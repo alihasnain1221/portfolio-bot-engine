@@ -1,0 +1,6091 @@
+{
+  "profile": {
+    "name": "Ali Hasnain",
+    "headline": "Senior Software & AI Engineer",
+    "also": "Technical Lead",
+    "location": "Lahore, Pakistan",
+    "years_experience": 5,
+    "contact": {
+      "email": "alibutthasnain@gmail.com",
+      "linkedin": "https://linkedin.com/in/ali-hasnain-mir"
+    },
+    "cta": {
+      "scheduling_link": "",
+      "style": "playful and warm, never pushy",
+      "availability": "I've got time flexibility on my end, but it'd be great to talk it through on a call."
+    },
+    "emerging_skills": [
+      "self-hosted / fine-tuned LLMs (PEFT on small GPU boxes)",
+      "deeper agentic systems & MCP tooling"
+    ],
+    "voice": {
+      "tone": "Casual, warm, and direct with a playful edge. Confident but never boastful. Concise -- gets to the point fast, sounds like a real person talking, not a resume. Uses contractions and first person, the odd \"honestly\" / \"ngl\" / \"funny you ask\". Still clean and professional enough for recruiters -- no buzzword soup, no filler, no over-explaining.\n",
+      "do": [
+        "Lead with a direct, friendly answer in 2-4 sentences.",
+        "Talk like a person; a little energy and personality is good.",
+        "Drop the playful call-invite naturally when it fits.",
+        "When asked about my stack or tech, frame it microservices-first: I'm a microservices / distributed-systems engineer at heart, MERN is my primary stack WITHIN that, and I lean on AWS + Terraform to run things as services. Don't just rattle off a flat tool list."
+      ],
+      "dont": [
+        "No corporate buzzword soup or LinkedIn-speak.",
+        "Don't pad, over-explain, or list everything you know.",
+        "Avoid em-dashes, double hyphens, and semicolons. Prefer short sentences with commas or full stops. They read less AI generated."
+      ],
+      "examples": [
+        "Yeah, that's right in my wheelhouse. Shipped a few production AWS setups with full Terraform IaC.",
+        "Honestly, that one was a team effort. I contributed but didn't lead it.",
+        "Funny you ask, I'm elbow-deep in that as we speak. Wanna hop on a quick call about it?",
+        "Microservices guy at heart, honestly. MERN's my primary stack, MongoDB, Express, React, Node, and I run it all on AWS with Terraform. Happy to get into how I split things into services.",
+        "Honestly, I've got some flexibility on timing. Would be great to talk it through on a quick call though, wanna set one up?"
+      ]
+    },
+    "summary": "Senior Software & AI Engineer with 5+ years, at heart a microservices and distributed-systems engineer: I design event-driven, service-based architectures (monolith to microservices, BFF/gateway) and run them on AWS with Terraform IaC. MERN is my primary stack within that (MongoDB, Express, React, Node.js, TypeScript), plus Nest.js. Owned architecture-to-delivery across fintech, healthcare, and SaaS, leading cross-functional teams, CI/CD pipelines, and production-grade systems handling high-volume transactions. Also designed and shipped production multi-model AI pipelines (AWS Rekognition, OpenAI Moderation API, GPT-4o) with deliberate signal separation and structured LLM output.\n",
+    "tech_lead_areas": [
+      "Architecture ownership: monolith -> microservices, BFF/gateway, event-driven design",
+      "Infrastructure as Code (Terraform/HashiCorp), multi-region disaster recovery, zero-downtime deploys",
+      "CI/CD pipeline design with automated unit + E2E testing",
+      "Multi-model AI pipeline design, agentic AI, structured LLM output",
+      "Team leadership & mentoring (led a team of 6), rigorous code reviews, engineering best practices",
+      "Observability & monitoring (Grafana, OpenTelemetry)",
+      "Database architecture & migrations (MySQL/PostgreSQL/MongoDB) for high-volume transactions",
+      "Agile delivery leadership (sprint planning, stand-ups, retrospectives)"
+    ],
+    "experience": [
+      {
+        "company": "Nextek Solutions",
+        "title": "Technical Lead / Senior Software Engineer",
+        "period": "Sep 2022 - Present"
+      },
+      {
+        "company": "Rapidzz Solutions",
+        "title": "Senior Web Developer (led a team of 6)",
+        "period": "Sep 2021 - Sep 2022"
+      }
+    ],
+    "education": [
+      "MSCS, FAST - National University of Computer and Emerging Sciences (High Honors, 2023-2025)",
+      "BSCS, PAK AIMS - Institute of Management Sciences (2019-2023)"
+    ],
+    "cv_skills": {
+      "AI & Automation": [
+        "Agentic AI",
+        "LLMs",
+        "GPT-4o",
+        "OpenAI Moderation API",
+        "Multi-model Pipelines",
+        "Structured LLM Output",
+        "Claude",
+        "MCPs",
+        "n8n",
+        "Make.io",
+        "AWS Transcribe",
+        "Replit",
+        "Design Patterns"
+      ],
+      "Core": [
+        "React",
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "Node.js",
+        "Express.js",
+        "Nest.js",
+        "Go",
+        "Python"
+      ],
+      "Backend & Database": [
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "RESTful APIs",
+        "gRPC",
+        "Asynchronous Processing",
+        "Event-Driven Architecture",
+        "Redux/Redux Saga"
+      ],
+      "Cloud & Infrastructure": [
+        "AWS (Lambda, API Gateway, RDS, CDN, CodePipeline, CodeBuild)",
+        "Terraform",
+        "HashiCorp",
+        "GCP",
+        "CI/CD",
+        "IaC",
+        "Zero Downtime Deployments",
+        "MLOps"
+      ],
+      "Observability & Monitoring": [
+        "Grafana",
+        "OpenTelemetry (OTel)"
+      ],
+      "Methodologies": [
+        "Agile",
+        "Code Reviews",
+        "Observability",
+        "Technical Leadership",
+        "DevOps"
+      ]
+    },
+    "cv_experience": [
+      {
+        "company": "NEXTEK SOLUTIONS",
+        "title": "Technical Lead / Senior Software Engineer",
+        "period": "September 2022 – Present",
+        "highlights": [
+          "Architected and deployed resilient MERN backend systems supporting high-volume financial infrastructure, maintaining 99.9% uptime across transaction-heavy platforms.",
+          "Designed and implemented CI/CD pipelines with automated testing, reducing deployment latency by 40% while enforcing WCAG accessibility standards.",
+          "Scaled RESTful APIs and database schemas across MySQL and PostgreSQL to handle massive seasonal traffic spikes and reliable money movement for nonprofit fundraising.",
+          "Mentored junior developers and conducted rigorous code reviews to uphold engineering best practices and maintain high code quality standards.",
+          "Collaborated with cross-functional teams to integrate analytics and observability tooling, identify and resolve endpoint weak spots, and ensure smooth end-to-end delivery."
+        ]
+      },
+      {
+        "company": "RAPIDZZ SOLUTIONS",
+        "title": "Senior Web Developer",
+        "period": "September 2021 – September 2022",
+        "highlights": [
+          "Led a team of 6 developers to build high-performance platforms using React, TypeScript, and MERN stack, increasing user engagement by 30% in the first quarter.",
+          "Implemented Turborepo for monorepo management, consolidating fragmented data tools into a unified CRM and management platform.",
+          "Actively participated in agile rituals including sprint planning, daily stand-ups, and retrospectives, driving consistent on-time delivery under stringent timelines.",
+          "Migrated legacy database systems to MySQL/PostgreSQL architectures, ensuring data integrity for billions of dollars in donor transactions.",
+          "Advocated for adoption of emerging technologies and frameworks, keeping the team at the forefront of the evolving tech landscape."
+        ]
+      }
+    ],
+    "cv_projects": [
+      {
+        "name": "SPiN - Sports Network Mobile App",
+        "summary": "Built and shipped a production 3-layer AI content moderation pipeline: AWS Rekognition hard gate → OpenAI Moderation API (language-only) → GPT-4o contextual judgment with a sports-domain system prompt and structured JSON output. Deliberately separated visual signals (pixel-level Rekognition labels) from language signals (AWS Transcribe + detected text) to eliminate false positives on sports content. Pipeline runs fully async for video via SNS/DynamoDB Streams and sync for images, feeding results via webhook to MongoDB. Re-architected the platform from monolithic MVP to microservices with full IaC on AWS.",
+        "tech": [
+          "MERN",
+          "Go",
+          "Python",
+          "Terraform",
+          "AWS Rekognition",
+          "AWS Transcribe",
+          "AWS Comprehend",
+          "AWS Personalize",
+          "OpenAI Moderation API",
+          "GPT-4o",
+          "DynamoDB Streams",
+          "SNS"
+        ],
+        "link": "https://spinsports.ai"
+      },
+      {
+        "name": "MojoTip",
+        "summary": "Originally launched as InstaTip, rebranded to MojoTip following copyright resolution. Built from scratch as a monolithic MVP and scaled horizontally to handle growing load. Fintech cashless tipping platform with robust backend infrastructure and automated CI/CD pipelines.",
+        "tech": [
+          "MongoDB",
+          "Express.js",
+          "Node.js",
+          "TypeScript"
+        ],
+        "link": "https://mojotip.com"
+      },
+      {
+        "name": "Success.ai",
+        "summary": "Built a multi-channel cold outreach automation platform. An Apify-powered scraper extracts LinkedIn leads based on user-defined criteria and stages them for outreach. Users compose campaigns via a template builder with variable substitution and AI-assisted copy generation (OpenAI GPT with explicit positive/negative prompt framing for tone control). EmailEngine drives automated follow-up sequences based on response status. The core engineering challenge was a unified multi-account inbox that aggregates all client email accounts into a single interface, supporting both manual compose/send from any account and automated EmailEngine sequences. Bulk sending routes leads in chunks across multiple sender addresses to avoid spam filters and rate limits.",
+        "tech": [
+          "MERN",
+          "Terraform",
+          "HashiCorp",
+          "OpenAI GPT",
+          "EmailEngine",
+          "Apify",
+          "Node.js"
+        ],
+        "link": "https://success.ai"
+      },
+      {
+        "name": "UmeedVentures",
+        "summary": "Redesigned a coupled three-module monolith into 12 independent microservices, enabling parallel team deployments with zero cross-team blocking. Built full IaC via Terraform (ECS, CDN, RDS, API Gateway), making infrastructure reproducible and region-portable. Led disaster recovery during a Bahrain AWS region outage, migrating production to a new region in hours using existing Terraform config. Maintained infrastructure cost parity while doubling system reliability across 3 independent teams.",
+        "tech": [
+          "Nest.js (BFF/Gateway)",
+          "Node.js/Express (microservices)",
+          "React/Vite",
+          "Terraform",
+          "AWS (ECS, CDN, RDS, API Gateway)"
+        ],
+        "link": "https://umeedcs.com/"
+      },
+      {
+        "name": "Lantern Finance",
+        "summary": "Built a fractional ETH staking platform solving the 32 ETH minimum barrier by pooling user investments percentage-based until the threshold is reached, staking via BitGo, and distributing rewards proportional to each user's pool contribution. Integrated MetaMask as the client-side wallet connector for transaction signing with no server-side key management. The core challenge was ledger consistency: keeping in-app transaction records in sync with on-chain state across both MetaMask and BitGo, handled via webhooks from both to track refund progress, reflect live wallet balances, and maintain a full audit trail. Built an internal reconciliation system to catch and surface any discrepancies between on-chain events and internal records.",
+        "tech": [
+          "MERN",
+          "TypeScript",
+          "MetaMask",
+          "BitGo",
+          "ethers.js"
+        ],
+        "link": "https://lantern.finance/"
+      },
+      {
+        "name": "North Metro100 BNM100",
+        "summary": "Built a fully automated job pipeline system using n8n and Claude (via MCP). A scheduled workflow scrapes job listings from target sites, creates structured Jira tickets with key-value job metadata, and triggers a dynamic re-prioritization agent on every new item. Client manages pipeline progression via a drag-and-drop Jira board. On job entry into the processing column, an agentic workflow triggers, queries member preference profiles from the NorthMetro portal, uses Claude via MCP to match and rank the most relevant members, emails assignments with follow-up reminders, and automatically schedules calendar tasks on acknowledgment.",
+        "tech": [
+          "n8n",
+          "Claude MCP",
+          "Jira API",
+          "Node.js",
+          "Replit",
+          "Terraform",
+          "HashiCorp"
+        ],
+        "link": "https://northmetro100.org/"
+      },
+      {
+        "name": "The Simple Vue",
+        "summary": "Started on Replit with Supabase and Firebase Cloud Functions, migrated to Heroku, then to AWS via CodeBuild and CodePipeline, showcasing full infrastructure evolution from prototype to cloud-native deployment.",
+        "tech": [
+          "Replit",
+          "Supabase",
+          "Firebase Cloud Functions",
+          "Heroku",
+          "AWS CDN",
+          "CodeBuild",
+          "CodePipeline"
+        ],
+        "link": "https://www.thesimplevue.com/"
+      },
+      {
+        "name": "SafeCamp - MedFlow",
+        "summary": "Healthcare platform tailored for laboratory partners. Reduced overhead costs and errors through end-to-end efficiency software, leveraging serverless architecture and a generic componential approach.",
+        "tech": [
+          "Serverless AWS Lambda",
+          "Node.js",
+          "React.js",
+          "Redux Saga",
+          "Redux Toolkit"
+        ],
+        "link": "https://www.gomedflow.com/"
+      },
+      {
+        "name": "Bond Studio AI",
+        "summary": "Interior design and procurement platform. Started as B2E and evolved into a large-scale B2C platform built with a cross-functional team.",
+        "tech": [
+          "Nest.js",
+          "Terraform",
+          "Unity",
+          "React Native",
+          "Regressions"
+        ],
+        "link": null
+      },
+      {
+        "name": "BuzzMi",
+        "summary": "Gamification-based secure messaging and social app with cashback rewards, end-to-end encryption, private messaging, and community mentorship features.",
+        "tech": [
+          "Nest.js",
+          "Node.js",
+          "Terraform",
+          "React Native",
+          "E2E Regressions"
+        ],
+        "link": null
+      },
+      {
+        "name": "Trove",
+        "summary": "eGift card distribution platform for employee gifting. Centralizes gifting across borders for the Asia-Pacific region, tracking spending and redemptions via a dashboard.",
+        "tech": [
+          "AWS EC2",
+          "MERN",
+          "GCP Cloud Functions"
+        ],
+        "link": "https://trove.com/"
+      },
+      {
+        "name": "CastingPAX",
+        "summary": "B2B2C casting platform simplifying the casting process through automation, reducing wasted time and empowering casting directors.",
+        "tech": [
+          "MERN",
+          "Micro-frontends",
+          "AWS RDS",
+          "Unit Tests",
+          "Test Stories"
+        ],
+        "link": "https://www.castingpax.com/"
+      },
+      {
+        "name": "SafeScan",
+        "summary": "B2B SaaS compliance and job site safety platform. Combines real-time check-ins, digital inspections, and accountability tracking to streamline communication and reduce reporting delays.",
+        "tech": [
+          "MERN",
+          "gRPC",
+          "AWS Lambda",
+          "AWS API Gateway",
+          "AWS CodeBuild",
+          "AWS CodePipeline"
+        ],
+        "link": "https://www.safesiteusa.com/"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "key": "spin",
+      "slug": "SPN/New_SPN_Backend",
+      "name": "SPiN - Sports Network",
+      "role": "lead",
+      "self_reported": false,
+      "authorship": {
+        "your_commits": 3941,
+        "total": 5710,
+        "share": 0.69,
+        "first": "2024-04-03",
+        "last": "2026-07-09",
+        "loc_you": 595561
+      },
+      "stack": {
+        "languages": [
+          "HCL",
+          "JavaScript",
+          "Python",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "AWS",
+          "BullMQ",
+          "Express",
+          "FastAPI",
+          "Firebase",
+          "MongoDB",
+          "OpenAI",
+          "Pydantic",
+          "React",
+          "Redis",
+          "Tailwind",
+          "Vite",
+          "Vue",
+          "WebSockets",
+          "numpy",
+          "pandas"
+        ],
+        "testing": [
+          "Jest",
+          "Playwright",
+          "Supertest",
+          "Vitest"
+        ],
+        "iac": [
+          "Terraform"
+        ],
+        "tags": [
+          "Docker",
+          "E2E Testing",
+          "GitHub Actions",
+          "IaC",
+          "Unit Testing",
+          "MERN",
+          "Go",
+          "Python",
+          "Terraform",
+          "AWS Rekognition",
+          "AWS Transcribe",
+          "AWS Comprehend",
+          "AWS Personalize",
+          "OpenAI Moderation API",
+          "GPT-4o",
+          "DynamoDB Streams",
+          "SNS",
+          "AWS Lambda",
+          "MCP",
+          "MCP Tools"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": true,
+        "iac": true,
+        "ci": true,
+        "readme": true,
+        "docker": true,
+        "serverless": false
+      },
+      "featured_rank": 1,
+      "disclosure_tier": "summary",
+      "link": "https://spinsports.ai",
+      "ai_showcase": true,
+      "source": "resume",
+      "summary_public": "Built and shipped a production 3-layer AI content moderation pipeline: AWS Rekognition hard gate -> OpenAI Moderation API (language-only) -> GPT-4o contextual judgment with a sports-domain system prompt and structured JSON output. Deliberately separated visual signals (pixel-level Rekognition labels) from language signals (AWS Transcribe + detected text) to eliminate false positives on sports content. Pipeline runs fully async for video via SNS/DynamoDB Streams and sync for images, feeding results via webhook to MongoDB. Re-architected the platform from monolithic MVP to microservices with full IaC on AWS. Also built MCP (Model Context Protocol) tools for the platform and implemented the AWS Lambda functions provisioned as code via Terraform.",
+      "workflow_brief": "The AI content moderation pipeline operates in three layers: AWS Rekognition for visual analysis, OpenAI Moderation API for language filtering, and GPT-4o for contextual judgment. It processes video asynchronously using SNS/DynamoDB Streams and images synchronously, with results sent to MongoDB via webhook.",
+      "domain": "sports",
+      "skills_evidenced": [
+        "AI pipeline design",
+        "AWS",
+        "AWS Comprehend",
+        "AWS Lambda",
+        "AWS Personalize",
+        "AWS Rekognition",
+        "AWS Transcribe",
+        "BullMQ",
+        "DynamoDB Streams",
+        "Express",
+        "FastAPI",
+        "Firebase",
+        "GPT-4o",
+        "Go",
+        "Infrastructure as Code",
+        "MCP",
+        "MCP Tools",
+        "MCP tool development",
+        "MERN",
+        "Microservices architecture",
+        "MongoDB",
+        "OpenAI",
+        "OpenAI Moderation API",
+        "Pydantic",
+        "Python",
+        "React",
+        "Redis",
+        "SNS",
+        "Tailwind",
+        "Terraform",
+        "Vite",
+        "Vue",
+        "WebSockets",
+        "numpy",
+        "pandas"
+      ]
+    },
+    {
+      "key": "mojotip",
+      "slug": "Intsa-Tip/Insta-Tip-Backend",
+      "name": "MojoTip (formerly InstaTip)",
+      "role": "contributor",
+      "self_reported": false,
+      "authorship": {
+        "your_commits": 761,
+        "total": 1688,
+        "share": 0.451,
+        "first": "2024-04-07",
+        "last": "2025-12-10",
+        "loc_you": 95402
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Express",
+          "Firebase",
+          "MongoDB",
+          "React",
+          "Redux Toolkit",
+          "Vite"
+        ],
+        "testing": [],
+        "iac": [],
+        "tags": [
+          "GitHub Actions",
+          "Express.js",
+          "Node.js",
+          "TypeScript"
+        ]
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": 2,
+      "disclosure_tier": "summary",
+      "link": "https://mojotip.com",
+      "ai_showcase": false,
+      "source": "resume",
+      "summary_public": "Originally launched as InstaTip, rebranded to MojoTip following copyright resolution. Built from scratch as a monolithic MVP and scaled horizontally to handle growing load. Fintech cashless tipping platform with robust backend infrastructure and automated CI/CD pipelines.",
+      "workflow_brief": "Users can send and receive cashless tips through the platform, which processes transactions using a scalable backend infrastructure.",
+      "domain": "fintech",
+      "skills_evidenced": [
+        "Backend architecture",
+        "CI/CD pipeline design",
+        "Express",
+        "Express.js",
+        "Firebase",
+        "JavaScript",
+        "MongoDB",
+        "Node.js",
+        "React",
+        "Redux Toolkit",
+        "TypeScript",
+        "Vite"
+      ]
+    },
+    {
+      "key": "success_ai",
+      "slug": "success_ai",
+      "name": "Success.ai",
+      "role": "self-reported",
+      "self_reported": true,
+      "authorship": null,
+      "stack": {
+        "languages": [],
+        "frameworks": [],
+        "testing": [],
+        "iac": [],
+        "tags": [
+          "MERN",
+          "openClaw",
+          "Terraform",
+          "HashiCorp",
+          "OpenAI GPT",
+          "EmailEngine",
+          "Apify",
+          "Node.js"
+        ]
+      },
+      "signals": {},
+      "featured_rank": 3,
+      "disclosure_tier": "summary",
+      "link": "https://success.ai/",
+      "ai_showcase": true,
+      "source": "resume",
+      "summary_public": "Built a multi-channel cold outreach automation platform. An Apify-powered scraper extracts LinkedIn leads based on user-defined criteria and stages them for outreach. Users compose campaigns via a template builder with variable substitution and AI-assisted copy generation (OpenAI GPT with explicit positive/negative prompt framing for tone control). EmailEngine drives automated follow-up sequences based on response status. The core engineering challenge was a unified multi-account inbox that aggregates all client email accounts into a single interface, supporting both manual compose/send from any account and automated EmailEngine sequences. Bulk sending routes leads in chunks across multiple sender addresses to avoid spam filters and rate limits. Built on openClaw and self-hosted, deployed and managed directly on its own server.",
+      "workflow_brief": "The platform scrapes LinkedIn for leads, stages them for outreach, and allows users to create campaigns with AI-generated content. It manages email sequences and aggregates multiple email accounts into a single interface.",
+      "domain": "automation",
+      "skills_evidenced": [
+        "AI-assisted automation",
+        "Apify",
+        "EmailEngine",
+        "HashiCorp",
+        "Infrastructure as Code",
+        "MERN",
+        "Node.js",
+        "OpenAI GPT",
+        "Terraform",
+        "agentic outreach",
+        "multi-account systems design",
+        "openClaw",
+        "self-hosted deployment"
+      ]
+    },
+    {
+      "key": "umeedventures",
+      "slug": "UmeedVentures",
+      "name": "UmeedVentures",
+      "role": "lead",
+      "self_reported": false,
+      "authorship": {
+        "your_commits": 303,
+        "total": 350,
+        "share": 0.866,
+        "first": "2025-09-19",
+        "last": "2026-03-26",
+        "loc_you": 751453
+      },
+      "stack": {
+        "languages": [
+          "HCL",
+          "JavaScript",
+          "Python",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Express",
+          "Nest.js",
+          "Next.js",
+          "PostgreSQL",
+          "React",
+          "Vite"
+        ],
+        "testing": [
+          "Jest",
+          "Supertest"
+        ],
+        "iac": [
+          "Terraform"
+        ],
+        "tags": [
+          "Docker",
+          "GitHub Actions",
+          "IaC",
+          "Unit Testing",
+          "Nest.js (BFF/Gateway)",
+          "Node.js/Express (microservices)",
+          "React/Vite",
+          "Terraform",
+          "AWS (ECS, CDN, RDS, API Gateway)"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": true,
+        "ci": true,
+        "readme": true,
+        "docker": true,
+        "serverless": false
+      },
+      "featured_rank": 4,
+      "disclosure_tier": "summary",
+      "link": "https://umeedcs.com/",
+      "ai_showcase": false,
+      "source": "resume",
+      "summary_public": "Redesigned a coupled three-module monolith into 12 independent microservices, enabling parallel team deployments with zero cross-team blocking. Built full IaC via Terraform (ECS, CDN, RDS, API Gateway), making infrastructure reproducible and region-portable. Led disaster recovery during a Bahrain AWS region outage, migrating production to a new region in hours using existing Terraform config. Maintained infrastructure cost parity while doubling system reliability across 3 independent teams.",
+      "workflow_brief": "The platform operates by utilizing a microservices architecture, where each service can be deployed independently, allowing for seamless updates and scalability. Infrastructure is managed through Terraform, enabling easy replication and migration across regions.",
+      "domain": "venture capital",
+      "skills_evidenced": [
+        "AWS",
+        "AWS (ECS, CDN, RDS, API Gateway)",
+        "Architecture ownership",
+        "Disaster recovery",
+        "Express",
+        "Infrastructure as Code",
+        "JavaScript",
+        "Microservices",
+        "Nest.js",
+        "Nest.js (BFF/Gateway)",
+        "Next.js",
+        "Node.js/Express (microservices)",
+        "PostgreSQL",
+        "Python",
+        "React",
+        "React/Vite",
+        "Team leadership",
+        "Terraform",
+        "TypeScript",
+        "Vite"
+      ]
+    },
+    {
+      "key": "lantern",
+      "slug": "lantern/Lantern-backend",
+      "name": "Lantern Finance",
+      "role": "minor",
+      "self_reported": false,
+      "authorship": {
+        "your_commits": 196,
+        "total": 1418,
+        "share": 0.138,
+        "first": "2023-12-15",
+        "last": "2024-07-09",
+        "loc_you": 13602
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Express",
+          "Firebase",
+          "Firebase Functions",
+          "MongoDB",
+          "React",
+          "Redux",
+          "Redux Toolkit",
+          "Tailwind",
+          "Webpack"
+        ],
+        "testing": [
+          "Cypress",
+          "Jest",
+          "Supertest"
+        ],
+        "iac": [],
+        "tags": [
+          "Docker",
+          "E2E Testing",
+          "GitHub Actions",
+          "Unit Testing",
+          "MERN",
+          "TypeScript",
+          "MetaMask",
+          "BitGo",
+          "ethers.js"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": true,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": true,
+        "serverless": false
+      },
+      "featured_rank": 5,
+      "disclosure_tier": "summary",
+      "link": "https://lantern.finance/",
+      "ai_showcase": false,
+      "source": "resume",
+      "summary_public": "Built a fractional ETH staking platform solving the 32 ETH minimum barrier by pooling user investments percentage-based until the threshold is reached, staking via BitGo, and distributing rewards proportional to each user's pool contribution. Integrated MetaMask as the client-side wallet connector for transaction signing with no server-side key management. The core challenge was ledger consistency: keeping in-app transaction records in sync with on-chain state across both MetaMask and BitGo, handled via webhooks from both to track refund progress, reflect live wallet balances, and maintain a full audit trail. Built an internal reconciliation system to catch and surface discrepancies between on-chain events and internal records.",
+      "workflow_brief": "",
+      "domain": "fintech",
+      "skills_evidenced": [
+        "BitGo",
+        "Cypress",
+        "Docker",
+        "E2E Testing",
+        "Express",
+        "Firebase",
+        "Firebase Functions",
+        "GitHub Actions",
+        "JavaScript",
+        "Jest",
+        "MERN",
+        "MetaMask",
+        "MongoDB",
+        "React",
+        "Redux",
+        "Redux Toolkit",
+        "Supertest",
+        "Tailwind",
+        "TypeScript",
+        "Unit Testing",
+        "Webpack",
+        "ethers.js"
+      ]
+    },
+    {
+      "key": "northmetro100",
+      "slug": "SF-MentorApp/mentor100-frontend",
+      "name": "North Metro100 (BNM100)",
+      "role": "lead",
+      "self_reported": false,
+      "authorship": {
+        "your_commits": 264,
+        "total": 373,
+        "share": 0.708,
+        "first": "2025-12-08",
+        "last": "2026-04-30",
+        "loc_you": 176318
+      },
+      "stack": {
+        "languages": [
+          "JavaScript"
+        ],
+        "frameworks": [
+          "Express",
+          "Firebase",
+          "Firebase Functions",
+          "PostgreSQL",
+          "React",
+          "Redux",
+          "Sequelize",
+          "Serverless Framework",
+          "Tailwind"
+        ],
+        "testing": [
+          "React Testing Library",
+          "Testing Library"
+        ],
+        "iac": [],
+        "tags": [
+          "CI/CD",
+          "GitHub Actions",
+          "Unit Testing",
+          "n8n",
+          "Claude (MCP)",
+          "Jira API",
+          "Node.js",
+          "Replit",
+          "Terraform",
+          "HashiCorp"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": true
+      },
+      "featured_rank": 6,
+      "disclosure_tier": "summary",
+      "link": "https://northmetro100.org/",
+      "ai_showcase": true,
+      "source": "resume",
+      "summary_public": "Built a fully automated job pipeline system using n8n and Claude (via MCP). A scheduled workflow scrapes job listings from target sites, creates structured Jira tickets with key-value job metadata, and triggers a dynamic re-prioritization agent on every new item. Client manages pipeline progression via a drag-and-drop Jira board. On job entry into the processing column, an agentic workflow triggers, queries member preference profiles from the NorthMetro portal, uses Claude via MCP to match and rank the most relevant members, emails assignments with follow-up reminders, and automatically schedules calendar tasks on acknowledgment.",
+      "workflow_brief": "The system automates job listing scrapes and creates Jira tickets with metadata. It dynamically prioritizes tasks and matches jobs to members using Claude via MCP, sending assignments and scheduling tasks.",
+      "domain": "job automation",
+      "skills_evidenced": [
+        "CI/CD",
+        "Claude (MCP)",
+        "Express",
+        "Firebase",
+        "Firebase Functions",
+        "GitHub Actions",
+        "HashiCorp",
+        "JavaScript",
+        "Jira API",
+        "Node.js",
+        "PostgreSQL",
+        "React",
+        "Redux",
+        "Replit",
+        "Sequelize",
+        "Serverless Framework",
+        "Tailwind",
+        "Terraform",
+        "Unit Testing",
+        "n8n"
+      ]
+    },
+    {
+      "key": "simplevue",
+      "slug": "SF-MentorApp/mentor100-frontend",
+      "name": "The Simple Vue",
+      "role": "lead",
+      "self_reported": false,
+      "authorship": {
+        "your_commits": 264,
+        "total": 373,
+        "share": 0.708,
+        "first": "2025-12-08",
+        "last": "2026-04-30",
+        "loc_you": 176318
+      },
+      "stack": {
+        "languages": [
+          "JavaScript"
+        ],
+        "frameworks": [
+          "Express",
+          "Firebase",
+          "Firebase Functions",
+          "PostgreSQL",
+          "React",
+          "Redux",
+          "Sequelize",
+          "Serverless Framework",
+          "Tailwind"
+        ],
+        "testing": [
+          "React Testing Library",
+          "Testing Library"
+        ],
+        "iac": [],
+        "tags": [
+          "CI/CD",
+          "GitHub Actions",
+          "Unit Testing",
+          "Replit",
+          "Supabase",
+          "Firebase Cloud Functions",
+          "Heroku",
+          "AWS CDN",
+          "CodeBuild",
+          "CodePipeline"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": true
+      },
+      "featured_rank": 7,
+      "disclosure_tier": "summary",
+      "link": "https://www.thesimplevue.com/",
+      "ai_showcase": false,
+      "source": "resume",
+      "summary_public": "Started on Replit with Supabase and Firebase Cloud Functions, migrated to Heroku, then to AWS via CodeBuild and CodePipeline, showcasing full infrastructure evolution from prototype to cloud-native deployment.",
+      "workflow_brief": "The platform began on Replit with Supabase and Firebase Cloud Functions, transitioned to Heroku for enhanced deployment capabilities, and finally moved to AWS, leveraging CodeBuild and CodePipeline for a robust CI/CD pipeline.",
+      "domain": "devtools",
+      "skills_evidenced": [
+        "AWS CDN",
+        "CI/CD",
+        "CodeBuild",
+        "CodePipeline",
+        "Express",
+        "Firebase",
+        "Firebase Cloud Functions",
+        "Firebase Functions",
+        "GitHub Actions",
+        "Heroku",
+        "JavaScript",
+        "PostgreSQL",
+        "React",
+        "Redux",
+        "Replit",
+        "Sequelize",
+        "Serverless Framework",
+        "Supabase",
+        "Tailwind",
+        "Unit Testing"
+      ]
+    },
+    {
+      "key": "bondstudio",
+      "slug": "bondstudio",
+      "name": "Bond Studio AI",
+      "role": "self-reported",
+      "self_reported": true,
+      "authorship": null,
+      "stack": {
+        "languages": [],
+        "frameworks": [],
+        "testing": [],
+        "iac": [],
+        "tags": [
+          "Nest.js",
+          "Terraform",
+          "Unity",
+          "React Native",
+          "Regressions"
+        ]
+      },
+      "signals": {},
+      "featured_rank": 8,
+      "disclosure_tier": "summary",
+      "link": null,
+      "ai_showcase": false,
+      "source": "resume",
+      "summary_public": "Interior design and procurement platform. Started as B2E and evolved into a large-scale B2C platform built with a cross-functional team.",
+      "workflow_brief": "",
+      "domain": "interior design",
+      "skills_evidenced": [
+        "Architecture ownership",
+        "Cross-functional team delivery",
+        "Nest.js",
+        "React Native",
+        "Regressions",
+        "Terraform",
+        "Unity"
+      ]
+    },
+    {
+      "key": "buzzmi",
+      "slug": "Buzz-mi/BuzzBE",
+      "name": "BuzzMi",
+      "role": "contributor",
+      "self_reported": false,
+      "authorship": {
+        "your_commits": 34,
+        "total": 1251,
+        "share": 0.027,
+        "first": "2024-12-11",
+        "last": "2025-02-17",
+        "loc_you": 79716
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Fastify",
+          "Firebase",
+          "LangChain",
+          "Nest.js",
+          "Nx",
+          "PostgreSQL",
+          "Redis",
+          "Stripe",
+          "TypeORM"
+        ],
+        "testing": [
+          "Jest"
+        ],
+        "iac": [],
+        "tags": [
+          "CI/CD",
+          "Docker",
+          "Unit Testing",
+          "Node.js",
+          "Terraform",
+          "React Native",
+          "E2E Regressions"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": true,
+        "serverless": false
+      },
+      "featured_rank": 9,
+      "disclosure_tier": "summary",
+      "link": null,
+      "ai_showcase": false,
+      "source": "resume",
+      "summary_public": "Gamification-based secure messaging and social app with cashback rewards, end-to-end encryption, private messaging, and community mentorship features. Contributed as part of a cross-functional team.",
+      "workflow_brief": "",
+      "domain": "social media",
+      "skills_evidenced": [
+        "CI/CD",
+        "Docker",
+        "E2E Regressions",
+        "Fastify",
+        "Firebase",
+        "JavaScript",
+        "Jest",
+        "LangChain",
+        "Nest.js",
+        "Node.js",
+        "Nx",
+        "PostgreSQL",
+        "React Native",
+        "Redis",
+        "Stripe",
+        "Terraform",
+        "TypeORM",
+        "TypeScript",
+        "Unit Testing"
+      ]
+    },
+    {
+      "key": "trove",
+      "slug": "Trove/Trover-admin",
+      "name": "Trove",
+      "role": "lead",
+      "self_reported": false,
+      "authorship": {
+        "your_commits": 201,
+        "total": 336,
+        "share": 0.598,
+        "first": "2023-10-16",
+        "last": "2024-06-05",
+        "loc_you": 1842744
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Express",
+          "MongoDB"
+        ],
+        "testing": [],
+        "iac": [],
+        "tags": [
+          "GitHub Actions",
+          "AWS EC2",
+          "MERN",
+          "GCP Cloud Functions"
+        ]
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": 10,
+      "disclosure_tier": "summary",
+      "link": "https://trove.com/",
+      "ai_showcase": false,
+      "source": "resume",
+      "summary_public": "eGift card distribution platform for employee gifting. Centralizes gifting across borders for the Asia-Pacific region, tracking spending and redemptions via a dashboard.",
+      "workflow_brief": "The platform operates by allowing users to distribute eGift cards to employees, with a dashboard interface that tracks and manages the distribution, spending, and redemption of these cards.",
+      "domain": "e-commerce",
+      "skills_evidenced": [
+        "AWS EC2",
+        "Express",
+        "Full-stack delivery",
+        "GCP Cloud Functions",
+        "JavaScript",
+        "MERN",
+        "MongoDB",
+        "TypeScript"
+      ]
+    },
+    {
+      "key": "castingpax",
+      "slug": "CastingPAX/CastingPAX-backend",
+      "name": "CastingPAX",
+      "role": "lead",
+      "self_reported": false,
+      "authorship": {
+        "your_commits": 799,
+        "total": 1065,
+        "share": 0.75,
+        "first": "2021-03-05",
+        "last": "2024-10-28",
+        "loc_you": 215537
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Express",
+          "MongoDB",
+          "React",
+          "Redux",
+          "Redux Saga",
+          "Redux Toolkit",
+          "Stripe"
+        ],
+        "testing": [
+          "Puppeteer",
+          "React Testing Library",
+          "Testing Library"
+        ],
+        "iac": [],
+        "tags": [
+          "CI/CD",
+          "Docker",
+          "E2E Testing",
+          "GitHub Actions",
+          "Unit Testing",
+          "MERN",
+          "Micro-frontends",
+          "AWS RDS",
+          "Unit Tests",
+          "Test Stories"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": true,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": true,
+        "serverless": false
+      },
+      "featured_rank": 11,
+      "disclosure_tier": "summary",
+      "link": "https://www.castingpax.com/",
+      "ai_showcase": false,
+      "source": "resume",
+      "summary_public": "B2B2C casting platform simplifying the casting process through automation, reducing wasted time and empowering casting directors.",
+      "workflow_brief": "CastingPAX automates the casting process, streamlining interactions between casting directors and talent. It leverages micro-frontends architecture and CI/CD pipelines with automated unit tests and test stories to ensure a robust and efficient system.",
+      "domain": "entertainment",
+      "skills_evidenced": [
+        "AWS RDS",
+        "Automated Testing",
+        "CI/CD",
+        "Express",
+        "JavaScript",
+        "MERN",
+        "Micro-frontends",
+        "MongoDB",
+        "React",
+        "Redux",
+        "Redux Saga",
+        "Redux Toolkit",
+        "Stripe",
+        "Test Stories",
+        "TypeScript",
+        "Unit Tests"
+      ]
+    },
+    {
+      "key": "safescan",
+      "slug": "Safe-Scan/safescan_admin",
+      "name": "SafeScan",
+      "role": "contributor",
+      "self_reported": false,
+      "authorship": {
+        "your_commits": 1883,
+        "total": 4368,
+        "share": 0.431,
+        "first": "2023-08-08",
+        "last": "2026-07-06",
+        "loc_you": 321511
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "AWS",
+          "BullMQ",
+          "Express",
+          "MongoDB",
+          "OpenAI",
+          "React",
+          "Redis",
+          "Redux",
+          "Redux Toolkit",
+          "Vite"
+        ],
+        "testing": [
+          "Puppeteer",
+          "React Testing Library",
+          "Testing Library"
+        ],
+        "iac": [],
+        "tags": [
+          "E2E Testing",
+          "GitHub Actions",
+          "Unit Testing",
+          "MERN",
+          "gRPC",
+          "AWS Lambda",
+          "AWS API Gateway",
+          "AWS CodeBuild",
+          "AWS CodePipeline"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": true,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": 12,
+      "disclosure_tier": "summary",
+      "link": "https://www.safesiteusa.com/",
+      "ai_showcase": false,
+      "source": "resume",
+      "summary_public": "B2B SaaS compliance and job site safety platform. Combines real-time check-ins, digital inspections, and accountability tracking to streamline communication and reduce reporting delays.",
+      "workflow_brief": "The platform operates by enabling real-time check-ins and digital inspections, which are tracked and reported to streamline communication and accountability on job sites.",
+      "domain": "compliance",
+      "skills_evidenced": [
+        "AWS",
+        "AWS API Gateway",
+        "AWS CodeBuild",
+        "AWS CodePipeline",
+        "AWS Lambda",
+        "BullMQ",
+        "CI/CD",
+        "E2E Testing",
+        "Express",
+        "JavaScript",
+        "MERN",
+        "MongoDB",
+        "OpenAI",
+        "React",
+        "Redis",
+        "Redux",
+        "Redux Toolkit",
+        "Serverless AWS",
+        "TypeScript",
+        "Unit Testing",
+        "Vite",
+        "gRPC"
+      ]
+    },
+    {
+      "key": "pobot",
+      "slug": "Test-apps/PoBot_Expansion–AI_Assistant_for_Migrant_Support",
+      "name": "PoBot - AI Assistant for Migrant Support",
+      "role": "solo",
+      "self_reported": false,
+      "authorship": {
+        "your_commits": 7,
+        "total": 7,
+        "share": 1.0,
+        "first": "2026-07-09",
+        "last": "2026-07-10",
+        "loc_you": 1271576
+      },
+      "stack": {
+        "languages": [
+          "Python"
+        ],
+        "frameworks": [
+          "FAISS",
+          "OpenAI",
+          "PyTorch",
+          "Sentence-Transformers",
+          "Transformers",
+          "numpy"
+        ],
+        "testing": [],
+        "iac": [],
+        "tags": [
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": 13,
+      "disclosure_tier": "open",
+      "link": null,
+      "ai_showcase": true,
+      "source": "repo",
+      "summary_public": "A retrieval-augmented (RAG) AI assistant that answers migrant-support questions grounded in a curated knowledge base rather than free-form LLM output. Demonstrates retrieval pipeline design, prompt engineering, and end-to-end LLM application architecture.",
+      "workflow_brief": "PoBot uses a retrieval-augmented generation approach where user queries are matched against a curated knowledge base using FAISS and Sentence-Transformers. Relevant information is retrieved and used to generate accurate responses through an LLM, ensuring answers are grounded in reliable data.",
+      "domain": "AI / social support",
+      "skills_evidenced": [
+        "FAISS",
+        "LLM application architecture",
+        "OpenAI",
+        "PyTorch",
+        "Python",
+        "RAG design",
+        "Sentence-Transformers",
+        "Transformers",
+        "numpy"
+      ]
+    },
+    {
+      "key": "leadforge",
+      "slug": "Personal/leadforge-system",
+      "name": "LeadForge - AI Lead-Generation System",
+      "role": "solo",
+      "self_reported": false,
+      "authorship": {
+        "your_commits": 18,
+        "total": 19,
+        "share": 0.947,
+        "first": "2026-03-29",
+        "last": "2026-03-29",
+        "loc_you": 26974
+      },
+      "stack": {
+        "languages": [
+          "JavaScript"
+        ],
+        "frameworks": [],
+        "testing": [],
+        "iac": [],
+        "tags": []
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": 14,
+      "disclosure_tier": "open",
+      "link": null,
+      "ai_showcase": true,
+      "source": "repo",
+      "summary_public": "A solo-built, closed-loop lead-generation system for pitching web-design services to local businesses: scrape leads (SerpAPI) -> score -> generate personalized AI pitch emails -> send automatically -> track opens/replies -> analyze conversions to improve over time. Built on n8n with Claude via MCP. Strong evidence of agentic-AI and automation capability owned end to end.",
+      "workflow_brief": "The system scrapes leads, scores them, generates personalized AI pitch emails, sends them automatically, and tracks engagement to analyze and improve conversion rates.",
+      "domain": "marketing automation",
+      "skills_evidenced": [
+        "Agentic AI automation",
+        "End-to-end system ownership",
+        "JavaScript"
+      ]
+    },
+    {
+      "key": "llm_extractor",
+      "slug": "Test-apps/llm-knowledge-extractor",
+      "name": "LLM Knowledge Extractor",
+      "role": "snapshot",
+      "self_reported": false,
+      "authorship": {
+        "your_commits": 2,
+        "total": 2,
+        "share": 1.0,
+        "first": "2025-09-03",
+        "last": "2025-09-03",
+        "loc_you": 7695
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Express",
+          "OpenAI"
+        ],
+        "testing": [
+          "Jest",
+          "Supertest"
+        ],
+        "iac": [],
+        "tags": [
+          "Docker",
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": true,
+        "serverless": false
+      },
+      "featured_rank": 15,
+      "disclosure_tier": "open",
+      "link": null,
+      "ai_showcase": true,
+      "source": "repo",
+      "summary_public": "A service that extracts structured knowledge - entities, summaries, keywords - from unstructured text using an LLM, returning schema-validated output. Shows practical structured-LLM-output engineering.",
+      "workflow_brief": "The service processes unstructured text input through an LLM to extract structured data, which is then validated against a predefined schema before being returned to the user.",
+      "domain": "AI/NLP",
+      "skills_evidenced": [
+        "API design",
+        "Docker",
+        "Express",
+        "JavaScript",
+        "Jest",
+        "LLM structured extraction",
+        "OpenAI",
+        "Supertest",
+        "TypeScript",
+        "Unit Testing"
+      ]
+    },
+    {
+      "slug": "EarlyBirdsProperties/EarlyBirds-Properties-FE",
+      "name": "EarlyBirds Properties FE",
+      "role": "solo",
+      "authorship": {
+        "your_commits": 164,
+        "total": 168,
+        "share": 0.976,
+        "first": "2025-08-05",
+        "last": "2026-01-13",
+        "loc_you": 249509
+      },
+      "stack": {
+        "languages": [
+          "JavaScript"
+        ],
+        "frameworks": [
+          "Next.js",
+          "React"
+        ],
+        "testing": [],
+        "iac": [],
+        "tags": []
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "EarlyBirds Properties FE is a real estate platform developed using JavaScript with Next.js and React frameworks. The platform features automatic sitemap generation and robots.txt configuration to enhance SEO, including metadata for Google Image Search. It is designed to be easily deployable on the Vercel platform.",
+      "workflow_brief": "The platform runs a development server locally, allowing for live editing and auto-updating of pages. It generates a sitemap at build time, including static pages, blog posts, and property details with images, optimizing for search engine visibility.",
+      "skills_evidenced": [
+        "JavaScript",
+        "Next.js",
+        "React",
+        "SEO"
+      ],
+      "domain": "real estate"
+    },
+    {
+      "slug": "SPN/meadowlands-service",
+      "name": "meadowlands service",
+      "role": "solo",
+      "authorship": {
+        "your_commits": 97,
+        "total": 102,
+        "share": 0.951,
+        "first": "2026-02-27",
+        "last": "2026-06-05",
+        "loc_you": 28975
+      },
+      "stack": {
+        "languages": [
+          "HCL",
+          "JavaScript",
+          "Python",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "FastAPI",
+          "Firebase",
+          "React",
+          "Redux Toolkit",
+          "Vite",
+          "numpy",
+          "pandas"
+        ],
+        "testing": [],
+        "iac": [
+          "Terraform"
+        ],
+        "tags": [
+          "Docker",
+          "GitHub Actions",
+          "IaC"
+        ]
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": true,
+        "ci": true,
+        "readme": true,
+        "docker": true,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Meadowlands Service is a development platform leveraging technologies such as FastAPI, Firebase, React, and Redux Toolkit. It is built with a focus on infrastructure as code using Terraform, and incorporates Docker and GitHub Actions for streamlined deployment and CI/CD processes.",
+      "workflow_brief": "",
+      "skills_evidenced": [
+        "Docker",
+        "FastAPI",
+        "Firebase",
+        "GitHub Actions",
+        "Infrastructure as Code",
+        "React",
+        "Redux Toolkit",
+        "Terraform",
+        "Vite",
+        "numpy",
+        "pandas"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "SPN/infrastructure-bootstrap",
+      "name": "infrastructure bootstrap",
+      "role": "solo",
+      "authorship": {
+        "your_commits": 73,
+        "total": 75,
+        "share": 0.973,
+        "first": "2025-07-15",
+        "last": "2026-06-01",
+        "loc_you": 12089
+      },
+      "stack": {
+        "languages": [
+          "HCL"
+        ],
+        "frameworks": [],
+        "testing": [],
+        "iac": [
+          "Terraform"
+        ],
+        "tags": [
+          "GitHub Actions",
+          "IaC"
+        ]
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": true,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "The 'infrastructure-bootstrap' project is designed to automate the provisioning of foundational AWS infrastructure for new microservice repositories using Terraform Cloud and GitHub Actions. It sets up essential resources such as ECR repositories and IAM roles, allowing each microservice to manage its own infrastructure while utilizing shared components. The project emphasizes environment isolation with separate AWS accounts and Terraform Cloud workspaces for development, staging, and production environments. CI/CD processes are integrated with automated deployments for development and manual approvals for staging and production.",
+      "workflow_brief": "The bootstrap process provisions base resources like ECR repositories and IAM roles for new services. Each microservice repository manages its own infrastructure, referencing shared resources. CI/CD is managed via GitHub Actions with automated and manual deployment workflows.",
+      "skills_evidenced": [
+        "AWS",
+        "CI/CD",
+        "Environment Isolation",
+        "GitHub Actions",
+        "Infrastructure as Code",
+        "Terraform"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "Boiler-plates/Backend-MVC",
+      "name": "Backend MVC",
+      "role": "solo",
+      "authorship": {
+        "your_commits": 25,
+        "total": 25,
+        "share": 1.0,
+        "first": "2024-07-29",
+        "last": "2024-09-03",
+        "loc_you": 20142
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Express",
+          "Firebase",
+          "MongoDB"
+        ],
+        "testing": [
+          "Jest",
+          "Supertest"
+        ],
+        "iac": [],
+        "tags": [
+          "GitHub Actions",
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Backend MVC is a server API project developed using TypeScript and Express, designed to support multiple environments including development, testing, and production. The project utilizes MongoDB for database management and incorporates Firebase for additional backend functionalities. It employs Jest and Supertest for testing, and GitHub Actions for CI/CD processes.",
+      "workflow_brief": "The server API is configured to run in different environments by using environment variables specified in `.env` files. It supports hot-reloading in development mode and can be built and started in production mode using npm scripts. ESLint is used for maintaining code quality.",
+      "skills_evidenced": [
+        "Express",
+        "Firebase",
+        "GitHub Actions",
+        "JavaScript",
+        "Jest",
+        "MongoDB",
+        "Supertest",
+        "TypeScript",
+        "Unit Testing"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "Boiler-plates/Frontend-Monorepo",
+      "name": "Frontend Monorepo",
+      "role": "solo",
+      "authorship": {
+        "your_commits": 21,
+        "total": 21,
+        "share": 1.0,
+        "first": "2024-08-05",
+        "last": "2024-08-30",
+        "loc_you": 62350
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "MongoDB",
+          "Next.js",
+          "React",
+          "Redux Toolkit",
+          "Tailwind"
+        ],
+        "testing": [],
+        "iac": [],
+        "tags": []
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "The Frontend Monorepo is a solo-developed project utilizing JavaScript and TypeScript with frameworks such as Next.js, React, Redux Toolkit, and Tailwind. It is designed to streamline frontend development by consolidating code into a single repository, enhancing maintainability and scalability. MongoDB is used for data management.",
+      "workflow_brief": "The monorepo setup allows developers to run a development server using npm, yarn, pnpm, or bun. It supports live editing with auto-updates by modifying files like `app/page.tsx`. Deployment is facilitated through the Vercel platform.",
+      "skills_evidenced": [
+        "JavaScript",
+        "MongoDB",
+        "Next.js",
+        "React",
+        "Redux Toolkit",
+        "Tailwind",
+        "TypeScript"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "E-commerce-FYP-test",
+      "name": "E commerce FYP test",
+      "role": "solo",
+      "authorship": {
+        "your_commits": 10,
+        "total": 10,
+        "share": 1.0,
+        "first": "2023-01-08",
+        "last": "2023-09-11",
+        "loc_you": 37670
+      },
+      "stack": {
+        "languages": [
+          "JavaScript"
+        ],
+        "frameworks": [
+          "React",
+          "Redux"
+        ],
+        "testing": [
+          "React Testing Library",
+          "Testing Library"
+        ],
+        "iac": [],
+        "tags": [
+          "GitHub Actions",
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "E commerce FYP test is a JavaScript-based platform developed using React and Redux, focusing on building a robust frontend for ecommerce applications. The project includes comprehensive unit testing using React Testing Library and Testing Library, and employs GitHub Actions for continuous integration.",
+      "workflow_brief": "The platform is initiated with Create React App, allowing developers to run, test, and build the application efficiently. It supports development with live reloading and provides a production-ready build process that optimizes performance.",
+      "skills_evidenced": [
+        "GitHub Actions",
+        "JavaScript",
+        "React",
+        "Redux",
+        "Unit Testing"
+      ],
+      "domain": "ecommerce"
+    },
+    {
+      "slug": "Test-apps/real-time-todo-app-vue",
+      "name": "real time todo app vue",
+      "role": "solo",
+      "authorship": {
+        "your_commits": 10,
+        "total": 10,
+        "share": 1.0,
+        "first": "2024-09-18",
+        "last": "2024-09-19",
+        "loc_you": 20361
+      },
+      "stack": {
+        "languages": [
+          "JavaScript"
+        ],
+        "frameworks": [
+          "Tailwind",
+          "Vue"
+        ],
+        "testing": [],
+        "iac": [],
+        "tags": []
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "The 'real-time-todo-app-vue' is a JavaScript-based application developed using the Vue framework and styled with Tailwind CSS. It allows users to manage tasks in real-time, providing a dynamic and responsive user experience.",
+      "workflow_brief": "Users can set up the project by running 'npm install'. The app supports development with hot-reloading using 'npm run serve' and can be compiled for production with 'npm run build'. Code quality is maintained through linting with 'npm run lint'.",
+      "skills_evidenced": [
+        "JavaScript",
+        "Tailwind",
+        "Tailwind CSS",
+        "Vue"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "StoryBirds/Firebase-Functions",
+      "name": "Firebase Functions",
+      "role": "solo",
+      "authorship": {
+        "your_commits": 8,
+        "total": 8,
+        "share": 1.0,
+        "first": "2024-08-30",
+        "last": "2025-06-24",
+        "loc_you": 12049
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Firebase",
+          "Firebase Functions"
+        ],
+        "testing": [],
+        "iac": [],
+        "tags": []
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": false,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Firebase Functions is a serverless framework that allows developers to run backend code in response to events triggered by Firebase features and HTTPS requests. The engineer worked solo on this project, utilizing JavaScript and TypeScript to implement the functions.",
+      "workflow_brief": "Firebase Functions operates by executing backend code in response to events such as database changes or HTTP requests, enabling dynamic and scalable application behavior.",
+      "skills_evidenced": [
+        "Firebase",
+        "Firebase Functions",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "Boiler-plates/Cloud_Functions_Boiler_Plate",
+      "name": "Cloud Functions Boiler Plate",
+      "role": "solo",
+      "authorship": {
+        "your_commits": 6,
+        "total": 6,
+        "share": 1.0,
+        "first": "2024-09-16",
+        "last": "2024-09-16",
+        "loc_you": 9440
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Firebase",
+          "Firebase Functions"
+        ],
+        "testing": [],
+        "iac": [],
+        "tags": []
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Cloud Functions Boilerplate is a structured setup for developing serverless functions using Firebase Cloud Functions and TypeScript. It includes features like the Firebase Admin SDK for service interaction, Zod for schema validation, and tools like Prettier and ESLint for code quality. The project is organized into directories for configuration, constants, libraries, types, utilities, and validators, providing a comprehensive framework for building and deploying functions on Firebase.",
+      "workflow_brief": "Developers can clone the repository, install dependencies, and use the Firebase emulator suite to run functions locally. The setup supports TypeScript compilation and deployment to Firebase using the Firebase CLI.",
+      "skills_evidenced": [
+        "Code Quality",
+        "Firebase",
+        "Firebase Functions",
+        "JavaScript",
+        "Serverless Architecture",
+        "TypeScript"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "other-mind-cloud-functions/delete-user/delete_user_om",
+      "name": "delete user om",
+      "role": "solo",
+      "authorship": {
+        "your_commits": 6,
+        "total": 6,
+        "share": 1.0,
+        "first": "2023-12-19",
+        "last": "2023-12-29",
+        "loc_you": 13551
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "React"
+        ],
+        "testing": [
+          "React Testing Library",
+          "Testing Library"
+        ],
+        "iac": [],
+        "tags": [
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Delete User OM is a React-based application developed using JavaScript and TypeScript. It leverages the React Testing Library for unit testing to ensure robust functionality. The project was bootstrapped with Create React App, providing a streamlined development and build process.",
+      "workflow_brief": "The application runs in development mode using `npm start`, allowing for live reloading and lint error visibility. Testing is conducted with `npm test` in an interactive watch mode, while `npm run build` optimizes the app for production deployment.",
+      "skills_evidenced": [
+        "JavaScript",
+        "React",
+        "React Testing Library",
+        "TypeScript",
+        "Unit Testing"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "SPN/spin-service-client-python",
+      "name": "spin service client python",
+      "role": "solo",
+      "authorship": {
+        "your_commits": 6,
+        "total": 6,
+        "share": 1.0,
+        "first": "2025-10-28",
+        "last": "2025-10-30",
+        "loc_you": 1230
+      },
+      "stack": {
+        "languages": [
+          "Python"
+        ],
+        "frameworks": [],
+        "testing": [
+          "pytest"
+        ],
+        "iac": [],
+        "tags": [
+          "GitHub Actions",
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "The SPIN Service Client (Python) is a shared client library designed for SPIN microservices, utilizing AWS CloudMap for service discovery. It features client-side load balancing, automatic retries with exponential backoff, DNS caching with configurable TTL, and stale cache fallback. The library is developed in Python and employs pytest for unit testing. GitHub Actions are used for manual release processes to AWS CodeArtifact.",
+      "workflow_brief": "The library automatically discovers service instances using AWS CloudMap DNS, balances load by randomly selecting healthy instances, and retries connections with exponential backoff. It caches DNS responses and falls back to cached IPs if DNS resolution fails.",
+      "skills_evidenced": [
+        "AWS CloudMap",
+        "GitHub Actions",
+        "Python",
+        "Unit Testing"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "DSA/spn-league-portal",
+      "name": "spn league portal",
+      "role": "lead",
+      "authorship": {
+        "your_commits": 516,
+        "total": 664,
+        "share": 0.777,
+        "first": "2025-03-15",
+        "last": "2026-01-22",
+        "loc_you": 127572
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Firebase",
+          "Next.js",
+          "Nx",
+          "React",
+          "Redux Toolkit",
+          "Tailwind"
+        ],
+        "testing": [
+          "Jest",
+          "React Testing Library"
+        ],
+        "iac": [],
+        "tags": [
+          "GitHub Actions",
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "The SPN League Portal is a sports platform developed using JavaScript and TypeScript, leveraging frameworks such as Firebase, Next.js, Nx, React, Redux Toolkit, and Tailwind. As the technical lead, the engineer was responsible for a significant portion of the development, focusing on architecture and testing. The platform's CI/CD processes were enhanced using GitHub Actions, with unit testing facilitated by Jest and React Testing Library.",
+      "workflow_brief": "The platform utilizes Nx for efficient workspace management, allowing developers to run tasks, build production bundles, and manage projects with ease. CI workflows are set up to leverage Nx Cloud for scalable and fast continuous integration, including features like remote caching and task distribution.",
+      "skills_evidenced": [
+        "Firebase",
+        "GitHub Actions",
+        "JavaScript",
+        "Jest",
+        "Next.js",
+        "Nx",
+        "React",
+        "React Testing Library",
+        "Redux Toolkit",
+        "Tailwind",
+        "TypeScript",
+        "Unit Testing"
+      ],
+      "domain": "sports"
+    },
+    {
+      "slug": "SPN/spn-vue-app",
+      "name": "spn vue app",
+      "role": "lead",
+      "authorship": {
+        "your_commits": 508,
+        "total": 859,
+        "share": 0.591,
+        "first": "2025-11-27",
+        "last": "2026-07-03",
+        "loc_you": 179052
+      },
+      "stack": {
+        "languages": [
+          "HCL",
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Firebase",
+          "Tailwind",
+          "Vite",
+          "Vue"
+        ],
+        "testing": [
+          "Playwright",
+          "Vitest"
+        ],
+        "iac": [
+          "Terraform"
+        ],
+        "tags": [
+          "E2E Testing",
+          "GitHub Actions",
+          "IaC",
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": true,
+        "iac": true,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "The SPiN Vue Web App is a youth sports team management application developed using Vue 3. It includes features such as social media feeds, calendar management, and team coordination tools. The tech stack comprises Vue 3, Vite, PrimeVue, and Firebase for authentication, Firestore database, and storage. The app employs Terraform for infrastructure as code and utilizes GitHub Actions for CI/CD processes, with testing frameworks like Playwright and Vitest ensuring robust end-to-end and unit testing.",
+      "workflow_brief": "The application is developed with a focus on modularity and scalability using Vue 3 and Vite. Firebase handles authentication and data storage, while GitHub Actions automate the CI/CD pipeline, deploying changes to staging and production environments. Infrastructure is managed with Terraform, ensuring consistent and repeatable deployments.",
+      "skills_evidenced": [
+        "CI/CD",
+        "E2E Testing",
+        "Firebase",
+        "JavaScript",
+        "Tailwind",
+        "Terraform",
+        "TypeScript",
+        "Unit Testing",
+        "Vite",
+        "Vue"
+      ],
+      "domain": "sports"
+    },
+    {
+      "slug": "Test-apps/Basic-Auth/BE",
+      "name": "BE",
+      "role": "lead",
+      "authorship": {
+        "your_commits": 383,
+        "total": 562,
+        "share": 0.681,
+        "first": "2024-04-03",
+        "last": "2024-07-24",
+        "loc_you": 50510
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "AWS",
+          "Express",
+          "Firebase",
+          "MongoDB"
+        ],
+        "testing": [
+          "Jest",
+          "Supertest"
+        ],
+        "iac": [],
+        "tags": [
+          "GitHub Actions",
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "BE is a backend platform designed to standardize web API development. It utilizes JavaScript and TypeScript, with a focus on consistency and maintainability across applications. The platform is built using AWS, Express, Firebase, and MongoDB, and incorporates testing frameworks such as Jest and Supertest. GitHub Actions are employed for continuous integration and unit testing.",
+      "workflow_brief": "The platform standardizes API development by providing guidelines and examples, ensuring consistent practices across applications. Developers can install dependencies and start the application using npm commands.",
+      "skills_evidenced": [
+        "AWS",
+        "Express",
+        "Firebase",
+        "GitHub Actions",
+        "JavaScript",
+        "Jest",
+        "MongoDB",
+        "Supertest",
+        "TypeScript",
+        "Unit Testing"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "SPN/infrastructure-core",
+      "name": "infrastructure core",
+      "role": "lead",
+      "authorship": {
+        "your_commits": 160,
+        "total": 205,
+        "share": 0.78,
+        "first": "2025-07-14",
+        "last": "2026-07-10",
+        "loc_you": 22171
+      },
+      "stack": {
+        "languages": [
+          "HCL"
+        ],
+        "frameworks": [],
+        "testing": [],
+        "iac": [
+          "Terraform"
+        ],
+        "tags": [
+          "GitHub Actions",
+          "IaC"
+        ]
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": true,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Infrastructure Core is a Terraform-based infrastructure project designed for AWS ECS applications. It includes components such as a multi-AZ VPC with public/private subnets, an ECS cluster with optional CloudWatch insights, and an Application Load Balancer with configurable deletion protection. The project utilizes Terraform Cloud for state management and remote execution, with changes applied through a pull request workflow and GitHub Actions for environment management.",
+      "workflow_brief": "The infrastructure is managed using Terraform, with changes initiated via pull requests that trigger Terraform plans. Merging a PR automatically applies changes to the development environment, while staging and production require manual triggers through GitHub Actions.",
+      "skills_evidenced": [
+        "AWS ECS",
+        "Application Load Balancer",
+        "GitHub Actions",
+        "Infrastructure as Code",
+        "Terraform",
+        "VPC"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "SPN/shareable-service",
+      "name": "shareable service",
+      "role": "lead",
+      "authorship": {
+        "your_commits": 108,
+        "total": 169,
+        "share": 0.639,
+        "first": "2025-09-23",
+        "last": "2026-07-01",
+        "loc_you": 21449
+      },
+      "stack": {
+        "languages": [
+          "Go",
+          "HCL"
+        ],
+        "frameworks": [],
+        "testing": [],
+        "iac": [
+          "Terraform"
+        ],
+        "tags": [
+          "Docker",
+          "GitHub Actions",
+          "IaC"
+        ]
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": true,
+        "ci": true,
+        "readme": true,
+        "docker": true,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Shareable Service is a high-performance microservice designed to generate branded, shareable images from social media posts. It converts SVG templates into high-quality PNG images, incorporating custom themes, user profiles, and QR codes. The service is optimized for social media platforms like Instagram, Facebook, and Twitter, ensuring brand consistency and enhancing user engagement. It is built using Go and Terraform, with Docker and GitHub Actions for deployment and CI/CD processes.",
+      "workflow_brief": "The service receives requests via an HTTPS API, processes them through an ECS Fargate service using a Gin web framework, and generates images using an SVG generator with resvg. It utilizes Redis for task queuing and S3 for storage, ensuring scalability and performance.",
+      "skills_evidenced": [
+        "Docker",
+        "GitHub Actions",
+        "Go",
+        "HCL",
+        "Infrastructure as Code (IaC)",
+        "Terraform"
+      ],
+      "domain": "social media"
+    },
+    {
+      "slug": "SPN/garden-service",
+      "name": "garden service",
+      "role": "lead",
+      "authorship": {
+        "your_commits": 83,
+        "total": 134,
+        "share": 0.619,
+        "first": "2026-02-04",
+        "last": "2026-06-04",
+        "loc_you": 1936
+      },
+      "stack": {
+        "languages": [
+          "HCL",
+          "JavaScript",
+          "Python",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "FastAPI"
+        ],
+        "testing": [
+          "Vitest",
+          "pytest"
+        ],
+        "iac": [
+          "Terraform"
+        ],
+        "tags": [
+          "Docker",
+          "GitHub Actions",
+          "IaC",
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": true,
+        "ci": true,
+        "readme": true,
+        "docker": true,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Garden Service is a platform designed to manage and process document collections using a handler-based architecture. It employs technologies such as FastAPI for the backend, with infrastructure managed through Terraform. The system is built using languages like HCL, JavaScript, Python, and TypeScript, and includes testing frameworks such as Vitest and pytest.",
+      "workflow_brief": "Handlers are added by selecting a base class that fits the collection type, implementing necessary methods, and registering it in the main application file. This allows for flexible document processing and management.",
+      "skills_evidenced": [
+        "CI/CD",
+        "FastAPI",
+        "Infrastructure as Code",
+        "Technical Leadership",
+        "Terraform",
+        "Unit Testing"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "SPN/ci-cd-workflows",
+      "name": "ci cd workflows",
+      "role": "lead",
+      "authorship": {
+        "your_commits": 66,
+        "total": 79,
+        "share": 0.835,
+        "first": "2025-07-14",
+        "last": "2026-06-01",
+        "loc_you": 11512
+      },
+      "stack": {
+        "languages": [],
+        "frameworks": [],
+        "testing": [],
+        "iac": [],
+        "tags": [
+          "GitHub Actions"
+        ]
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Developed reusable GitHub Actions workflows for common CI/CD tasks, including adding Jira comments to pull requests, running Terraform plans, and performing security scans for Docker containers, Go, and Python code. These workflows integrate tools like Trivy, GoSec, Govulncheck, and Bandit to enhance security and streamline development processes.",
+      "workflow_brief": "The CI/CD workflows automate tasks such as linking Jira stories to pull requests, executing Terraform plans with linting, and conducting security scans on Docker images and codebases. They provide detailed reports and comments directly on pull requests, facilitating seamless integration and feedback.",
+      "skills_evidenced": [
+        "CI/CD",
+        "GitHub Actions",
+        "Security Scanning",
+        "Terraform"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "SPN/dev-tools",
+      "name": "dev tools",
+      "role": "lead",
+      "authorship": {
+        "your_commits": 54,
+        "total": 73,
+        "share": 0.74,
+        "first": "2026-01-31",
+        "last": "2026-07-03",
+        "loc_you": 10382
+      },
+      "stack": {
+        "languages": [
+          "HCL",
+          "JavaScript",
+          "Python"
+        ],
+        "frameworks": [
+          "Anthropic",
+          "FastAPI"
+        ],
+        "testing": [],
+        "iac": [
+          "Terraform"
+        ],
+        "tags": [
+          "Docker",
+          "GitHub Actions",
+          "IaC",
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": true,
+        "ci": true,
+        "readme": true,
+        "docker": true,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "The dev-tools project is a mono-repo of standalone developer tools for the Spin project, designed to assist with service monitoring and load testing. Each tool within the repository is independent, with its own dependencies and configuration, ensuring modularity and ease of use. The tools include 'spin-up', a CLI and web dashboard for monitoring local development services, and 'scale-test', which facilitates load testing and monitoring of ECS autoscaling.",
+      "workflow_brief": "The tools are structured to be run from their respective directories, with independent dependencies managed via `requirements.txt` or `package.json`. 'spin-up' provides a CLI and web interface for service monitoring, while 'scale-test' generates CPU load to test ECS autoscaling and monitors instance health.",
+      "skills_evidenced": [
+        "Anthropic",
+        "Docker",
+        "FastAPI",
+        "GitHub Actions",
+        "HCL",
+        "IaC",
+        "JavaScript",
+        "Python",
+        "Terraform"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "EarlyBirdsProperties/EarlyBirds-Properties-BE",
+      "name": "EarlyBirds Properties BE",
+      "role": "lead",
+      "authorship": {
+        "your_commits": 38,
+        "total": 43,
+        "share": 0.884,
+        "first": "2025-08-23",
+        "last": "2025-12-22",
+        "loc_you": 11264
+      },
+      "stack": {
+        "languages": [
+          "JavaScript"
+        ],
+        "frameworks": [
+          "Express",
+          "MongoDB",
+          "Webpack"
+        ],
+        "testing": [],
+        "iac": [],
+        "tags": []
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": false,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "EarlyBirds Properties BE is a backend platform developed using JavaScript, Express, and MongoDB. It serves the real estate domain by managing property data and facilitating interactions between users and the system.",
+      "workflow_brief": "The platform operates by utilizing Express for handling HTTP requests and MongoDB for data storage, allowing users to interact with property listings and related data.",
+      "skills_evidenced": [
+        "Backend Development",
+        "Express",
+        "JavaScript",
+        "MongoDB",
+        "Webpack"
+      ],
+      "domain": "real estate"
+    },
+    {
+      "slug": "DSA/stat-link-BE-v2",
+      "name": "stat link BE v2",
+      "role": "lead",
+      "authorship": {
+        "your_commits": 18,
+        "total": 27,
+        "share": 0.667,
+        "first": "2025-04-22",
+        "last": "2025-04-25",
+        "loc_you": 6766852
+      },
+      "stack": {
+        "languages": [
+          "Python"
+        ],
+        "frameworks": [],
+        "testing": [],
+        "iac": [],
+        "tags": [
+          "GitHub Actions"
+        ]
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": true,
+        "readme": false,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Stat Link BE v2 is a backend project led by the engineer, primarily using Python. The project involved significant contributions to the codebase, with a focus on integrating GitHub Actions for CI/CD processes.",
+      "workflow_brief": "The backend system processes data and automates workflows using GitHub Actions to ensure continuous integration and deployment.",
+      "skills_evidenced": [
+        "CI/CD",
+        "GitHub Actions",
+        "Python"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "SPN/evaluation-app",
+      "name": "evaluation app",
+      "role": "lead",
+      "authorship": {
+        "your_commits": 18,
+        "total": 36,
+        "share": 0.5,
+        "first": "2026-02-02",
+        "last": "2026-06-01",
+        "loc_you": 41759
+      },
+      "stack": {
+        "languages": [
+          "HCL",
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Firebase",
+          "React",
+          "Tailwind",
+          "Vite"
+        ],
+        "testing": [],
+        "iac": [
+          "Terraform"
+        ],
+        "tags": [
+          "GitHub Actions",
+          "IaC"
+        ]
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": true,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "The evaluation app is a React-based application developed using Vite and TypeScript, designed for deployment on AWS infrastructure. It leverages Firebase for backend services and utilizes Tailwind for styling. The infrastructure is managed with Terraform, ensuring efficient deployment and configuration management through Terraform Cloud.",
+      "workflow_brief": "The application is developed using React and Vite, with TypeScript for type safety. It is deployed to AWS using Terraform, which manages the CloudFront distribution and S3 bucket policies. CI/CD is handled via GitHub Actions, automating linting, building, and deployment processes.",
+      "skills_evidenced": [
+        "Firebase",
+        "GitHub Actions",
+        "IaC",
+        "JavaScript",
+        "React",
+        "Tailwind",
+        "Terraform",
+        "TypeScript",
+        "Vite"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "Test-apps/apollo-brokers-limit-challenge",
+      "name": "apollo brokers limit challenge",
+      "role": "lead",
+      "authorship": {
+        "your_commits": 18,
+        "total": 22,
+        "share": 0.818,
+        "first": "2026-04-21",
+        "last": "2026-04-21",
+        "loc_you": 1377815
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "Python",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Django",
+          "Next.js",
+          "React",
+          "Tailwind"
+        ],
+        "testing": [],
+        "iac": [],
+        "tags": []
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "The Apollo Brokers Limit Challenge is a project designed to create a workspace for operations managers to review broker-submitted opportunities. The tool includes a Django backend with REST API capabilities and a Next.js frontend. The backend models the domain and provides list and detail endpoints with filtering support, while the frontend focuses on delivering a polished user experience. The project involves API design, relational data modeling, and crafting an intuitive UI.",
+      "workflow_brief": "Operations managers use the tool to browse and filter broker submissions. The Django backend models the domain and exposes endpoints for data retrieval, while the Next.js frontend provides a user-friendly interface for viewing and interacting with the data.",
+      "skills_evidenced": [
+        "API design",
+        "Django",
+        "JavaScript",
+        "Next.js",
+        "Python",
+        "React",
+        "Tailwind",
+        "TypeScript",
+        "relational data modeling"
+      ],
+      "domain": "fintech"
+    },
+    {
+      "slug": "Masoil/Masoil",
+      "name": "Masoil",
+      "role": "lead",
+      "authorship": {
+        "your_commits": 11,
+        "total": 21,
+        "share": 0.524,
+        "first": "2025-07-10",
+        "last": "2025-07-11",
+        "loc_you": 102395
+      },
+      "stack": {
+        "languages": [
+          "JavaScript"
+        ],
+        "frameworks": [],
+        "testing": [],
+        "iac": [],
+        "tags": []
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": false,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Masoil is a platform in the energy sector, developed with a focus on JavaScript. The engineer played a leading role, contributing significantly to the project's development and architecture.",
+      "workflow_brief": "",
+      "skills_evidenced": [
+        "JavaScript",
+        "architecture",
+        "technical leadership"
+      ],
+      "domain": "energy"
+    },
+    {
+      "slug": "npm-packages/Express-TS-BoilerPlate-NPM-package",
+      "name": "Express TS BoilerPlate NPM package",
+      "role": "lead",
+      "authorship": {
+        "your_commits": 3,
+        "total": 3,
+        "share": 1.0,
+        "first": "2024-03-10",
+        "last": "2024-03-10",
+        "loc_you": 259
+      },
+      "stack": {
+        "languages": [
+          "JavaScript"
+        ],
+        "frameworks": [],
+        "testing": [],
+        "iac": [],
+        "tags": []
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Express TypeScript Boilerplate is a professionally structured boilerplate designed for building robust and scalable backend applications using Express.js and TypeScript. It includes features such as dynamic imports for efficient module loading, ESLint and Prettier for code style consistency, and a TypeScript setup for enhanced code readability and maintainability. The boilerplate also supports multi-environment configurations, allowing for easy scalability and maintainability of the backend codebase.",
+      "workflow_brief": "The boilerplate is set up by running a command via npx, which installs the necessary files and configurations. It includes a pre-configured `.env` file for MongoDB connection and supports multiple environments through npm scripts, allowing developers to switch environments by modifying the `ENVIRONMENT` variable.",
+      "skills_evidenced": [
+        "Dynamic Imports",
+        "ESLint",
+        "Express.js",
+        "JavaScript",
+        "Prettier",
+        "TypeScript"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "LogoGenie/logogenie.fr",
+      "name": "logogenie.fr",
+      "role": "contributor",
+      "authorship": {
+        "your_commits": 82,
+        "total": 535,
+        "share": 0.153,
+        "first": "2026-04-06",
+        "last": "2026-07-10",
+        "loc_you": 38820
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "Python",
+          "TypeScript"
+        ],
+        "frameworks": [],
+        "testing": [],
+        "iac": [],
+        "tags": [
+          "Docker",
+          "GitHub Actions",
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": true,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Logogenie.fr is an ecommerce platform where the engineer contributed to the development using JavaScript, Python, and TypeScript. The project involved integrating Docker and GitHub Actions for continuous integration and deployment, as well as implementing unit testing to ensure code quality.",
+      "workflow_brief": "The platform likely involves a user interface for customers to interact with, backend services to handle business logic, and integration with payment systems like Stripe for transactions.",
+      "skills_evidenced": [
+        "Docker",
+        "GitHub Actions",
+        "JavaScript",
+        "Python",
+        "TypeScript",
+        "Unit Testing"
+      ],
+      "domain": "ecommerce"
+    },
+    {
+      "slug": "SPN/public-website",
+      "name": "public website",
+      "role": "contributor",
+      "authorship": {
+        "your_commits": 33,
+        "total": 74,
+        "share": 0.446,
+        "first": "2026-02-23",
+        "last": "2026-04-10",
+        "loc_you": 10839
+      },
+      "stack": {
+        "languages": [
+          "HCL",
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Tailwind"
+        ],
+        "testing": [],
+        "iac": [
+          "Terraform"
+        ],
+        "tags": [
+          "GitHub Actions",
+          "IaC"
+        ]
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": true,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "The public marketing website for Sports Profile Network is developed using Astro and styled with Tailwind. It utilizes JavaScript and TypeScript for its frontend components. The infrastructure is managed with Terraform, and deployments are automated through GitHub Actions, with environments served via S3 and CloudFront.",
+      "workflow_brief": "The website is developed using Astro, with styling by Tailwind. It is built and previewed locally using npm commands. Deployment is automated through GitHub Actions, with infrastructure managed by Terraform, and the site is served via S3 and CloudFront.",
+      "skills_evidenced": [
+        "GitHub Actions",
+        "Infrastructure as Code",
+        "JavaScript",
+        "Tailwind",
+        "Terraform",
+        "TypeScript"
+      ],
+      "domain": "sports"
+    },
+    {
+      "slug": "PTI-Central-Punjab/PTI-Central-Punjab-BE",
+      "name": "PTI Central Punjab BE",
+      "role": "contributor",
+      "authorship": {
+        "your_commits": 32,
+        "total": 141,
+        "share": 0.227,
+        "first": "2025-12-31",
+        "last": "2026-01-27",
+        "loc_you": 13986
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Express",
+          "Prisma"
+        ],
+        "testing": [],
+        "iac": [],
+        "tags": [
+          "Docker"
+        ]
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": true,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "PTI Central Punjab BE is a production-ready Node.js backend API designed using Express, TypeScript, and MySQL with Prisma ORM. It features JWT authentication, request validation, and Swagger API documentation. The project employs a layered architecture and supports Docker for containerization.",
+      "workflow_brief": "The backend API operates with a layered architecture, handling user requests through controllers, services, and repositories before interacting with the MySQL database via Prisma. It supports local development with Docker for MySQL and hot-reloading for fast iteration, as well as a full Docker stack for production-like testing.",
+      "skills_evidenced": [
+        "Docker",
+        "Express",
+        "JavaScript",
+        "Prisma",
+        "TypeScript"
+      ],
+      "domain": "political platform"
+    },
+    {
+      "slug": "SPN/jumbotron-svc",
+      "name": "jumbotron svc",
+      "role": "contributor",
+      "authorship": {
+        "your_commits": 26,
+        "total": 96,
+        "share": 0.271,
+        "first": "2026-05-20",
+        "last": "2026-07-01",
+        "loc_you": 9649
+      },
+      "stack": {
+        "languages": [
+          "HCL",
+          "Python"
+        ],
+        "frameworks": [
+          "Anthropic",
+          "FastAPI",
+          "Pydantic",
+          "numpy",
+          "pandas"
+        ],
+        "testing": [
+          "pytest"
+        ],
+        "iac": [
+          "Terraform"
+        ],
+        "tags": [
+          "Docker",
+          "GitHub Actions",
+          "IaC",
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": true,
+        "ci": true,
+        "readme": true,
+        "docker": true,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Jumbotron SVC is a platform designed for managing and processing sports statistics and scores. It utilizes a computation DAG to handle raw data from various stats providers, creating and merging objects related to athletes and teams, and generating derived statistics and player ratings. The system is built using Python with frameworks such as FastAPI and Pydantic, and it employs Terraform for infrastructure as code. The platform integrates with MongoDB, S3, and Garden for data storage and management.",
+      "workflow_brief": "The platform processes raw sports data through a computation DAG, creating and merging athlete and team objects, and generating derived statistics. It provides endpoints for health checks and accessing stat column names, with data stored in MongoDB and S3.",
+      "skills_evidenced": [
+        "Anthropic",
+        "Docker",
+        "FastAPI",
+        "GitHub Actions",
+        "IaC",
+        "Pydantic",
+        "Python",
+        "Terraform",
+        "Unit Testing",
+        "numpy",
+        "pandas",
+        "pytest"
+      ],
+      "domain": "sports"
+    },
+    {
+      "slug": "SPN/registration-app",
+      "name": "registration app",
+      "role": "contributor",
+      "authorship": {
+        "your_commits": 26,
+        "total": 78,
+        "share": 0.333,
+        "first": "2026-01-28",
+        "last": "2026-06-01",
+        "loc_you": 6165
+      },
+      "stack": {
+        "languages": [
+          "HCL",
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Firebase",
+          "React",
+          "Redux Toolkit",
+          "Tailwind",
+          "Vite"
+        ],
+        "testing": [],
+        "iac": [
+          "Terraform"
+        ],
+        "tags": [
+          "GitHub Actions",
+          "IaC"
+        ]
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": true,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "The Registration App is a league registration portal developed using React, TypeScript, Vite, and Tailwind CSS v4. It facilitates user registration for sports leagues, leveraging modern web technologies for a seamless user experience.",
+      "workflow_brief": "Users can register for leagues through a web portal built with React and TypeScript. The application uses Vite for build automation and Tailwind CSS for styling, with Firebase handling backend services.",
+      "skills_evidenced": [
+        "Firebase",
+        "GitHub Actions",
+        "JavaScript",
+        "React",
+        "Redux Toolkit",
+        "Tailwind",
+        "Tailwind CSS",
+        "Terraform",
+        "TypeScript",
+        "Vite"
+      ],
+      "domain": "sports"
+    },
+    {
+      "slug": "SPN/spn-integration-tests",
+      "name": "spn integration tests",
+      "role": "contributor",
+      "authorship": {
+        "your_commits": 22,
+        "total": 51,
+        "share": 0.431,
+        "first": "2026-05-20",
+        "last": "2026-06-10",
+        "loc_you": 2335
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "AWS"
+        ],
+        "testing": [
+          "Playwright"
+        ],
+        "iac": [],
+        "tags": [
+          "Docker",
+          "E2E Testing",
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": true,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": true,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "The SPN Integration Tests project involves API-focused integration tests for the SLATE platform, utilizing Playwright for testing. These tests are executed within the SLATE ECS network and are triggered through the SLATE UI. The tests include API interactions with a real SLATE environment, leveraging Firebase Auth emulator for user bootstrapping and MongoDB for user profiles. The project employs JavaScript and TypeScript, with AWS as the framework.",
+      "workflow_brief": "Integration tests are executed within the SLATE ECS network, focusing on API interactions. Playwright is used for testing, with Firebase Auth emulator for user setup and MongoDB for profile management.",
+      "skills_evidenced": [
+        "AWS",
+        "Docker",
+        "E2E Testing",
+        "JavaScript",
+        "Playwright",
+        "TypeScript",
+        "Unit Testing"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "DSA/stat-link-FE-v2",
+      "name": "stat link FE v2",
+      "role": "contributor",
+      "authorship": {
+        "your_commits": 7,
+        "total": 21,
+        "share": 0.333,
+        "first": "2025-04-18",
+        "last": "2025-04-22",
+        "loc_you": 1815
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "React",
+          "Tailwind",
+          "Vite"
+        ],
+        "testing": [],
+        "iac": [],
+        "tags": []
+      },
+      "signals": {
+        "unit_tests": false,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Stat Link FE v2 is a front-end development project utilizing JavaScript and TypeScript with the React framework, styled with Tailwind CSS, and built using Vite. The project focuses on setting up a minimal environment for React development with hot module replacement (HMR) and ESLint rules. It includes plugins for fast refresh using Babel or SWC.",
+      "workflow_brief": "The project sets up a React development environment with Vite, enabling hot module replacement and ESLint configuration. It supports both Babel and SWC for fast refresh, and recommends TypeScript for production applications.",
+      "skills_evidenced": [
+        "JavaScript",
+        "React",
+        "Tailwind",
+        "Tailwind CSS",
+        "TypeScript",
+        "Vite"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "Test-apps/adomate-public-FE",
+      "name": "adomate public FE",
+      "role": "contributor",
+      "authorship": {
+        "your_commits": 2,
+        "total": 3,
+        "share": 0.667,
+        "first": "2025-08-14",
+        "last": "2025-08-18",
+        "loc_you": 182
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Next.js",
+          "React",
+          "Tailwind"
+        ],
+        "testing": [
+          "React Testing Library",
+          "Testing Library",
+          "Vitest"
+        ],
+        "iac": [],
+        "tags": [
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Adomate Image Text Composer is a professional image and text composition tool built with React, TypeScript, and Fabric.js. It offers a comprehensive canvas-based editor for creating and manipulating text layers over images, featuring advanced typography controls, snapping functionality, and a modern, responsive UI. The application supports image uploads, real-time canvas editing, and a variety of text management features, including font management, text alignment, and color control. It also includes advanced features like multi-selection, transform preservation, history management, and auto-save, all underpinned by a professional architecture with modular hooks, Zustand-based state management, and performance optimizations.",
+      "workflow_brief": "The tool allows users to upload images and add multiple text layers, which can be edited in real-time using a canvas interface powered by Fabric.js. Users can manage typography, align text, and apply transformations, with features like snapping and multi-selection enhancing precision and efficiency.",
+      "skills_evidenced": [
+        "Fabric.js",
+        "JavaScript",
+        "Next.js",
+        "React",
+        "State Management",
+        "Tailwind",
+        "Tailwind CSS",
+        "TypeScript",
+        "Unit Testing"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "Test-apps/DevSkiller/1c4d188a-420b-47e5-9310-0c3d46afeccc",
+      "name": "1c4d188a 420b 47e5 9310 0c3d46afeccc",
+      "role": "contributor",
+      "authorship": {
+        "your_commits": 2,
+        "total": 3,
+        "share": 0.667,
+        "first": "2025-12-01",
+        "last": "2025-12-01",
+        "loc_you": 62
+      },
+      "stack": {
+        "languages": [
+          "JavaScript"
+        ],
+        "frameworks": [],
+        "testing": [
+          "Jasmine"
+        ],
+        "iac": [],
+        "tags": [
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Contributed to a movie fanpage social site by implementing a feature to find top-rated movies among friends. The feature calculates the top three movies with the highest average ratings from a user's friends, returning them in alphabetical order if ratings are tied. The implementation was done in JavaScript with unit tests written in Jasmine.",
+      "workflow_brief": "The feature works by analyzing movie ratings given by a user's friends, calculating average ratings, and returning the top three movies. If ratings are tied, movies are sorted alphabetically.",
+      "skills_evidenced": [
+        "Jasmine",
+        "JavaScript",
+        "Unit Testing"
+      ],
+      "domain": "social media"
+    },
+    {
+      "slug": "Test-apps/platform-functional-IslamAmjad",
+      "name": "platform functional IslamAmjad",
+      "role": "contributor",
+      "authorship": {
+        "your_commits": 2,
+        "total": 3,
+        "share": 0.667,
+        "first": "2025-08-07",
+        "last": "2025-08-07",
+        "loc_you": 114
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [],
+        "testing": [
+          "Vitest"
+        ],
+        "iac": [],
+        "tags": [
+          "GitHub Actions",
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": true,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "The Speechify Platform Functional Test project involved implementing core functionalities such as an LRU Cache Provider, an SSML Parser, and a function to convert an SSML Node Tree to plain text. The project was developed using JavaScript and TypeScript, with unit testing facilitated by Vitest. GitHub Actions was utilized for continuous integration.",
+      "workflow_brief": "The platform processes SSML input by parsing it into a node tree, which can then be converted into plain text. An LRU Cache Provider is used to efficiently manage frequently accessed data.",
+      "skills_evidenced": [
+        "GitHub Actions",
+        "JavaScript",
+        "TypeScript",
+        "Unit Testing"
+      ],
+      "domain": "devtools"
+    },
+    {
+      "slug": "Test-apps/mission-control-telemetry-tegdtv",
+      "name": "mission control telemetry tegdtv",
+      "role": "contributor",
+      "authorship": {
+        "your_commits": 1,
+        "total": 3,
+        "share": 0.333,
+        "first": "2025-12-11",
+        "last": "2025-12-11",
+        "loc_you": 15712
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Nest.js"
+        ],
+        "testing": [
+          "Jest",
+          "Supertest"
+        ],
+        "iac": [],
+        "tags": [
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "Mission Control Telemetry System is a real-time telemetry ingestion and monitoring platform built with NestJS. It is designed to handle device telemetry from space probes using an event-driven architecture and automated anomaly detection. The system features probe management, high-performance telemetry ingestion, real-time anomaly detection, and mission status aggregations. It employs a domain-driven design and repository pattern, with comprehensive testing and full TypeScript strict mode.",
+      "workflow_brief": "The system ingests telemetry data from space probes via an API layer, processes it through a service layer, and uses an in-memory event bus for decoupled processing. Anomaly detection and status aggregation are handled by dedicated services, ensuring real-time monitoring and reporting.",
+      "skills_evidenced": [
+        "Domain-Driven Design",
+        "Event-Driven Architecture",
+        "JavaScript",
+        "Nest.js",
+        "TypeScript",
+        "Unit Testing"
+      ],
+      "domain": "aerospace"
+    },
+    {
+      "slug": "Test-apps/spn-base-todo-list-backend",
+      "name": "spn base todo list backend",
+      "role": "contributor",
+      "authorship": {
+        "your_commits": 1,
+        "total": 3,
+        "share": 0.333,
+        "first": "2024-07-29",
+        "last": "2024-07-29",
+        "loc_you": 1369
+      },
+      "stack": {
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "Express",
+          "MongoDB"
+        ],
+        "testing": [
+          "Jest",
+          "Supertest"
+        ],
+        "iac": [],
+        "tags": [
+          "Unit Testing"
+        ]
+      },
+      "signals": {
+        "unit_tests": true,
+        "e2e_tests": false,
+        "iac": false,
+        "ci": false,
+        "readme": true,
+        "docker": false,
+        "serverless": false
+      },
+      "featured_rank": null,
+      "disclosure_tier": "summary",
+      "summary_public": "The SPN Base Todo List Backend is a backend service for managing todo lists, built using JavaScript and TypeScript. It utilizes the Express framework and MongoDB for data storage, with Jest and Supertest employed for unit testing.",
+      "workflow_brief": "The backend service allows users to manage todo lists through a web API, ensuring consistency and maintainability by following established guidelines and best practices.",
+      "skills_evidenced": [
+        "Express",
+        "JavaScript",
+        "Jest",
+        "MongoDB",
+        "Supertest",
+        "TypeScript",
+        "Unit Testing"
+      ],
+      "domain": "devtools"
+    }
+  ],
+  "skills": {
+    "JavaScript": [
+      {
+        "project": "mojotip",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "trove",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "leadforge",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "llm_extractor",
+        "role": "snapshot",
+        "weight": 0.1
+      },
+      {
+        "project": "EarlyBirdsProperties/EarlyBirds-Properties-FE",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Boiler-plates/Backend-MVC",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Boiler-plates/Frontend-Monorepo",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "E-commerce-FYP-test",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Test-apps/real-time-todo-app-vue",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "StoryBirds/Firebase-Functions",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Boiler-plates/Cloud_Functions_Boiler_Plate",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "other-mind-cloud-functions/delete-user/delete_user_om",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "DSA/spn-league-portal",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/spn-vue-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/Basic-Auth/BE",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/dev-tools",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "EarlyBirdsProperties/EarlyBirds-Properties-BE",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/evaluation-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/apollo-brokers-limit-challenge",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Masoil/Masoil",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "npm-packages/Express-TS-BoilerPlate-NPM-package",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "LogoGenie/logogenie.fr",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/public-website",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "PTI-Central-Punjab/PTI-Central-Punjab-BE",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/registration-app",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/spn-integration-tests",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "DSA/stat-link-FE-v2",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/adomate-public-FE",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/DevSkiller/1c4d188a-420b-47e5-9310-0c3d46afeccc",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/platform-functional-IslamAmjad",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/mission-control-telemetry-tegdtv",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/spn-base-todo-list-backend",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "TypeScript": [
+      {
+        "project": "mojotip",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "trove",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "llm_extractor",
+        "role": "snapshot",
+        "weight": 0.1
+      },
+      {
+        "project": "Boiler-plates/Backend-MVC",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Boiler-plates/Frontend-Monorepo",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "StoryBirds/Firebase-Functions",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Boiler-plates/Cloud_Functions_Boiler_Plate",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "other-mind-cloud-functions/delete-user/delete_user_om",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "DSA/spn-league-portal",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/spn-vue-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/Basic-Auth/BE",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/evaluation-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/apollo-brokers-limit-challenge",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "npm-packages/Express-TS-BoilerPlate-NPM-package",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "LogoGenie/logogenie.fr",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/public-website",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "PTI-Central-Punjab/PTI-Central-Punjab-BE",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/registration-app",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/spn-integration-tests",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "DSA/stat-link-FE-v2",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/adomate-public-FE",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/platform-functional-IslamAmjad",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/mission-control-telemetry-tegdtv",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/spn-base-todo-list-backend",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "GitHub Actions": [
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/meadowlands-service",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/infrastructure-bootstrap",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Boiler-plates/Backend-MVC",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "E-commerce-FYP-test",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/spin-service-client-python",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "DSA/spn-league-portal",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/Basic-Auth/BE",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/infrastructure-core",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/shareable-service",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/ci-cd-workflows",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/dev-tools",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "DSA/stat-link-BE-v2",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/evaluation-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "LogoGenie/logogenie.fr",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/public-website",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/jumbotron-svc",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/registration-app",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/platform-functional-IslamAmjad",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Unit Testing": [
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "llm_extractor",
+        "role": "snapshot",
+        "weight": 0.1
+      },
+      {
+        "project": "Boiler-plates/Backend-MVC",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "E-commerce-FYP-test",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "other-mind-cloud-functions/delete-user/delete_user_om",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/spin-service-client-python",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "DSA/spn-league-portal",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/spn-vue-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/Basic-Auth/BE",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/garden-service",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "LogoGenie/logogenie.fr",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/jumbotron-svc",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/spn-integration-tests",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/adomate-public-FE",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/DevSkiller/1c4d188a-420b-47e5-9310-0c3d46afeccc",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/platform-functional-IslamAmjad",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/mission-control-telemetry-tegdtv",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/spn-base-todo-list-backend",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "React": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "mojotip",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "EarlyBirdsProperties/EarlyBirds-Properties-FE",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/meadowlands-service",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Boiler-plates/Frontend-Monorepo",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "E-commerce-FYP-test",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "other-mind-cloud-functions/delete-user/delete_user_om",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "DSA/spn-league-portal",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/evaluation-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/apollo-brokers-limit-challenge",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/registration-app",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "DSA/stat-link-FE-v2",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/adomate-public-FE",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Terraform": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "success_ai",
+        "role": "self-reported",
+        "weight": 0.0
+      },
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "bondstudio",
+        "role": "self-reported",
+        "weight": 0.0
+      },
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/meadowlands-service",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/infrastructure-bootstrap",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/spn-vue-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/infrastructure-core",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/shareable-service",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/garden-service",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/ci-cd-workflows",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/dev-tools",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/evaluation-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/public-website",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/jumbotron-svc",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/registration-app",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Firebase": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "mojotip",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/meadowlands-service",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Boiler-plates/Backend-MVC",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "StoryBirds/Firebase-Functions",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Boiler-plates/Cloud_Functions_Boiler_Plate",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "DSA/spn-league-portal",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/spn-vue-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/Basic-Auth/BE",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/evaluation-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/registration-app",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Tailwind": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Boiler-plates/Frontend-Monorepo",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Test-apps/real-time-todo-app-vue",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "DSA/spn-league-portal",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/spn-vue-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/evaluation-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/apollo-brokers-limit-challenge",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/public-website",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/registration-app",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "DSA/stat-link-FE-v2",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/adomate-public-FE",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Express": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "mojotip",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "trove",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "llm_extractor",
+        "role": "snapshot",
+        "weight": 0.1
+      },
+      {
+        "project": "Boiler-plates/Backend-MVC",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Test-apps/Basic-Auth/BE",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "EarlyBirdsProperties/EarlyBirds-Properties-BE",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "PTI-Central-Punjab/PTI-Central-Punjab-BE",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/spn-base-todo-list-backend",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "MongoDB": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "mojotip",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "trove",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Boiler-plates/Backend-MVC",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Boiler-plates/Frontend-Monorepo",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Test-apps/Basic-Auth/BE",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "EarlyBirdsProperties/EarlyBirds-Properties-BE",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/spn-base-todo-list-backend",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "CI/CD": [
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/infrastructure-bootstrap",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/spn-vue-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/garden-service",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/ci-cd-workflows",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "DSA/stat-link-BE-v2",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Python": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "pobot",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/spin-service-client-python",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/dev-tools",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "DSA/stat-link-BE-v2",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/apollo-brokers-limit-challenge",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "LogoGenie/logogenie.fr",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/jumbotron-svc",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Vite": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "mojotip",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/meadowlands-service",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/spn-vue-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/evaluation-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/registration-app",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "DSA/stat-link-FE-v2",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Infrastructure as Code": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "success_ai",
+        "role": "self-reported",
+        "weight": 0.0
+      },
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/meadowlands-service",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/infrastructure-bootstrap",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/infrastructure-core",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/garden-service",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/public-website",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Docker": [
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "llm_extractor",
+        "role": "snapshot",
+        "weight": 0.1
+      },
+      {
+        "project": "SPN/meadowlands-service",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/shareable-service",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/dev-tools",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "LogoGenie/logogenie.fr",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "PTI-Central-Punjab/PTI-Central-Punjab-BE",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/jumbotron-svc",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/spn-integration-tests",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Redux Toolkit": [
+      {
+        "project": "mojotip",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/meadowlands-service",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Boiler-plates/Frontend-Monorepo",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "DSA/spn-league-portal",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/registration-app",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Next.js": [
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "EarlyBirdsProperties/EarlyBirds-Properties-FE",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Boiler-plates/Frontend-Monorepo",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "DSA/spn-league-portal",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/apollo-brokers-limit-challenge",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/adomate-public-FE",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "AWS": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/infrastructure-bootstrap",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Test-apps/Basic-Auth/BE",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/spn-integration-tests",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Redux": [
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "E-commerce-FYP-test",
+        "role": "solo",
+        "weight": 1.0
+      }
+    ],
+    "Jest": [
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "llm_extractor",
+        "role": "snapshot",
+        "weight": 0.1
+      },
+      {
+        "project": "Boiler-plates/Backend-MVC",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "DSA/spn-league-portal",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/Basic-Auth/BE",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/spn-base-todo-list-backend",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "FastAPI": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/meadowlands-service",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/garden-service",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/dev-tools",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/jumbotron-svc",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Firebase Functions": [
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "StoryBirds/Firebase-Functions",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Boiler-plates/Cloud_Functions_Boiler_Plate",
+        "role": "solo",
+        "weight": 1.0
+      }
+    ],
+    "numpy": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "pobot",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/meadowlands-service",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/jumbotron-svc",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "MERN": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "success_ai",
+        "role": "self-reported",
+        "weight": 0.0
+      },
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "trove",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "PostgreSQL": [
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Supertest": [
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "llm_extractor",
+        "role": "snapshot",
+        "weight": 0.1
+      },
+      {
+        "project": "Boiler-plates/Backend-MVC",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Test-apps/Basic-Auth/BE",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/spn-base-todo-list-backend",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Vue": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/real-time-todo-app-vue",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/spn-vue-app",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Tailwind CSS": [
+      {
+        "project": "Test-apps/real-time-todo-app-vue",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/registration-app",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "DSA/stat-link-FE-v2",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/adomate-public-FE",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "OpenAI": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "pobot",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "llm_extractor",
+        "role": "snapshot",
+        "weight": 0.1
+      }
+    ],
+    "pandas": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/meadowlands-service",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/jumbotron-svc",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "IaC": [
+      {
+        "project": "SPN/dev-tools",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/evaluation-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/jumbotron-svc",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "E2E Testing": [
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "SPN/spn-vue-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/spn-integration-tests",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Redis": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Node.js": [
+      {
+        "project": "mojotip",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "success_ai",
+        "role": "self-reported",
+        "weight": 0.0
+      },
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Nest.js": [
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "bondstudio",
+        "role": "self-reported",
+        "weight": 0.0
+      },
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/mission-control-telemetry-tegdtv",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "React Testing Library": [
+      {
+        "project": "other-mind-cloud-functions/delete-user/delete_user_om",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "DSA/spn-league-portal",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Go": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/shareable-service",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Replit": [
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Sequelize": [
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Serverless Framework": [
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "HCL": [
+      {
+        "project": "SPN/shareable-service",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/dev-tools",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "AWS Lambda": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "BullMQ": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Pydantic": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/jumbotron-svc",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Express.js": [
+      {
+        "project": "mojotip",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "npm-packages/Express-TS-BoilerPlate-NPM-package",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Nx": [
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "DSA/spn-league-portal",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Stripe": [
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Anthropic": [
+      {
+        "project": "SPN/dev-tools",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/jumbotron-svc",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Webpack": [
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "EarlyBirdsProperties/EarlyBirds-Properties-BE",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "FAISS": [
+      {
+        "project": "pobot",
+        "role": "solo",
+        "weight": 1.0
+      }
+    ],
+    "LLM application architecture": [
+      {
+        "project": "pobot",
+        "role": "solo",
+        "weight": 1.0
+      }
+    ],
+    "PyTorch": [
+      {
+        "project": "pobot",
+        "role": "solo",
+        "weight": 1.0
+      }
+    ],
+    "RAG design": [
+      {
+        "project": "pobot",
+        "role": "solo",
+        "weight": 1.0
+      }
+    ],
+    "Sentence-Transformers": [
+      {
+        "project": "pobot",
+        "role": "solo",
+        "weight": 1.0
+      }
+    ],
+    "Transformers": [
+      {
+        "project": "pobot",
+        "role": "solo",
+        "weight": 1.0
+      }
+    ],
+    "Agentic AI automation": [
+      {
+        "project": "leadforge",
+        "role": "solo",
+        "weight": 1.0
+      }
+    ],
+    "End-to-end system ownership": [
+      {
+        "project": "leadforge",
+        "role": "solo",
+        "weight": 1.0
+      }
+    ],
+    "SEO": [
+      {
+        "project": "EarlyBirdsProperties/EarlyBirds-Properties-FE",
+        "role": "solo",
+        "weight": 1.0
+      }
+    ],
+    "Environment Isolation": [
+      {
+        "project": "SPN/infrastructure-bootstrap",
+        "role": "solo",
+        "weight": 1.0
+      }
+    ],
+    "Code Quality": [
+      {
+        "project": "Boiler-plates/Cloud_Functions_Boiler_Plate",
+        "role": "solo",
+        "weight": 1.0
+      }
+    ],
+    "Serverless Architecture": [
+      {
+        "project": "Boiler-plates/Cloud_Functions_Boiler_Plate",
+        "role": "solo",
+        "weight": 1.0
+      }
+    ],
+    "AWS CloudMap": [
+      {
+        "project": "SPN/spin-service-client-python",
+        "role": "solo",
+        "weight": 1.0
+      }
+    ],
+    "API design": [
+      {
+        "project": "llm_extractor",
+        "role": "snapshot",
+        "weight": 0.1
+      },
+      {
+        "project": "Test-apps/apollo-brokers-limit-challenge",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "AI pipeline design": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "AWS Comprehend": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "AWS Personalize": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "AWS Rekognition": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "AWS Transcribe": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "DynamoDB Streams": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "GPT-4o": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "MCP": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "MCP Tools": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "MCP tool development": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Microservices architecture": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "OpenAI Moderation API": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "SNS": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "WebSockets": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "HashiCorp": [
+      {
+        "project": "success_ai",
+        "role": "self-reported",
+        "weight": 0.0
+      },
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "AWS (ECS, CDN, RDS, API Gateway)": [
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Architecture ownership": [
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "bondstudio",
+        "role": "self-reported",
+        "weight": 0.0
+      }
+    ],
+    "Disaster recovery": [
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Microservices": [
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Nest.js (BFF/Gateway)": [
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Node.js/Express (microservices)": [
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "React/Vite": [
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Team leadership": [
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Claude (MCP)": [
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Jira API": [
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "n8n": [
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "AWS CDN": [
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "CodeBuild": [
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "CodePipeline": [
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Firebase Cloud Functions": [
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Heroku": [
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Supabase": [
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "AWS EC2": [
+      {
+        "project": "trove",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Full-stack delivery": [
+      {
+        "project": "trove",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "GCP Cloud Functions": [
+      {
+        "project": "trove",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "AWS RDS": [
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Automated Testing": [
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Micro-frontends": [
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Redux Saga": [
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Test Stories": [
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Unit Tests": [
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "AWS ECS": [
+      {
+        "project": "SPN/infrastructure-core",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Application Load Balancer": [
+      {
+        "project": "SPN/infrastructure-core",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "VPC": [
+      {
+        "project": "SPN/infrastructure-core",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Infrastructure as Code (IaC)": [
+      {
+        "project": "SPN/shareable-service",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Technical Leadership": [
+      {
+        "project": "SPN/garden-service",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Security Scanning": [
+      {
+        "project": "SPN/ci-cd-workflows",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Backend Development": [
+      {
+        "project": "EarlyBirdsProperties/EarlyBirds-Properties-BE",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Django": [
+      {
+        "project": "Test-apps/apollo-brokers-limit-challenge",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "relational data modeling": [
+      {
+        "project": "Test-apps/apollo-brokers-limit-challenge",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "architecture": [
+      {
+        "project": "Masoil/Masoil",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "technical leadership": [
+      {
+        "project": "Masoil/Masoil",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Dynamic Imports": [
+      {
+        "project": "npm-packages/Express-TS-BoilerPlate-NPM-package",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "ESLint": [
+      {
+        "project": "npm-packages/Express-TS-BoilerPlate-NPM-package",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Prettier": [
+      {
+        "project": "npm-packages/Express-TS-BoilerPlate-NPM-package",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Backend architecture": [
+      {
+        "project": "mojotip",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "CI/CD pipeline design": [
+      {
+        "project": "mojotip",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "React Native": [
+      {
+        "project": "bondstudio",
+        "role": "self-reported",
+        "weight": 0.0
+      },
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "E2E Regressions": [
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Fastify": [
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "LangChain": [
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "TypeORM": [
+      {
+        "project": "buzzmi",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "AWS API Gateway": [
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "AWS CodeBuild": [
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "AWS CodePipeline": [
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Serverless AWS": [
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "gRPC": [
+      {
+        "project": "safescan",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Prisma": [
+      {
+        "project": "PTI-Central-Punjab/PTI-Central-Punjab-BE",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "pytest": [
+      {
+        "project": "SPN/jumbotron-svc",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Playwright": [
+      {
+        "project": "SPN/spn-integration-tests",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Fabric.js": [
+      {
+        "project": "Test-apps/adomate-public-FE",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "State Management": [
+      {
+        "project": "Test-apps/adomate-public-FE",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Jasmine": [
+      {
+        "project": "Test-apps/DevSkiller/1c4d188a-420b-47e5-9310-0c3d46afeccc",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Domain-Driven Design": [
+      {
+        "project": "Test-apps/mission-control-telemetry-tegdtv",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Event-Driven Architecture": [
+      {
+        "project": "Test-apps/mission-control-telemetry-tegdtv",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "BitGo": [
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      }
+    ],
+    "Cypress": [
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      }
+    ],
+    "MetaMask": [
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      }
+    ],
+    "ethers.js": [
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      }
+    ],
+    "LLM structured extraction": [
+      {
+        "project": "llm_extractor",
+        "role": "snapshot",
+        "weight": 0.1
+      }
+    ],
+    "AI-assisted automation": [
+      {
+        "project": "success_ai",
+        "role": "self-reported",
+        "weight": 0.0
+      }
+    ],
+    "Apify": [
+      {
+        "project": "success_ai",
+        "role": "self-reported",
+        "weight": 0.0
+      }
+    ],
+    "EmailEngine": [
+      {
+        "project": "success_ai",
+        "role": "self-reported",
+        "weight": 0.0
+      }
+    ],
+    "OpenAI GPT": [
+      {
+        "project": "success_ai",
+        "role": "self-reported",
+        "weight": 0.0
+      }
+    ],
+    "agentic outreach": [
+      {
+        "project": "success_ai",
+        "role": "self-reported",
+        "weight": 0.0
+      }
+    ],
+    "multi-account systems design": [
+      {
+        "project": "success_ai",
+        "role": "self-reported",
+        "weight": 0.0
+      }
+    ],
+    "openClaw": [
+      {
+        "project": "success_ai",
+        "role": "self-reported",
+        "weight": 0.0
+      }
+    ],
+    "self-hosted deployment": [
+      {
+        "project": "success_ai",
+        "role": "self-reported",
+        "weight": 0.0
+      }
+    ],
+    "Cross-functional team delivery": [
+      {
+        "project": "bondstudio",
+        "role": "self-reported",
+        "weight": 0.0
+      }
+    ],
+    "Regressions": [
+      {
+        "project": "bondstudio",
+        "role": "self-reported",
+        "weight": 0.0
+      }
+    ],
+    "Unity": [
+      {
+        "project": "bondstudio",
+        "role": "self-reported",
+        "weight": 0.0
+      }
+    ]
+  },
+  "generated_with": "openai/gpt-4o"
+}
