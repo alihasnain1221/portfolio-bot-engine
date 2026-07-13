@@ -1,0 +1,14 @@
+# --- ingestion (local, private) ---
+pyyaml>=6.0
+ruamel.yaml>=0.18        # comment-preserving YAML round-trip (scrape_cv writes profile.yaml)
+pypdf>=4.0               # CV/PDF text extraction (scrape_cv)
+
+# --- LLM providers (pluggable; use whichever key is available) ---
+# openai SDK also covers Groq and xAI Grok via base_url override.
+anthropic>=0.40.0
+openai>=1.40.0
+
+# --- backend / serving ---
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.5

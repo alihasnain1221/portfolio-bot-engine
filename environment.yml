@@ -1,0 +1,11 @@
+# Backend-specific conda environment (Python is from conda, everything else via pip).
+# Run from backend/:
+#   conda env create -f environment.yml     # first time
+#   conda env update -f environment.yml     # after requirements.txt changes
+#   conda activate portfolio-chatbot
+name: portfolio-chatbot
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - -r requirements.txt
