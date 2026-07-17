@@ -1,0 +1,17 @@
+# --- secrets / never commit ---
+.env
+*.env
+!.env.example
+
+# --- PII: résumés and CVs are personal, kept out of git ---
+*.pdf
+
+# --- python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- generated bundle: only the privacy-checked profile.json is tracked ---
+out/*
+!out/profile.json
