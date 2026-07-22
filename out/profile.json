@@ -318,6 +318,14 @@
         ],
         "link": "https://www.safesiteusa.com/"
       }
+    ],
+    "cv_education": [
+      "FAST - NATIONAL UNIVERSITY OF COMPUTER AND EMERGING SCIENCES Lahore MSCS in Computer Science, Graduated With High Honors January 2023 – January 2025",
+      "PAK AIMS - THE INSTITUTE OF MANAGEMENT SCIENCES Lahore BSCS in Computer Science January 2019 – January 2023"
+    ],
+    "cv_languages": [
+      "English",
+      "Urdu"
     ]
   },
   "projects": [
@@ -6087,5 +6095,5 @@
       }
     ]
   },
-  "generated_with": "openai/gpt-4o"
+  "generated_with": "meta-refresh"
 }
