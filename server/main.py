@@ -48,7 +48,7 @@ _TURNSTILE_VERIFY_URL = "https://challenges.cloudflare.com/turnstile/v0/siteveri
 _BUSY_MESSAGES = {
     "rate_limit": "I'm getting a lot of questions right now, give me a sec and try again.",
     "unavailable": "Welp, my machinery behind the scenes just showed its true colors while I was putting your answer together. Give it another go in a moment?",
-    "internal": "Aha, hit a snag while generating that one. I'm pinging the real Ali to look into it. Mind trying again in a bit?",
+    "internal": "Aha, hit a snag while generating that one. I'm flagging it to get looked into. Mind trying again in a bit?",
     "timeout": "Hmm, that took a little longer than I'd like. Mind giving it another shot?",
 }
 

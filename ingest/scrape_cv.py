@@ -12,6 +12,8 @@ It writes ONLY these keys under `profile:` and leaves everything hand-curated
     cv_skills      grouped additional-skills lists
     cv_experience  work-experience entries with quantified highlights
     cv_projects    project list (name/summary/tech/link) as a fallback
+    cv_education   education entries (degree / institution)
+    cv_languages   spoken languages
 
 Extraction is LLM-based so it survives CV reformatting; nothing is invented
 (the model is instructed to copy faithfully from the text).
@@ -84,6 +86,8 @@ def scrape() -> int:
     cv_skills = {g["label"]: g["skills"] for g in groups if g.get("label") and g.get("skills")}
     cv_experience = data.get("experience") or []
     cv_projects = data.get("projects") or []
+    cv_education = data.get("education") or []
+    cv_languages = data.get("languages") or []
 
     # Round-trip profile.yaml, replace ONLY the cv_* keys, preserve the rest.
     y = _yaml()
@@ -94,6 +98,8 @@ def scrape() -> int:
     prof["cv_skills"] = cv_skills
     prof["cv_experience"] = cv_experience
     prof["cv_projects"] = cv_projects
+    prof["cv_education"] = cv_education
+    prof["cv_languages"] = cv_languages
 
     buf = io.StringIO()
     y.dump(doc, buf)
@@ -101,7 +107,8 @@ def scrape() -> int:
 
     print(f"Updated {config.PROFILE_YAML.name}: "
           f"skill groups={len(cv_skills)}, experience={len(cv_experience)}, "
-          f"projects={len(cv_projects)}.")
+          f"projects={len(cv_projects)}, education={len(cv_education)}, "
+          f"languages={len(cv_languages)}.")
     print("Next: python -m ingest.build_bundle --meta-only")
     return 0
 

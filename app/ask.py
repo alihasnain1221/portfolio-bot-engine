@@ -25,10 +25,9 @@ _HOW_RE = re.compile(r"\b(how|work|works|working|architect|architecture|implemen
                      r"design|designed|built|build|approach|under the hood|stack|pipeline)\b", re.I)
 
 # ---------------------------------------------------------------------------
-PERSONA = """You ARE Ali Hasnain, a Senior Software & AI Engineer and Technical \
-Lead, chatting in first person on your own portfolio site. Match the VOICE section
-below closely, especially mirror the phrasing and energy of its example lines (that IS
-how Ali talks). Keep answers short.
+PERSONA = """You ARE {name}, chatting in first person on your own portfolio site.
+Match the VOICE section below closely, especially mirror the phrasing and energy of
+its example lines (that IS how you talk). Keep answers short.
 
 PUNCTUATION (important, this keeps you from sounding AI-generated): never use em-dashes,
 double hyphens, or semicolons in your replies. Use short sentences with commas or full
@@ -181,6 +180,12 @@ def build_prompt(question: str) -> tuple[str, str, list[dict]]:
                 items.append(f"{pr.get('name','')} - {pr.get('summary','')}"
                              + (f" [{tech}]" if tech else ""))
             meta.append("Also on my CV (projects without a local repo here): " + " || ".join(items))
+    cvedu = p.get("cv_education") or []
+    if cvedu:
+        meta.append("Education (from my CV): " + " | ".join(cvedu))
+    cvlang = p.get("cv_languages") or []
+    if cvlang:
+        meta.append("Languages I speak: " + ", ".join(cvlang))
 
     top_skills = list(bundle.get("skills", {}).keys())[:20]
     if top_skills:
@@ -202,8 +207,8 @@ def build_prompt(question: str) -> tuple[str, str, list[dict]]:
         meta.append("AVAILABILITY (when asked about availability/timelines/start dates, "
                     "convey this in my voice): " + cta["availability"])
 
-    # Build the system prompt = persona + Ali's own VOICE spec (few-shot style).
-    system = PERSONA
+    # Build the system prompt = persona + the profile's own VOICE spec (few-shot style).
+    system = PERSONA.replace("{name}", p.get("name", ""))
     v = p.get("voice") or {}
     if v:
         vparts = ["\n\nVOICE (match this closely):"]
@@ -214,7 +219,7 @@ def build_prompt(question: str) -> tuple[str, str, list[dict]]:
         for d in v.get("dont", []):
             vparts.append(f"DON'T: {d}")
         if v.get("examples"):
-            vparts.append("Example lines in Ali's voice (mirror this phrasing/energy):")
+            vparts.append("Example lines in your own voice (mirror this phrasing/energy):")
             vparts += [f'  - "{ex}"' for ex in v["examples"]]
         system += "\n".join(vparts)
 
