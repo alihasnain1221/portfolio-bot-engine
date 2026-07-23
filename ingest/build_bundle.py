@@ -173,10 +173,71 @@ def _public_view(card: dict) -> dict:
     return {k: v for k, v in card.items() if k != "_internal"}
 
 
+# ---------------------------------------------------------------------------
+# Resume-grounded people (dev-<person> branches): the bot must answer from
+# THEIR CV, not from Ali's featured/git project cards. When profile.yaml sets
+# `resume_grounded: true`, the bundle's projects/skills come straight from the
+# scraped cv_projects / cv_skills (no LLM, no repo scan, no Ali leakage).
+# ---------------------------------------------------------------------------
+def _slug(name: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", (name or "").lower()).strip("-") or "project"
+
+
+def _cv_cards(profile: dict) -> list[dict]:
+    cards = []
+    for i, pr in enumerate(profile.get("cv_projects") or [], start=1):
+        tech = [t for t in (pr.get("tech") or []) if t]
+        cards.append({
+            "key": pr.get("name", ""), "slug": _slug(pr.get("name", "")),
+            "name": pr.get("name", ""), "role": "self-reported",
+            "self_reported": True, "authorship": None,
+            "stack": {"languages": [], "frameworks": tech, "testing": [], "iac": [], "tags": []},
+            "signals": {}, "featured_rank": i, "disclosure_tier": "summary",
+            "link": pr.get("link"), "ai_showcase": False, "source": "resume",
+            "domain": "", "workflow_brief": "",
+            "summary_public": " ".join((pr.get("summary") or "").split()),
+            "skills_evidenced": sorted(set(tech)),
+        })
+    return cards
+
+
+def _cv_skills_index(profile: dict, cards: list[dict]) -> dict:
+    idx: dict[str, list] = {}
+    for grp in (profile.get("cv_skills") or {}).values():
+        for s in grp:
+            idx.setdefault(s, [])
+    for c in cards:
+        for s in c["skills_evidenced"]:
+            idx.setdefault(s, [{"project": c["key"], "role": "self-reported", "weight": 0.5}])
+    return idx
+
+
+def _emit_resume_bundle(profile_doc: dict) -> int:
+    """Write out/profile.json grounded purely in the person's CV. No LLM."""
+    p = profile_doc["profile"]
+    cards = _cv_cards(p)
+    skills = _cv_skills_index(p, cards)
+    bundle = {
+        "profile": {k: v for k, v in p.items()},
+        "projects": [_public_view(c) for c in cards],
+        "skills": skills,
+        "generated_with": "resume-grounded",
+    }
+    config.OUT_DIR.mkdir(parents=True, exist_ok=True)
+    (config.OUT_DIR / "profile.json").write_text(
+        json.dumps(bundle, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"Resume-grounded bundle for {p.get('name')}: "
+          f"projects={len(cards)} skills={len(skills)} "
+          f"(cv_summary={'yes' if p.get('cv_summary') else 'no'})")
+    return 0
+
+
 def refresh_meta() -> int:
     """Fast path: re-emit profile.json from existing cards + current profile.yaml
     profile meta (cta, emerging_skills, headline, ...). No LLM calls."""
     profile = yaml.safe_load(config.PROFILE_YAML.read_text(encoding="utf-8"))
+    if profile["profile"].get("resume_grounded"):
+        return _emit_resume_bundle(profile)
     full = json.load(open(config.OUT_DIR / "projects.json", encoding="utf-8"))
     skills = json.load(open(config.OUT_DIR / "skills.json", encoding="utf-8"))
     bundle = {

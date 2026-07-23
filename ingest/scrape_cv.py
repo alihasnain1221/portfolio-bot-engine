@@ -14,6 +14,8 @@ It writes ONLY these keys under `profile:` and leaves everything hand-curated
     cv_projects    project list (name/summary/tech/link) as a fallback
     cv_education   education entries (degree / institution)
     cv_languages   spoken languages
+    cv_summary     the CV's professional-summary paragraph (used as the bot's
+                   summary when profile.resume_grounded is true)
 
 Extraction is LLM-based so it survives CV reformatting; nothing is invented
 (the model is instructed to copy faithfully from the text).
@@ -38,6 +40,7 @@ _SYSTEM = (
 _SCHEMA = """\
 Extract the CV into JSON with EXACTLY these keys:
 {
+  "summary":      string,
   "skill_groups": [{"label": string, "skills": [string]}],
   "experience":   [{"company": string, "title": string, "period": string, "highlights": [string]}],
   "projects":     [{"name": string, "summary": string, "tech": [string], "link": string|null}],
@@ -45,6 +48,7 @@ Extract the CV into JSON with EXACTLY these keys:
   "languages":    [string]
 }
 Rules:
+- summary: the CV's professional-summary/about paragraph, copied faithfully (first person, 2-4 sentences). Empty string if the CV has none.
 - skill_groups: mirror the CV's own skill categories and their items verbatim.
 - experience.highlights: one entry per bullet, trimmed but faithful (keep metrics).
 - projects.summary: the project's description as written; tech = its listed technologies.
@@ -88,6 +92,7 @@ def scrape() -> int:
     cv_projects = data.get("projects") or []
     cv_education = data.get("education") or []
     cv_languages = data.get("languages") or []
+    cv_summary = (data.get("summary") or "").strip()
 
     # Round-trip profile.yaml, replace ONLY the cv_* keys, preserve the rest.
     y = _yaml()
@@ -100,6 +105,7 @@ def scrape() -> int:
     prof["cv_projects"] = cv_projects
     prof["cv_education"] = cv_education
     prof["cv_languages"] = cv_languages
+    prof["cv_summary"] = cv_summary
 
     buf = io.StringIO()
     y.dump(doc, buf)
@@ -108,7 +114,7 @@ def scrape() -> int:
     print(f"Updated {config.PROFILE_YAML.name}: "
           f"skill groups={len(cv_skills)}, experience={len(cv_experience)}, "
           f"projects={len(cv_projects)}, education={len(cv_education)}, "
-          f"languages={len(cv_languages)}.")
+          f"languages={len(cv_languages)}, summary={'yes' if cv_summary else 'no'}.")
     print("Next: python -m ingest.build_bundle --meta-only")
     return 0
 

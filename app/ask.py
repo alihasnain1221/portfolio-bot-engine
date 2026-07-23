@@ -143,13 +143,17 @@ def _render_card(c: dict, include_workflow: bool) -> str:
 def build_prompt(question: str) -> tuple[str, str, list[dict]]:
     bundle = load_bundle()
     p = bundle["profile"]
+    # resume_grounded people (dev-<person>): ground ONLY in their CV. Use the
+    # CV summary and skip Ali's hand-curated tech-lead/emerging-skill positioning.
+    rg = bool(p.get("resume_grounded"))
     how = bool(_HOW_RE.search(question))
     cards = retrieve(question)
 
+    summary = (p.get("cv_summary") or p.get("summary", "")) if rg else p.get("summary", "")
     meta = [f"You are {p['name']}, {p.get('headline','')}"
             + (f" ({p['also']})" if p.get('also') else "") + f", based in {p.get('location','')}.",
-            p.get("summary", "")]
-    if p.get("tech_lead_areas"):
+            summary]
+    if p.get("tech_lead_areas") and not rg:
         meta.append("Your tech-lead areas: " + "; ".join(p["tech_lead_areas"]))
 
     # CV-derived grounding (from ingest/scrape_cv.py). Lets the bot speak to
@@ -190,7 +194,7 @@ def build_prompt(question: str) -> tuple[str, str, list[dict]]:
     top_skills = list(bundle.get("skills", {}).keys())[:20]
     if top_skills:
         meta.append("Top skills (by evidence): " + ", ".join(top_skills))
-    if p.get("emerging_skills"):
+    if p.get("emerging_skills") and not rg:
         meta.append("EMERGING_SKILLS (actively adopting now -> playful + steer to a call): "
                     + "; ".join(p["emerging_skills"]))
     cta = p.get("cta") or {}
