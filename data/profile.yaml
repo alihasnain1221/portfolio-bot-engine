@@ -15,14 +15,15 @@
 # =====================================================================
 
 profile:
-  name: Ali Hasnain
-  headline: Senior Software & AI Engineer
-  also: Technical Lead
+  name: Uzair Rahim
+  headline: Senior Software Engineer
+  also: AI & Automation
+  resume_grounded: true
   location: Lahore, Pakistan
-  years_experience: 5
+  years_experience: 6
   contact:
-    email: alihussnain20.dev@gmail.com
-    linkedin: https://linkedin.com/in/ali-hasnain-mir
+    email: uzair.raheem987@gmail.com
+    linkedin: https://www.linkedin.com/in/muhammad-uzair-rahim-826b49b6/
 
   # Call-to-action: the bot's MAIN direction is to warmly (and a little
   # playfully) steer interested visitors toward booking a call with Ali --
@@ -106,210 +107,133 @@ profile:
   # AUTO-GENERATED below (cv_skills / cv_experience / cv_projects) from the CV by
   # `python -m ingest.scrape_cv`. Do not hand-edit; re-run the script to refresh.
   cv_skills:
-    AI & Automation:
-      - Agentic AI
-      - LLMs
-      - GPT-4o
-      - OpenAI Moderation API
-      - Multi-model Pipelines
-      - Structured LLM Output
-      - Claude
-      - MCPs
-      - n8n
-      - Make.io
-      - AWS Transcribe
-      - Replit
-      - Design Patterns
-    Core:
-      - React
-      - TypeScript
-      - JavaScript (ES6+)
-      - Node.js
-      - Express.js
-      - Nest.js
-      - Go
-      - Python
-    Backend & Database:
-      - MySQL
-      - PostgreSQL
-      - MongoDB
-      - RESTful APIs
-      - gRPC
-      - Asynchronous Processing
-      - Event-Driven Architecture
-      - Redux/Redux Saga
-    Cloud & Infrastructure:
-      - AWS (Lambda, API Gateway, RDS, CDN, CodePipeline, CodeBuild)
-      - Terraform
-      - HashiCorp
-      - GCP
-      - CI/CD
-      - IaC
-      - Zero Downtime Deployments
-      - MLOps
-    Observability & Monitoring:
-      - Grafana
-      - OpenTelemetry (OTel)
-    Methodologies:
-      - Agile
-      - Code Reviews
-      - Observability
-      - Technical Leadership
-      - DevOps
+    Automation & AI:
+      - Temporal.ai/Open Claw
+      - LLM Integrations
+      - n8n/Replit/Cursor
+      - Workflow Automation
   cv_experience:
-    - company: NEXTEK SOLUTIONS
-      title: Technical Lead / Senior Software Engineer
-      period: September 2022 – Present
+    - company: NexTek Solutions
+      title: AI & Automation Engineer
+      period: Sep 2023, Present
       highlights:
-        - Architected and deployed resilient MERN backend systems supporting high-volume financial infrastructure, maintaining 99.9% uptime across transaction-heavy platforms.
-        - Designed and implemented CI/CD pipelines with automated testing, reducing deployment latency by 40% while enforcing WCAG accessibility standards.
-        - Scaled RESTful APIs and database schemas across MySQL and PostgreSQL to handle massive seasonal traffic spikes and reliable money movement for nonprofit fundraising.
-        - Mentored junior developers and conducted rigorous code reviews to uphold engineering best practices and maintain high code quality standards.
-        - Collaborated with cross-functional teams to integrate analytics and observability tooling, identify and resolve endpoint weak spots, and ensure smooth end-to-end delivery.
-    - company: RAPIDZZ SOLUTIONS
-      title: Senior Web Developer
-      period: September 2021 – September 2022
+        - Built an autonomous government opportunity pipeline using n8n, Openclaw.ai, and a custom Python/Temporal multi-agent framework — covering discovery, AI evaluation, proposal drafting, and follow-up automation.
+        - Developed an AI evaluation workflow that reads attachments, scores opportunities against company profile, generates reports, and updates Jira — fully without human input.
+        - Built a business-day-aware automated follow-up email system with 6 AI-personalized templates and smart reply detection to stop sequences automatically.
+        - Led a team of 20+ engineers delivering scalable SaaS platforms on React, Node.js, AWS, and GCP — introduced CI/CD pipelines that reduced release time by 30%.
+    - company: Freelance
+      title: Custom AI Full Stack Engineer
+      period: Jun 2023, Aug2023
       highlights:
-        - Led a team of 6 developers to build high-performance platforms using React, TypeScript, and MERN stack, increasing user engagement by 30% in the first quarter.
-        - Implemented Turborepo for monorepo management, consolidating fragmented data tools into a unified CRM and management platform.
-        - Actively participated in agile rituals including sprint planning, daily stand-ups, and retrospectives, driving consistent on-time delivery under stringent timelines.
-        - Migrated legacy database systems to MySQL/PostgreSQL architectures, ensuring data integrity for billions of dollars in donor transactions.
-        - Advocated for adoption of emerging technologies and frameworks, keeping the team at the forefront of the evolving tech landscape.
+        - Built 15+ full-stack web applications using React, Next.js, Node.js, and PostgreSQL for startups and SaaS products.
+        - Built and integrated 30+ APIs and third-party services, including Stripe, Twilio, and OpenAI.
+        - Improved application performance by up to 40% through code optimization and better data handling.
+        - Implemented AI and automation workflows using Python, n8n, Claude, and Cursor to streamline product features and development.
+    - company: Rapidzz Solutions
+      title: Principle Software Engineer
+      period: Sep 2020, Aug 2023
+      highlights:
+        - Architected and developed large-scale web and mobile platforms using Node.js, React, React Native, and AWS infrastructure.
+        - Delivered 10+ production systems with microservices, REST APIs, and scalable cloud deployments.
+        - Improved backend response time by 35% through API optimization and caching strategies.
+        - Mentored junior developers and conducted code reviews to maintain high code quality.
+    - company: The Entertainer
+      title: Senior Software Engineer
+      period: Jul 2019, Aug 2020
+      highlights:
+        - Developed and maintained high-traffic applications used by thousands of active users.
+        - Built and optimized backend APIs using Node.js and Laravel with MySQL and MongoDB.
+        - Integrated third-party services, including payment gateways, messaging, and analytics tools.
+        - Reduced application errors and improved stability through debugging and performance monitoring.
+    - company: AcclivousByte
+      title: Web Developer
+      period: Jan 2016, Jun 2019
+      highlights:
+        - Developed 8+ web applications using PHP/Laravel, Vue.js, and MySQL.
+        - Built RESTful APIs and implemented scalable backend modules for enterprise clients.
+        - Optimized database queries and backend logic, improving page load speed by 25%.
+        - Collaborated with designers and QA teams to deliver reliable product releases.
   cv_projects:
-    - name: SPiN - Sports Network Mobile App
-      summary: 'Built and shipped a production 3-layer AI content moderation pipeline: AWS Rekognition hard gate → OpenAI Moderation API (language-only) → GPT-4o contextual judgment with a sports-domain system prompt and structured JSON output. Deliberately separated visual signals (pixel-level Rekognition labels) from language signals (AWS Transcribe + detected text) to eliminate false positives on sports content. Pipeline runs fully async for video via SNS/DynamoDB Streams and sync for images, feeding results via webhook to MongoDB. Re-architected the platform from monolithic MVP to microservices with full IaC on AWS.'
-      tech:
-        - MERN
-        - Go
-        - Python
-        - Terraform
-        - AWS Rekognition
-        - AWS Transcribe
-        - AWS Comprehend
-        - AWS Personalize
-        - OpenAI Moderation API
-        - GPT-4o
-        - DynamoDB Streams
-        - SNS
-      link: https://spinsports.ai
-    - name: MojoTip
-      summary: Originally launched as InstaTip, rebranded to MojoTip following copyright resolution. Built from scratch as a monolithic MVP and scaled horizontally to handle growing load. Fintech cashless tipping platform with robust backend infrastructure and automated CI/CD pipelines.
-      tech:
-        - MongoDB
-        - Express.js
-        - Node.js
-        - TypeScript
-      link: https://mojotip.com
     - name: Success.ai
-      summary: Built a multi-channel cold outreach automation platform. An Apify-powered scraper extracts LinkedIn leads based on user-defined criteria and stages them for outreach. Users compose campaigns via a template builder with variable substitution and AI-assisted copy generation (OpenAI GPT with explicit positive/negative prompt framing for tone control). EmailEngine drives automated follow-up sequences based on response status. The core engineering challenge was a unified multi-account inbox that aggregates all client email accounts into a single interface, supporting both manual compose/send from any account and automated EmailEngine sequences. Bulk sending routes leads in chunks across multiple sender addresses to avoid spam filters and rate limits.
+      summary: A platform offering AI-driven solutions for business growth, including customer engagement, sales, and marketing automation tools to optimize business operations and improve customer relationships.
       tech:
-        - MERN
-        - Terraform
-        - HashiCorp
-        - OpenAI GPT
-        - EmailEngine
-        - Apify
-        - Node.js
-      link: https://success.ai
-    - name: UmeedVentures
-      summary: Redesigned a coupled three-module monolith into 12 independent microservices, enabling parallel team deployments with zero cross-team blocking. Built full IaC via Terraform (ECS, CDN, RDS, API Gateway), making infrastructure reproducible and region-portable. Led disaster recovery during a Bahrain AWS region outage, migrating production to a new region in hours using existing Terraform config. Maintained infrastructure cost parity while doubling system reliability across 3 independent teams.
+        - React
+        - Node
+        - MongoDB
+        - AWS
+        - OpenAI
+        - Sendgrid
+      link:
+    - name: MojoTip
+      summary: It is a cashless tipping platform that allows you to provide tips and rewards both online and offline by utilizing QR codes and quick payment technology.
       tech:
-        - Nest.js (BFF/Gateway)
-        - Node.js/Express (microservices)
-        - React/Vite
-        - Terraform
-        - AWS (ECS, CDN, RDS, API Gateway)
-      link: https://umeedcs.com/
+        - React
+        - Next
+        - Node
+        - Stripe
+        - Firebase
+      link:
+    - name: Finmo
+      summary: A UK-based mortgage platform designed to simplify the mortgage process. It offers tools for brokers and clients to manage mortgage applications, track progress, and ensure compliance.
+      tech:
+        - React
+        - Next
+        - Node
+        - Firebase
+        - AWS-S3
+      link:
+    - name: MedFlow
+      summary: A portal offering electronic health records and practice management solutions for healthcare providers, aiming to improve patient care and streamline administrative processes.
+      tech:
+        - React
+        - Node
+        - Firebase
+        - AWS-S3
+        - HIPAA
+      link:
+    - name: B2B Rocket
+      summary: A platform designed to assist B2B companies in managing and optimizing their sales process with features like lead generation, CRM integration, and sales analytics.
+      tech:
+        - React
+        - Next
+        - Node
+        - OpenAI
+        - AWS
+      link:
+    - name: SPIN
+      summary: An AI-powered platform that provides solutions for business process automation, including document processing, data extraction, and workflow management.
+      tech:
+        - React
+        - Next
+        - Node
+        - Python
+        - Django
+        - AWS
+        - OpenAI
+      link:
     - name: Lantern Finance
-      summary: "Built a fractional ETH staking platform solving the 32 ETH minimum barrier by pooling user investments percentage-based until the threshold is reached, staking via BitGo, and distributing rewards proportional to each user's pool contribution. Integrated MetaMask as the client-side wallet connector for transaction signing with no server-side key management. The core challenge was ledger consistency: keeping in-app transaction records in sync with on-chain state across both MetaMask and BitGo, handled via webhooks from both to track refund progress, reflect live wallet balances, and maintain a full audit trail. Built an internal reconciliation system to catch and surface any discrepancies between on-chain events and internal records."
+      summary: A financial platform providing tools and services for managing personal and business finances, including investment tracking, budgeting, and financial planning.
       tech:
-        - MERN
-        - TypeScript
-        - MetaMask
-        - BitGo
-        - ethers.js
-      link: https://lantern.finance/
-    - name: North Metro100 BNM100
-      summary: Built a fully automated job pipeline system using n8n and Claude (via MCP). A scheduled workflow scrapes job listings from target sites, creates structured Jira tickets with key-value job metadata, and triggers a dynamic re-prioritization agent on every new item. Client manages pipeline progression via a drag-and-drop Jira board. On job entry into the processing column, an agentic workflow triggers, queries member preference profiles from the NorthMetro portal, uses Claude via MCP to match and rank the most relevant members, emails assignments with follow-up reminders, and automatically schedules calendar tasks on acknowledgment.
-      tech:
-        - n8n
-        - Claude MCP
-        - Jira API
-        - Node.js
-        - Replit
-        - Terraform
-        - HashiCorp
-      link: https://northmetro100.org/
-    - name: The Simple Vue
-      summary: Started on Replit with Supabase and Firebase Cloud Functions, migrated to Heroku, then to AWS via CodeBuild and CodePipeline, showcasing full infrastructure evolution from prototype to cloud-native deployment.
-      tech:
-        - Replit
-        - Supabase
-        - Firebase Cloud Functions
-        - Heroku
-        - AWS CDN
-        - CodeBuild
-        - CodePipeline
-      link: https://www.thesimplevue.com/
-    - name: SafeCamp - MedFlow
-      summary: Healthcare platform tailored for laboratory partners. Reduced overhead costs and errors through end-to-end efficiency software, leveraging serverless architecture and a generic componential approach.
-      tech:
-        - Serverless AWS Lambda
-        - Node.js
-        - React.js
-        - Redux Saga
-        - Redux Toolkit
-      link: https://www.gomedflow.com/
-    - name: Bond Studio AI
-      summary: Interior design and procurement platform. Started as B2E and evolved into a large-scale B2C platform built with a cross-functional team.
-      tech:
-        - Nest.js
-        - Terraform
-        - Unity
-        - React Native
-        - Regressions
+        - React
+        - Next
+        - Node
+        - Tailwind CSS
+        - Firebase
+        - AWS
       link:
-    - name: BuzzMi
-      summary: Gamification-based secure messaging and social app with cashback rewards, end-to-end encryption, private messaging, and community mentorship features.
+    - name: Cuddlynest- SaaS Solution
+      summary: It’s a global vacation rental platform with fast search powered by Elasticsearch. It also uses machine learning to recommend properties based on user preferences and behavior.
       tech:
-        - Nest.js
-        - Node.js
-        - Terraform
-        - React Native
-        - E2E Regressions
+        - React
+        - Next
+        - Node
+        - Elasticsearch
+        - AWS
       link:
-    - name: Trove
-      summary: eGift card distribution platform for employee gifting. Centralizes gifting across borders for the Asia-Pacific region, tracking spending and redemptions via a dashboard.
-      tech:
-        - AWS EC2
-        - MERN
-        - GCP Cloud Functions
-      link: https://trove.com/
-    - name: CastingPAX
-      summary: B2B2C casting platform simplifying the casting process through automation, reducing wasted time and empowering casting directors.
-      tech:
-        - MERN
-        - Micro-frontends
-        - AWS RDS
-        - Unit Tests
-        - Test Stories
-      link: https://www.castingpax.com/
-    - name: SafeScan
-      summary: B2B SaaS compliance and job site safety platform. Combines real-time check-ins, digital inspections, and accountability tracking to streamline communication and reduce reporting delays.
-      tech:
-        - MERN
-        - gRPC
-        - AWS Lambda
-        - AWS API Gateway
-        - AWS CodeBuild
-        - AWS CodePipeline
-      link: https://www.safesiteusa.com/
-
-# ---------------------------------------------------------------------
-# FEATURED PROJECTS  (the bot leads with these).
-# disclosure_tier: mention-only | summary | open
-# source: resume | repo   (where the narrative is grounded)
-# ---------------------------------------------------------------------
+  cv_education:
+    - Bachelors in Computer Science Sep 2012 - Aug 2016 Institute of Management Sciences, Lahore, Pakistan
+  cv_languages: []
+  cv_summary: Full-stack engineer with 6+ years of production experience, now 3+ years deep in AI automation, designing multi-agent systems, LLM-integrated workflows, and autonomous pipelines that replace manual processes entirely. Recently designed an end-to-end autonomous pipeline for government opportunity discovery, AI evaluation, proposal generation, and follow-up emails — using self-hosted n8n, Temporal, multi-agent orchestration, and LLMs like Claude in production. Shipped 15+ applications across React, Next.js, Node.js, Python, and PostgreSQL. Led teams of 20+ engineers, reduced release cycles by 30%, and improved backend performance by up to 40%. I work best at the intersection of engineering and automation — turning manual processes into intelligent, reliable systems.
 featured:
   - rank: 1
     key: spin
