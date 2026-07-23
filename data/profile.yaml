@@ -16,10 +16,11 @@
 
 profile:
   name: Jawad Abdullah Khan
-  headline: Senior Software & AI Engineer
-  also: Technical Lead
+  headline: AI-Native Full Stack Engineer
+  also: LLMs, Agents, RAG
+  resume_grounded: true
   location: Lahore, Pakistan
-  years_experience: 5
+  years_experience: 10
   contact:
     email: jawadabdulah918@gmail.com
     linkedin: https://linkedin.com/in/jawadabdullah
@@ -257,6 +258,7 @@ profile:
   cv_education:
     - Master of Science — Artificial Intelligence University of Hertfordshire, Luton, UK AI · Deep Learning · Robotics
   cv_languages: []
+  cv_summary: 'AI-Native Full Stack Engineer with 10+ years of experience building scalable production systems and 3+ years specializing in AI engineering at NexTek Solutions. I have shipped production AI systems that real users rely on daily. RAG pipelines, AI agents, LLM integrations, semantic search, fine-tuned models, and intelligent automation workflows. Backed by solid engineering fundamentals across the full stack: React, Next.js, Node.js, Python, PostgreSQL, and AWS.'
 featured:
   - rank: 1
     key: spin
