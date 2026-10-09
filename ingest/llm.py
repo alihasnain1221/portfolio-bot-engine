@@ -36,13 +36,18 @@ def load_dotenv(path: Path | None = None) -> None:
 
 # provider -> (env key, default model, openai-compatible base_url or None)
 _PROVIDERS = {
-    "anthropic": ("ANTHROPIC_API_KEY", "claude-sonnet-5", None),
+    "anthropic": ("ANTHROPIC_API_KEY", "claude-opus-5-5", None),
     "openai":    ("OPENAI_API_KEY",   "gpt-4o",           None),
     "groq":      ("GROQ_API_KEY",     "llama-3.3-70b-versatile", "https://api.groq.com/openai/v1"),
     "xai":       ("XAI_API_KEY",      "grok-2-latest",    "https://api.x.ai/v1"),
 }
 # Preference order when PORTFOLIO_LLM_PROVIDER is not set.
 _PREFERENCE = ["anthropic", "openai", "groq", "xai"]
+
+# Claude models that accept server-side refusal fallbacks ("default" routing).
+_CLAUDE_FALLBACK_MODELS = ("claude-opus-5-5", "claude-opus-5", "claude-fable-5-1", "claude-sonnet-5-5")
+# Thinking tokens count against max_tokens, so callers' answer budgets get this on top.
+_THINKING_HEADROOM = 8000
 
 
 @dataclass
@@ -52,21 +57,33 @@ class LLM:
 
     def complete(self, system: str, user: str, *,
                  max_tokens: int = 1200, temperature: float = 0.2,
-                 as_json: bool = False) -> str:
-        """Single-turn completion. Returns the model's text (or JSON string)."""
+                 as_json: bool = False, effort: str | None = None) -> str:
+        """Single-turn completion. Returns the model's text (or JSON string).
+
+        `temperature` applies to OpenAI-compatible providers only (current Claude
+        models reject it); `effort` (low|medium|high|xhigh|max) to Claude only.
+        """
         env_key, _, base_url = _PROVIDERS[self.provider]
         api_key = os.environ[env_key]
 
         if self.provider == "anthropic":
             import anthropic
             client = anthropic.Anthropic(api_key=api_key)
-            kwargs = {}
             if as_json:
                 system = system + "\n\nRespond with ONLY valid JSON, no prose."
-            msg = client.messages.create(
-                model=self.model, max_tokens=max_tokens, temperature=temperature,
+            kwargs = {}
+            effort = os.environ.get("PORTFOLIO_LLM_EFFORT") or effort
+            if effort:
+                kwargs["output_config"] = {"effort": effort}
+            if self.model.startswith(_CLAUDE_FALLBACK_MODELS):
+                kwargs["betas"] = ["server-side-fallback-2026-07-01"]
+                kwargs["fallbacks"] = "default"
+            msg = client.beta.messages.create(
+                model=self.model, max_tokens=max_tokens + _THINKING_HEADROOM,
                 system=system, messages=[{"role": "user", "content": user}], **kwargs,
             )
+            if msg.stop_reason == "refusal":
+                raise RuntimeError(f"Claude declined the request ({getattr(msg.stop_details, 'category', None)})")
             return "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
 
         # OpenAI-compatible (openai, groq, xai)

@@ -246,7 +246,7 @@ def _sanitize(text: str) -> str:
 def answer(question: str, *, provider: str | None = None) -> dict:
     system, user, cards = build_prompt(question)
     llm = get_llm(provider=provider)
-    text = llm.complete(system, user, max_tokens=700, temperature=0.5)
+    text = llm.complete(system, user, max_tokens=700, temperature=0.5, effort="low")
     return {
         "answer": _sanitize(text),
         "projects_used": [c.get("name", c["slug"]) for c in cards],
