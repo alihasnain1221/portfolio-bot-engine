@@ -5,7 +5,7 @@ pypdf>=4.0               # CV/PDF text extraction (scrape_cv)
 
 # --- LLM providers (pluggable; use whichever key is available) ---
 # openai SDK also covers Groq and xAI Grok via base_url override.
-anthropic>=0.40.0
+anthropic>=0.116.0       # beta server-side refusal fallbacks
 openai>=1.40.0
 
 # --- backend / serving ---
