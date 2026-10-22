@@ -14,7 +14,8 @@ Env:
   PORTFOLIO_MAX_QUESTION_LEN  max chars in a question (default 600)
   PORTFOLIO_TURNSTILE_SECRET  Cloudflare Turnstile secret key (optional; when set,
                               /ask requires a valid turnstile_token -> bot protection)
-  + one LLM key (ANTHROPIC_API_KEY / OPENAI_API_KEY / GROQ_API_KEY / XAI_API_KEY)
+  + one LLM key (ANTHROPIC_API_KEY / OPENAI_API_KEY / GROQ_API_KEY / XAI_API_KEY /
+    GEMINI_API_KEY)
 """
 from __future__ import annotations
 

@@ -1,12 +1,12 @@
 """Pluggable LLM provider layer.
 
-Supports Anthropic Claude, OpenAI, Groq, and xAI Grok. Auto-detects whichever
-API key is present (in the environment or a local .env), so ingestion works
-with "whatever is available at the moment". Override the choice with
-PORTFOLIO_LLM_PROVIDER=anthropic|openai|groq|xai.
+Supports Anthropic Claude, OpenAI, Groq, xAI Grok, and Google Gemini.
+Auto-detects whichever API key is present (in the environment or a local .env),
+so ingestion works with "whatever is available at the moment". Override the
+choice with PORTFOLIO_LLM_PROVIDER=anthropic|openai|groq|xai|gemini.
 
-The OpenAI SDK is reused for OpenAI, Groq, and xAI via base_url override;
-Anthropic uses its own SDK. SDKs are imported lazily so a missing one never
+The OpenAI SDK is reused for OpenAI, Groq, xAI, and Gemini via base_url
+override; Anthropic uses its own SDK. SDKs are imported lazily so a missing one never
 breaks the others.
 """
 from __future__ import annotations
@@ -40,9 +40,10 @@ _PROVIDERS = {
     "openai":    ("OPENAI_API_KEY",   "gpt-4o",           None),
     "groq":      ("GROQ_API_KEY",     "llama-3.3-70b-versatile", "https://api.groq.com/openai/v1"),
     "xai":       ("XAI_API_KEY",      "grok-2-latest",    "https://api.x.ai/v1"),
+    "gemini":    ("GEMINI_API_KEY",   "gemini-3.8-flash", "https://generativelanguage.googleapis.com/v1beta/openai/"),
 }
 # Preference order when PORTFOLIO_LLM_PROVIDER is not set.
-_PREFERENCE = ["anthropic", "openai", "groq", "xai"]
+_PREFERENCE = ["anthropic", "openai", "groq", "xai", "gemini"]
 
 # Claude models that accept server-side refusal fallbacks ("default" routing).
 _CLAUDE_FALLBACK_MODELS = ("claude-opus-5-5", "claude-opus-5", "claude-fable-5-1", "claude-sonnet-5-5")
@@ -61,10 +62,12 @@ class LLM:
         """Single-turn completion. Returns the model's text (or JSON string).
 
         `temperature` applies to OpenAI-compatible providers only (current Claude
-        models reject it); `effort` (low|medium|high|xhigh|max) to Claude only.
+        models reject it). `effort` applies to Claude (low|medium|high|xhigh|max)
+        and Gemini (minimal|low|medium|high, sent as reasoning_effort).
         """
         env_key, _, base_url = _PROVIDERS[self.provider]
         api_key = os.environ[env_key]
+        effort = os.environ.get("PORTFOLIO_LLM_EFFORT") or effort
 
         if self.provider == "anthropic":
             import anthropic
@@ -72,7 +75,6 @@ class LLM:
             if as_json:
                 system = system + "\n\nRespond with ONLY valid JSON, no prose."
             kwargs = {}
-            effort = os.environ.get("PORTFOLIO_LLM_EFFORT") or effort
             if effort:
                 kwargs["output_config"] = {"effort": effort}
             if self.model.startswith(_CLAUDE_FALLBACK_MODELS):
@@ -86,10 +88,20 @@ class LLM:
                 raise RuntimeError(f"Claude declined the request ({getattr(msg.stop_details, 'category', None)})")
             return "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
 
-        # OpenAI-compatible (openai, groq, xai)
+        # OpenAI-compatible (openai, groq, xai, gemini)
         from openai import OpenAI
         client = OpenAI(api_key=api_key, base_url=base_url)
-        kwargs = {"response_format": {"type": "json_object"}} if as_json else {}
+        kwargs = {}
+        if self.provider == "gemini":
+            # Gemini 3.x thinking can't be disabled and its compat layer doesn't
+            # document json_object mode, so JSON is requested via the prompt.
+            if as_json:
+                system = system + "\n\nRespond with ONLY valid JSON, no prose."
+            if effort:
+                kwargs["reasoning_effort"] = effort
+            max_tokens += _THINKING_HEADROOM
+        elif as_json:
+            kwargs["response_format"] = {"type": "json_object"}
         resp = client.chat.completions.create(
             model=self.model, max_tokens=max_tokens, temperature=temperature,
             messages=[{"role": "system", "content": system},
@@ -129,7 +141,7 @@ def get_llm(provider: str | None = None, model: str | None = None) -> LLM:
         if not avail:
             raise RuntimeError(
                 "No LLM API key found. Set one of ANTHROPIC_API_KEY / OPENAI_API_KEY / "
-                "GROQ_API_KEY / XAI_API_KEY (in the environment or a .env file).")
+                "GROQ_API_KEY / XAI_API_KEY / GEMINI_API_KEY (in the environment or a .env file).")
         chosen = avail[0]
     default_model = _PROVIDERS[chosen][1]
     return LLM(provider=chosen, model=model or os.environ.get("PORTFOLIO_LLM_MODEL") or default_model)
