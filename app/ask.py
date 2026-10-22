@@ -246,9 +246,10 @@ def _sanitize(text: str) -> str:
 def answer(question: str, *, provider: str | None = None) -> dict:
     system, user, cards = build_prompt(question)
     llm = get_llm(provider=provider)
-    text = llm.complete(system, user, max_tokens=700, temperature=0.5, effort="low")
+    # 30s per attempt keeps a two-model fallback under Cloudflare's 100s proxy limit.
+    text = llm.complete(system, user, max_tokens=700, temperature=0.5, effort="low", timeout=30)
     return {
         "answer": _sanitize(text),
         "projects_used": [c.get("name", c["slug"]) for c in cards],
-        "model": f"{llm.provider}/{llm.model}",
+        "model": f"{llm.provider}/{llm.served_model or llm.model}",
     }
