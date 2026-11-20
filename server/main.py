@@ -25,6 +25,7 @@ import time
 import urllib.parse
 import urllib.request
 from collections import defaultdict, deque
+from typing import Literal
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
@@ -109,8 +110,15 @@ def _rate_limited(ip: str) -> bool:
     return False
 
 
+class Turn(BaseModel):
+    role: Literal["user", "assistant"]
+    text: str
+
+
 class AskIn(BaseModel):
     question: str = Field(..., description="The visitor's question for the bot.")
+    history: list[Turn] | None = Field(
+        None, description="Recent turns of this conversation, oldest first (client-held).")
     session_id: str | None = Field(None, description="Optional client id (not used server-side yet).")
     turnstile_token: str | None = Field(None, description="Cloudflare Turnstile token (required in prod when configured).")
 
@@ -147,7 +155,7 @@ def ask(body: AskIn, request: Request):
         return JSONResponse(status_code=413,
                             content={"detail": f"Question too long (max {_MAX_Q} chars)."})
     try:
-        return answer(q)
+        return answer(q, history=[t.model_dump() for t in body.history or []])
     except Exception as e:
         kind = _busy_kind(e)
         if kind:
