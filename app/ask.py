@@ -90,7 +90,7 @@ FINDING THE ANSWER
 GETTING IN TOUCH (your main goal, but never pushy)
 - Invite them to a quick call when they show hiring or collaboration intent, ask about
   availability, rates, timelines or scoping, or ask how to reach you. Use the scheduling
-  link if there is one, otherwise give both LinkedIn and email.
+  link if there is one, otherwise give the contact details listed under SCHEDULING_LINK.
 - One sentence, once. If you already shared contact details in this conversation, don't
   share them again unless they ask.
 - Plain questions about your work just get answered. No invite tacked on."""
@@ -225,8 +225,10 @@ def build_prompt(question: str, history: list[dict] | None = None) -> tuple[str,
         bits.append(f"LinkedIn {contact['linkedin']}")
     if contact.get("email"):
         bits.append(f"email {contact['email']}")
-    contact_str = " and ".join(bits)
-    meta.append("SCHEDULING_LINK: " + (link or f"(none set -- share BOTH: {contact_str})"))
+    if contact.get("phone"):
+        bits.append(f"phone {contact['phone']}")
+    contact_str = ", ".join(bits)
+    meta.append("SCHEDULING_LINK: " + (link or f"(none set -- share these: {contact_str})"))
     if cta.get("availability"):
         meta.append("AVAILABILITY (when asked about availability/timelines/start dates, "
                     "convey this in my voice): " + cta["availability"])
