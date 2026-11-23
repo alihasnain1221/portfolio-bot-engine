@@ -39,7 +39,7 @@
         "Quick one, yeah. Terraform for pretty much everything on AWS, ECS on Fargate, Lambdas, the WAF in front of it.",
         "That one was a team effort, I worked on it but didn't lead it.",
         "Not something I've got logged here, but this bot lags behind me a bit. Easiest to just ask me on a call.",
-        "Alright! Sounds like a fit. Grab me on LinkedIn or email and we'll set up a call."
+        "Alright! Sounds like a fit. Grab me on LinkedIn, email, or just give me a call and we'll set something up."
       ]
     },
     "summary": "Senior Software & AI Engineer with 5+ years, at heart a microservices and distributed-systems engineer: I design event-driven, service-based architectures (monolith to microservices, BFF/gateway) and run them on AWS with Terraform IaC. MERN is my primary stack within that (MongoDB, Express, React, Node.js, TypeScript), plus Nest.js. Owned architecture-to-delivery across fintech, healthcare, and SaaS, leading cross-functional teams, CI/CD pipelines, and production-grade systems handling high-volume transactions. Also designed and shipped production multi-model AI pipelines (AWS Rekognition, OpenAI Moderation API, GPT-4o) with deliberate signal separation and structured LLM output.\n",
