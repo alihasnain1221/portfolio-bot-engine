@@ -195,8 +195,13 @@ def build_prompt(question: str, history: list[dict] | None = None) -> tuple[str,
     # CV projects NOT already covered by a featured card (dedupe by name).
     cvproj = p.get("cv_projects") or []
     if cvproj:
-        feat_names = {c.get("name", "").lower() for c in bundle["projects"] if c.get("featured_rank")}
-        extra = [pr for pr in cvproj if pr.get("name", "").lower() not in feat_names]
+        # Names differ slightly between the CV and the featured list
+        # ("MojoTip" vs "MojoTip (formerly InstaTip)"), so match on containment.
+        def norm(s: str) -> str:
+            return re.sub(r"[^a-z0-9]", "", (s or "").lower())
+        feat_names = [norm(c.get("name")) for c in bundle["projects"] if c.get("featured_rank")]
+        extra = [pr for pr in cvproj if norm(pr.get("name"))
+                 and not any(norm(pr["name"]) in f or f in norm(pr["name"]) for f in feat_names)]
         if extra:
             items = []
             for pr in extra:
