@@ -281,10 +281,12 @@ def answer(question: str, *, history: list[dict] | None = None,
            provider: str | None = None) -> dict:
     system, user, cards = build_prompt(question, history)
     llm = get_llm(provider=provider)
-    # 30s per attempt keeps a two-model fallback under Cloudflare's 100s proxy limit.
-    text = llm.complete(system, user, max_tokens=700, temperature=0.5, effort="low", timeout=30)
+    # The 85s budget across all keys and models stays under Cloudflare's 100s proxy limit.
+    text = llm.complete(system, user, max_tokens=700, temperature=0.5, effort="low",
+                        timeout=30, budget=85)
     return {
         "answer": _sanitize(text),
         "projects_used": [c.get("name", c["slug"]) for c in cards],
         "model": f"{llm.provider}/{llm.served_model or llm.model}",
+        "key": llm.served_key,
     }

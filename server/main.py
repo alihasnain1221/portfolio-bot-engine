@@ -15,7 +15,7 @@ Env:
   PORTFOLIO_TURNSTILE_SECRET  Cloudflare Turnstile secret key (optional; when set,
                               /ask requires a valid turnstile_token -> bot protection)
   + one LLM key (ANTHROPIC_API_KEY / OPENAI_API_KEY / GROQ_API_KEY / XAI_API_KEY /
-    GEMINI_API_KEY)
+    GEMINI_API_KEY), with optional backups as <NAME>_API_KEY_2, _3, ...
 """
 from __future__ import annotations
 
