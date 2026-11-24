@@ -5,6 +5,10 @@ Auto-detects whichever API key is present (in the environment or a local .env),
 so ingestion works with "whatever is available at the moment". Override the
 choice with PORTFOLIO_LLM_PROVIDER=anthropic|openai|groq|xai|gemini.
 
+Each provider takes several keys: <NAME>_API_KEY first, then <NAME>_API_KEY_2,
+_3, ... in number order. A key that's rejected, out of quota or not answering
+hands the request to the next one.
+
 The OpenAI SDK is reused for OpenAI, Groq, xAI, and Gemini via base_url
 override; Anthropic uses its own SDK. SDKs are imported lazily so a missing one never
 breaks the others.
@@ -13,6 +17,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import time
 from dataclasses import dataclass
 from pathlib import Path
@@ -53,10 +58,36 @@ _THINKING_HEADROOM = 8000
 # Tried after the configured Gemini model; each has its own free-tier quota
 # (flash-lite: 500 requests/day vs 20 for full flash).
 _GEMINI_FALLBACK_MODELS = ("gemini-3.1-flash-lite",)
-# A model that just returned 5xx/429 or timed out is skipped for this long, so
-# later requests go straight to a healthy one. Kept per process (resets on restart).
+# A key or (key, model) that just failed is skipped for this long, so later
+# requests go straight to a healthy one. Kept per process (resets on restart).
 _COOLDOWN_SEC = 300
-_down_until: dict[str, float] = {}
+_down_until: dict[tuple[str, str | None], float] = {}   # (key, model or None for the whole key)
+# Below this many seconds of budget left, another attempt can't finish in time.
+_MIN_ATTEMPT_SEC = 5
+
+
+def api_keys(env_key: str) -> list[str]:
+    """Keys for one provider: ENV_KEY, then ENV_KEY_2, ENV_KEY_3, ... (duplicates dropped)."""
+    pattern = re.compile(rf"{re.escape(env_key)}(?:_(\d+))?")
+    slots = sorted((int(m.group(1) or 1), val.strip()) for name, val in os.environ.items()
+                   if (m := pattern.fullmatch(name)) and val.strip())
+    keys: list[str] = []
+    for _, val in slots:
+        if val not in keys:
+            keys.append(val)
+    return keys
+
+
+def _failure_scope(exc: Exception) -> str | None:
+    """'key' when this key can't be used, 'model' when this model is busy on it,
+    None when another key or model wouldn't change the outcome."""
+    status = getattr(exc, "status_code", None)
+    msg = str(exc).lower()
+    if status in (401, 403) or any(s in msg for s in ("api key", "api_key", "credit balance", "billing")):
+        return "key"
+    if status is None or status == 429 or status >= 500:   # no status: connection error or timeout
+        return "model"
+    return None
 
 
 @dataclass
@@ -64,81 +95,112 @@ class LLM:
     provider: str
     model: str
     served_model: str | None = None   # model that answered the last call
+    served_key: int | None = None     # 1 = <NAME>_API_KEY, 2 = <NAME>_API_KEY_2, ...
 
     def complete(self, system: str, user: str, *,
                  max_tokens: int = 1200, temperature: float = 0.2,
                  as_json: bool = False, effort: str | None = None,
-                 timeout: float = 120) -> str:
+                 timeout: float = 120, budget: float | None = None) -> str:
         """Single-turn completion. Returns the model's text (or JSON string).
 
         `temperature` applies to OpenAI-compatible providers only (current Claude
         models reject it). `effort` applies to Claude (low|medium|high|xhigh|max)
         and Gemini (minimal|low|medium|high, sent as reasoning_effort).
-        `timeout` (seconds, per attempt) applies to OpenAI-compatible providers.
+        `timeout` is seconds per attempt; `budget` caps the total across all
+        keys and models.
         """
         env_key, _, base_url = _PROVIDERS[self.provider]
-        api_key = os.environ[env_key]
+        keys = api_keys(env_key)
+        if not keys:
+            raise RuntimeError(f"{env_key} is not set.")
         effort = os.environ.get("PORTFOLIO_LLM_EFFORT") or effort
+        deadline = time.monotonic() + budget if budget else None
+        kwargs = {}
 
         if self.provider == "anthropic":
             import anthropic
-            client = anthropic.Anthropic(api_key=api_key)
+            api_error, make_client = anthropic.APIError, (lambda k: anthropic.Anthropic(api_key=k))
             if as_json:
                 system = system + "\n\nRespond with ONLY valid JSON, no prose."
-            kwargs = {}
             if effort:
                 kwargs["output_config"] = {"effort": effort}
             if self.model.startswith(_CLAUDE_FALLBACK_MODELS):
                 kwargs["betas"] = ["server-side-fallback-2026-07-01"]
                 kwargs["fallbacks"] = "default"
-            msg = client.beta.messages.create(
-                model=self.model, max_tokens=max_tokens + _THINKING_HEADROOM,
-                system=system, messages=[{"role": "user", "content": user}], **kwargs,
-            )
-            if msg.stop_reason == "refusal":
-                raise RuntimeError(f"Claude declined the request ({getattr(msg.stop_details, 'category', None)})")
-            self.served_model = msg.model
-            return "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
-
-        # OpenAI-compatible (openai, groq, xai, gemini)
-        import openai
-        kwargs = {}
-        models = [self.model]
-        if self.provider == "gemini":
-            # The fallback chain replaces SDK retries, which would only burn the
-            # free-tier quota re-hitting a model that's overloaded or rate-limited.
-            client = openai.OpenAI(api_key=api_key, base_url=base_url,
-                                   timeout=timeout, max_retries=0)
-            # Gemini 3.x thinking can't be disabled and its compat layer doesn't
-            # document json_object mode, so JSON is requested via the prompt.
-            if as_json:
-                system = system + "\n\nRespond with ONLY valid JSON, no prose."
-            if effort:
-                kwargs["reasoning_effort"] = effort
-            max_tokens += _THINKING_HEADROOM
-            chain = [self.model] + [m for m in _GEMINI_FALLBACK_MODELS if m != self.model]
-            now = time.monotonic()
-            models = [m for m in chain if _down_until.get(m, 0) <= now] or chain[:1]
+            chain = [self.model]   # model fallback happens server-side
         else:
-            client = openai.OpenAI(api_key=api_key, base_url=base_url, timeout=timeout)
-            if as_json:
-                kwargs["response_format"] = {"type": "json_object"}
+            # OpenAI-compatible (openai, groq, xai, gemini)
+            import openai
+            api_error = openai.APIError
+            chain = [self.model]
+            if self.provider == "gemini":
+                # Key and model fallback replace SDK retries, which would only burn
+                # the free-tier quota re-hitting a model that's overloaded or rate-limited.
+                make_client = lambda k: openai.OpenAI(api_key=k, base_url=base_url, max_retries=0)
+                # Gemini 3.x thinking can't be disabled and its compat layer doesn't
+                # document json_object mode, so JSON is requested via the prompt.
+                if as_json:
+                    system = system + "\n\nRespond with ONLY valid JSON, no prose."
+                if effort:
+                    kwargs["reasoning_effort"] = effort
+                max_tokens += _THINKING_HEADROOM
+                chain += [m for m in _GEMINI_FALLBACK_MODELS if m != self.model]
+            else:
+                make_client = lambda k: openai.OpenAI(api_key=k, base_url=base_url)
+                if as_json:
+                    kwargs["response_format"] = {"type": "json_object"}
 
-        for i, model in enumerate(models):
-            try:
-                resp = client.chat.completions.create(
-                    model=model, max_tokens=max_tokens, temperature=temperature,
-                    messages=[{"role": "system", "content": system},
-                              {"role": "user", "content": user}], **kwargs,
-                )
-            except (openai.APIConnectionError, openai.RateLimitError, openai.InternalServerError):
-                _down_until[model] = time.monotonic() + _COOLDOWN_SEC
-                if i == len(models) - 1:
-                    raise
+        # Every model on the first key, then every model on the next key, and so on.
+        now = time.monotonic()
+        attempts = [(slot, key, model) for slot, key in enumerate(keys, 1) for model in chain]
+        healthy = [a for a in attempts
+                   if _down_until.get((a[1], None), 0) <= now and _down_until.get((a[1], a[2]), 0) <= now]
+        last_error: Exception | None = None
+        dead_keys: set[str] = set()
+        clients: dict[str, object] = {}
+        for slot, key, model in healthy or attempts[:1]:
+            if key in dead_keys:
                 continue
-            _down_until.pop(model, None)
-            self.served_model = model
-            return resp.choices[0].message.content or ""
+            attempt_timeout = timeout
+            if deadline is not None:
+                attempt_timeout = min(timeout, deadline - time.monotonic())
+                if attempt_timeout < _MIN_ATTEMPT_SEC and last_error is not None:
+                    break
+            if key not in clients:
+                clients[key] = make_client(key)
+            client = clients[key]
+            try:
+                if self.provider == "anthropic":
+                    msg = client.beta.messages.create(
+                        model=model, max_tokens=max_tokens + _THINKING_HEADROOM,
+                        system=system, messages=[{"role": "user", "content": user}],
+                        timeout=attempt_timeout, **kwargs,
+                    )
+                    if msg.stop_reason == "refusal":
+                        raise RuntimeError(f"Claude declined the request ({getattr(msg.stop_details, 'category', None)})")
+                    text, served = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text"), msg.model
+                else:
+                    resp = client.chat.completions.create(
+                        model=model, max_tokens=max_tokens, temperature=temperature,
+                        messages=[{"role": "system", "content": system},
+                                  {"role": "user", "content": user}],
+                        timeout=attempt_timeout, **kwargs,
+                    )
+                    text, served = resp.choices[0].message.content or "", model
+            except api_error as e:
+                scope = _failure_scope(e)
+                if scope is None:
+                    raise
+                last_error = e
+                if scope == "key":
+                    dead_keys.add(key)
+                _down_until[(key, None if scope == "key" else model)] = time.monotonic() + _COOLDOWN_SEC
+                continue
+            _down_until.pop((key, None), None)
+            _down_until.pop((key, model), None)
+            self.served_model, self.served_key = served, slot
+            return text
+        raise last_error or RuntimeError(f"No {self.provider} key or model is available right now.")
 
     def complete_json(self, system: str, user: str, **kw) -> dict:
         raw = self.complete(system, user, as_json=True, **kw)
@@ -154,7 +216,7 @@ class LLM:
 
 def available_providers() -> list[str]:
     load_dotenv()
-    return [p for p in _PREFERENCE if os.environ.get(_PROVIDERS[p][0])]
+    return [p for p in _PREFERENCE if api_keys(_PROVIDERS[p][0])]
 
 
 def get_llm(provider: str | None = None, model: str | None = None) -> LLM:
@@ -165,7 +227,7 @@ def get_llm(provider: str | None = None, model: str | None = None) -> LLM:
         chosen = chosen.lower()
         if chosen not in _PROVIDERS:
             raise ValueError(f"Unknown provider '{chosen}'. Options: {list(_PROVIDERS)}")
-        if not os.environ.get(_PROVIDERS[chosen][0]):
+        if not api_keys(_PROVIDERS[chosen][0]):
             raise RuntimeError(f"{chosen} selected but {_PROVIDERS[chosen][0]} is not set.")
     else:
         avail = available_providers()
