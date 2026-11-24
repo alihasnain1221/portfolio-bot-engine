@@ -291,11 +291,13 @@ featured:
     # Apr 2026, so they are not listed as current tech.
     narrative: >
       SPiN (spinsports.ai) is a sports network for teams, leagues and families.
-      I've been contracted there through Nextek since April 2024. I built the
-      spec-writing role of an in-house multi-role AI agent platform (Claude
-      Agent SDK on AWS ECS Fargate): it reads Jira acceptance criteria and
-      merged backend diffs, writes Playwright regression tests and opens PRs,
-      driven from Jira and Slack with per-run caps on time, turns and cost. I
+      I've been contracted there through Nextek since April 2024. The team
+      has an in-house multi-role AI agent platform (Claude Agent SDK on AWS ECS
+      Fargate) whose core teammates built. My part is one agent on it, the
+      spec-writing role: it reads Jira acceptance criteria and merged backend
+      diffs, writes Playwright regression tests and opens PRs, driven from Jira
+      and Slack with per-run caps on time, turns and cost. Say "I built an AI
+      agent that writes regression tests", never "I built the agent platform". I
       designed and am the main author of a ~950-case Playwright API regression
       suite that gates a Node.js to .NET 10 / PostgreSQL backend rewrite,
       covering 58% of client-called endpoints, with daily Slack reports ranking
@@ -312,8 +314,8 @@ featured:
       + Capacitor and a .NET 10 / PostgreSQL API: org settings with
       inheritance, Twilio Verify SMS opt-in, FCM push notifications, iOS and
       Android deep links, and Replicache real-time sync for the evaluations
-      app. The agent platform's core and its other roles, and the test
-      environment platform's core, were built by teammates.
+      app. The test environment platform's core was also built by a teammate,
+      I extended it.
 
   - rank: 2
     key: mojotip
