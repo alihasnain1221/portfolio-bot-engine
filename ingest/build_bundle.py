@@ -252,6 +252,10 @@ def _sync_featured(profile: dict, cards: list[dict]) -> list[dict]:
     """
     by_key = {c.get("key"): c for c in cards if c.get("featured_rank")}
     others = [c for c in cards if not c.get("featured_rank")]
+    raw_path = config.OUT_DIR / "projects_raw.json"
+    by_slug = ({c["slug"]: c for c in json.load(open(raw_path, encoding="utf-8"))}
+               if raw_path.exists() else {})
+    empty_stack = {"languages": [], "frameworks": [], "testing": [], "iac": [], "tags": []}
     featured = []
     for f in profile.get("featured", []):
         resume_only = bool(f.get("resume_only"))
@@ -259,11 +263,20 @@ def _sync_featured(profile: dict, cards: list[dict]) -> list[dict]:
             "key": f["key"], "slug": f["key"],
             "role": f.get("role_override", "self-reported"),
             "self_reported": resume_only, "authorship": None,
-            "stack": {"languages": [], "frameworks": [], "testing": [], "iac": [], "tags": []},
+            "stack": dict(empty_stack),
             "signals": {}, "source": f.get("source", "resume"),
             "summary_public": "", "workflow_brief": "", "domain": "", "skills_evidenced": [],
         }
         tech = f.get("tech", [])
+        # Rebuild the stack from the scan so tech dropped from the yaml leaves the tags.
+        members = [by_slug[s] for s in f.get("repos", []) if s in by_slug]
+        if members:
+            card["stack"] = _aggregate(members)["stack"]
+        elif resume_only:
+            card["stack"] = {k: [] for k in empty_stack}
+        for t in tech:
+            if t not in card["stack"]["frameworks"] and t not in card["stack"]["tags"]:
+                card["stack"]["tags"].append(t)
         narrative = " ".join((f.get("narrative") or "").split())
         if narrative and narrative != card.get("summary_public"):
             card["summary_public"] = narrative
