@@ -73,7 +73,7 @@
         "Claude Agent SDK",
         "Anthropic SDK",
         "MCP (FastMCP authoring and consuming)",
-        "OpenAI (GPT -4o, Moderation API)",
+        "OpenAI (GPT-4o, Moderation API)",
         "xAI Grok",
         "Gemini",
         "Multi-model Pipelines",
@@ -153,8 +153,8 @@
           "Built the spec-writing role of an in-house multi-role AI agent platform (Claude Agent SDK on AWS ECS Fargate). It reads Jira acceptance criteria and merged backend diffs, writes Playwright regression tests and opens PRs, driven from Jira and Slack with per-run caps on time, turns and cost.",
           "Designed and am main author of a ~950-case Playwright API regression suite that gates a Node.js to .NET 10/PostgreSQL backend rewrite, covering 58% of client-called endpoints, with daily Slack reports ranking failures by impact.",
           "Top contributor to an internal platform that spins up short-lived full-stack test environments per branch (Terraform, ECS Fargate, GitHub Actions): service onboarding, per-environment Lambdas, test and route-coverage reporting. Authored a Python MCP server (FastMCP) that simulates users to seed these environments.",
-          "Built a 3-layer AI content moderation pipeline (AWS Rekognition, OpenAI Moderation, GPT -4o with structured output) that separates visual and language signals to avoid false positives on sports content, shipped as 5 Terraform-managed Lambdas.",
-          "Hardened the edge with AWS WAF v2 and ALB access logging, set up ECS autoscaling and wrote the load tests that verified it. Moved a crawler from ECS to Lambda + SQS + EventBridge with dead -letter queues and capped concurrency.",
+          "Built a 3-layer AI content moderation pipeline (AWS Rekognition, OpenAI Moderation, GPT-4o with structured output) that separates visual and language signals to avoid false positives on sports content, shipped as 5 Terraform-managed Lambdas.",
+          "Hardened the edge with AWS WAF v2 and ALB access logging, set up ECS autoscaling and wrote the load tests that verified it. Moved a crawler from ECS to Lambda + SQS + EventBridge with dead-letter queues and capped concurrency.",
           "Shipped product features across Vue 3 + Capacitor and a .NET 10/PostgreSQL API: org settings with inheritance, Twilio Verify SMS opt-in, FCM push notifications, iOS/Android deep links. Built Replicache real-time multi-user sync for the evaluations app as its largest contributor.",
           "Use Claude Code daily as an agentic development tool, with custom skills for headed Playwright UI walkthroughs, Jira/Confluence authoring and infrastructure access.",
           "Took client products from monolithic MVPs to microservices with Terraform IaC on AWS, including a live region migration during an AWS outage.",
@@ -215,7 +215,7 @@
       },
       {
         "name": "Portfolio AI Assistant",
-        "summary": "Multi-provider LLM chatbot that answers questions about my work, grounded in git history and CV data. Guardrails stop it from overclaiming or disclosing internal details. Runs a Gemini -first fallback chain across providers with a circuit breaker; three live bots deployed with Docker on a VPS.",
+        "summary": "Multi-provider LLM chatbot that answers questions about my work, grounded in git history and CV data. Guardrails stop it from overclaiming or disclosing internal details. Runs a Gemini-first fallback chain across providers with a circuit breaker; three live bots deployed with Docker on a VPS.",
         "tech": [
           "Gemini",
           "Multi-provider LLM Routing",
@@ -261,17 +261,94 @@
           "TypeScript"
         ],
         "link": "mojotip.com"
+      },
+      {
+        "name": "SafeCamp MedFlow",
+        "summary": "SafeCamp MedFlow: Serverless lab-workflow platform for healthcare partners (AWS Lambda, React, Redux Saga).",
+        "tech": [
+          "AWS Lambda",
+          "React",
+          "Redux Saga"
+        ],
+        "link": null
+      },
+      {
+        "name": "The Simple Vue",
+        "summary": "The Simple Vue: Took a product from a Replit/Supabase prototype through Heroku to AWS (CodeBuild, CodePipeline, CloudFront).",
+        "tech": [
+          "CodeBuild",
+          "CodePipeline",
+          "CloudFront"
+        ],
+        "link": null
+      },
+      {
+        "name": "Bond Studio AI",
+        "summary": "Bond Studio AI: Interior design and procurement platform, grown from B2E to B2C (Nest.js, React Native, Terraform).",
+        "tech": [
+          "Nest.js",
+          "React Native",
+          "Terraform"
+        ],
+        "link": null
+      },
+      {
+        "name": "BuzzMi",
+        "summary": "BuzzMi: Gamified secure messaging app with end-to-end encryption and cashback rewards (Nest.js, React Native).",
+        "tech": [
+          "Nest.js",
+          "React Native"
+        ],
+        "link": null
+      },
+      {
+        "name": "Trove",
+        "summary": "Trove: Cross-border employee eGift platform for the Asia-Pacific region (MERN, AWS EC2, GCP Cloud Functions).",
+        "tech": [
+          "MERN",
+          "AWS EC2",
+          "GCP Cloud Functions"
+        ],
+        "link": null
+      },
+      {
+        "name": "CastingPAX",
+        "summary": "CastingPAX: B2B2C casting automation platform (MERN, micro-frontends, AWS RDS).",
+        "tech": [
+          "MERN",
+          "micro-frontends",
+          "AWS RDS"
+        ],
+        "link": null
+      },
+      {
+        "name": "LLM Knowledge Extractor",
+        "summary": "LLM Knowledge Extractor: Structured JSON extraction from unstructured text with gpt-4o-mini.",
+        "tech": [
+          "gpt-4o-mini"
+        ],
+        "link": null
+      },
+      {
+        "name": "LeadForge",
+        "summary": "LeadForge: n8n + SerpAPI lead-scraping pipeline, built with Claude Code (personal).",
+        "tech": [
+          "n8n",
+          "SerpAPI",
+          "Claude Code"
+        ],
+        "link": null
       }
     ],
     "cv_education": [
-      "MSCS in Computer Science, Graduated With High Honors, FAST - NATIONAL UNIVERSITY OF COMPUTER AND EMERGING SCIENCES, Lahore (January 2023 – January 2025)",
-      "BSCS in Computer Science, PAK AIMS - THE INSTITUTE OF MANAGEMENT SCIENCES, Lahore (January 2019 – January 2023)"
+      "FAST - NATIONAL UNIVERSITY OF COMPUTER AND EMERGING SCIENCES Lahore\nMSCS in Computer Science, Graduated With High Honors January 2023 – January 2025",
+      "PAK AIMS - THE INSTITUTE OF MANAGEMENT SCIENCES Lahore\nBSCS in Computer Science January 2019 – January 2023"
     ],
     "cv_languages": [
       "English",
       "Urdu"
     ],
-    "cv_summary": "Senior Software & AI Engineer with 5+ years shipping production systems across sports tech, fintech, healthcare, and SaaS. Builds AI agents that do real engineering work: a Claude Agent SDK agent that writes regression tests from Jira tickets and merged co de under per -run cost and time limits, plus multi -model AI pipelines and MCP servers. Owns quality and platform work end to end, including a ~950 -case regression suite gating a backend rewrite, short-lived per-branch test environments on AWS, and Terraform -managed infrastructure. Works across TypeScript, Python, and C#/.NET with Vue, React, Node.js, FastAPI, and PostgreSQL."
+    "cv_summary": "Senior Software & AI Engineer with 5+ years shipping production systems across sports tech, fintech, healthcare, and SaaS. Builds AI agents that do real engineering work: a Claude Agent SDK agent that writes regression tests from Jira tickets and merged code under per-run cost and time limits, plus multi-model AI pipelines and MCP servers. Owns quality and platform work end to end, including a ~950-case regression suite gating a backend rewrite, short-lived per-branch test environments on AWS, and Terraform-managed infrastructure. Works across TypeScript, Python, and C#/.NET with Vue, React, Node.js, FastAPI, and PostgreSQL."
   },
   "projects": [
     {
