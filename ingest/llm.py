@@ -7,7 +7,8 @@ choice with PORTFOLIO_LLM_PROVIDER=anthropic|openai|groq|xai|gemini.
 
 Each provider takes several keys: <NAME>_API_KEY first, then <NAME>_API_KEY_2,
 _3, ... in number order. A key that's rejected, out of quota or not answering
-hands the request to the next one.
+hands the request to the next one. When every key of the chosen provider has
+failed, the other providers with a key set are tried, in preference order.
 
 The OpenAI SDK is reused for OpenAI, Groq, xAI, and Gemini via base_url
 override; Anthropic uses its own SDK. SDKs are imported lazily so a missing one never
@@ -19,7 +20,7 @@ import json
 import os
 import re
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 _PROJECT_DIR = Path(__file__).resolve().parent.parent
@@ -94,8 +95,11 @@ def _failure_scope(exc: Exception) -> str | None:
 class LLM:
     provider: str
     model: str
-    served_model: str | None = None   # model that answered the last call
-    served_key: int | None = None     # 1 = <NAME>_API_KEY, 2 = <NAME>_API_KEY_2, ...
+    # Tried in order, each on its default model, once every key of `provider` has failed.
+    fallback_providers: list[str] = field(default_factory=list)
+    served_provider: str | None = None   # provider that answered the last call
+    served_model: str | None = None      # model that answered the last call
+    served_key: int | None = None        # 1 = <NAME>_API_KEY, 2 = <NAME>_API_KEY_2, ...
 
     def complete(self, system: str, user: str, *,
                  max_tokens: int = 1200, temperature: float = 0.2,
@@ -106,34 +110,55 @@ class LLM:
         `temperature` applies to OpenAI-compatible providers only (current Claude
         models reject it). `effort` applies to Claude (low|medium|high|xhigh|max)
         and Gemini (minimal|low|medium|high, sent as reasoning_effort).
-        `timeout` is seconds per attempt; `budget` caps the total across all
-        keys and models.
+        `timeout` is seconds per attempt; `budget` caps the total across every
+        provider, key and model.
         """
-        env_key, _, base_url = _PROVIDERS[self.provider]
+        effort = os.environ.get("PORTFOLIO_LLM_EFFORT") or effort
+        deadline = time.monotonic() + budget if budget else None
+        first_error: Exception | None = None
+        plan = [(self.provider, self.model)] + [(p, _PROVIDERS[p][1]) for p in self.fallback_providers]
+        for provider, model in plan:
+            if first_error is not None and deadline is not None \
+                    and deadline - time.monotonic() < _MIN_ATTEMPT_SEC:
+                break
+            try:
+                text = self._complete_on(provider, model, system, user, max_tokens=max_tokens,
+                                         temperature=temperature, as_json=as_json, effort=effort,
+                                         timeout=timeout, deadline=deadline)
+            except Exception as e:
+                first_error = first_error or e
+                continue
+            self.served_provider = provider
+            return text
+        raise first_error
+
+    def _complete_on(self, provider: str, primary: str, system: str, user: str, *,
+                     max_tokens: int, temperature: float, as_json: bool, effort: str | None,
+                     timeout: float, deadline: float | None) -> str:
+        """Every key and model of one provider, in order, until one answers."""
+        env_key, _, base_url = _PROVIDERS[provider]
         keys = api_keys(env_key)
         if not keys:
             raise RuntimeError(f"{env_key} is not set.")
-        effort = os.environ.get("PORTFOLIO_LLM_EFFORT") or effort
-        deadline = time.monotonic() + budget if budget else None
         kwargs = {}
 
-        if self.provider == "anthropic":
+        if provider == "anthropic":
             import anthropic
             api_error, make_client = anthropic.APIError, (lambda k: anthropic.Anthropic(api_key=k))
             if as_json:
                 system = system + "\n\nRespond with ONLY valid JSON, no prose."
             if effort:
                 kwargs["output_config"] = {"effort": effort}
-            if self.model.startswith(_CLAUDE_FALLBACK_MODELS):
+            if primary.startswith(_CLAUDE_FALLBACK_MODELS):
                 kwargs["betas"] = ["server-side-fallback-2026-07-01"]
                 kwargs["fallbacks"] = "default"
-            chain = [self.model]   # model fallback happens server-side
+            chain = [primary]   # model fallback happens server-side
         else:
             # OpenAI-compatible (openai, groq, xai, gemini)
             import openai
             api_error = openai.APIError
-            chain = [self.model]
-            if self.provider == "gemini":
+            chain = [primary]
+            if provider == "gemini":
                 # Key and model fallback replace SDK retries, which would only burn
                 # the free-tier quota re-hitting a model that's overloaded or rate-limited.
                 make_client = lambda k: openai.OpenAI(api_key=k, base_url=base_url, max_retries=0)
@@ -144,7 +169,7 @@ class LLM:
                 if effort:
                     kwargs["reasoning_effort"] = effort
                 max_tokens += _THINKING_HEADROOM
-                chain += [m for m in _GEMINI_FALLBACK_MODELS if m != self.model]
+                chain += [m for m in _GEMINI_FALLBACK_MODELS if m != primary]
             else:
                 make_client = lambda k: openai.OpenAI(api_key=k, base_url=base_url)
                 if as_json:
@@ -170,7 +195,7 @@ class LLM:
                 clients[key] = make_client(key)
             client = clients[key]
             try:
-                if self.provider == "anthropic":
+                if provider == "anthropic":
                     msg = client.beta.messages.create(
                         model=model, max_tokens=max_tokens + _THINKING_HEADROOM,
                         system=system, messages=[{"role": "user", "content": user}],
@@ -200,7 +225,7 @@ class LLM:
             _down_until.pop((key, model), None)
             self.served_model, self.served_key = served, slot
             return text
-        raise last_error or RuntimeError(f"No {self.provider} key or model is available right now.")
+        raise last_error or RuntimeError(f"No {provider} key or model is available right now.")
 
     def complete_json(self, system: str, user: str, **kw) -> dict:
         raw = self.complete(system, user, as_json=True, **kw)
@@ -237,4 +262,5 @@ def get_llm(provider: str | None = None, model: str | None = None) -> LLM:
                 "GROQ_API_KEY / XAI_API_KEY / GEMINI_API_KEY (in the environment or a .env file).")
         chosen = avail[0]
     default_model = _PROVIDERS[chosen][1]
-    return LLM(provider=chosen, model=model or os.environ.get("PORTFOLIO_LLM_MODEL") or default_model)
+    return LLM(provider=chosen, model=model or os.environ.get("PORTFOLIO_LLM_MODEL") or default_model,
+               fallback_providers=[p for p in available_providers() if p != chosen])

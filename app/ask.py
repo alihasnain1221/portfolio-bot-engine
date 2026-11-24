@@ -287,6 +287,6 @@ def answer(question: str, *, history: list[dict] | None = None,
     return {
         "answer": _sanitize(text),
         "projects_used": [c.get("name", c["slug"]) for c in cards],
-        "model": f"{llm.provider}/{llm.served_model or llm.model}",
+        "model": f"{llm.served_provider or llm.provider}/{llm.served_model or llm.model}",
         "key": llm.served_key,
     }
