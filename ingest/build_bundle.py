@@ -232,14 +232,72 @@ def _emit_resume_bundle(profile_doc: dict) -> int:
     return 0
 
 
+def _skills_index(cards: list[dict]) -> dict:
+    """skill -> evidencing projects, strongest evidence first."""
+    skills: dict[str, list] = {}
+    for c in cards:
+        w = ROLE_WEIGHT.get(c["role"], 0.0)
+        for sk in c.get("skills_evidenced", []):
+            skills.setdefault(sk, []).append(
+                {"project": c.get("key", c["slug"]), "role": c["role"], "weight": round(w, 2)})
+    return dict(sorted(skills.items(), key=lambda kv: -sum(e["weight"] for e in kv[1])))
+
+
+def _sync_featured(profile: dict, cards: list[dict]) -> list[dict]:
+    """Re-apply profile.yaml's `featured` list to the existing cards, no LLM.
+
+    A featured card follows its yaml entry (narrative, tech, link, rank, tier).
+    An entry with no card yet gets a minimal one; a featured card whose entry
+    was removed from the yaml is dropped from the bundle.
+    """
+    by_key = {c.get("key"): c for c in cards if c.get("featured_rank")}
+    others = [c for c in cards if not c.get("featured_rank")]
+    featured = []
+    for f in profile.get("featured", []):
+        resume_only = bool(f.get("resume_only"))
+        card = by_key.get(f["key"]) or {
+            "key": f["key"], "slug": f["key"],
+            "role": f.get("role_override", "self-reported"),
+            "self_reported": resume_only, "authorship": None,
+            "stack": {"languages": [], "frameworks": [], "testing": [], "iac": [], "tags": []},
+            "signals": {}, "source": f.get("source", "resume"),
+            "summary_public": "", "workflow_brief": "", "domain": "", "skills_evidenced": [],
+        }
+        tech = f.get("tech", [])
+        narrative = " ".join((f.get("narrative") or "").split())
+        if narrative and narrative != card.get("summary_public"):
+            card["summary_public"] = narrative
+            # The generated brief and skills described the old narrative.
+            card["workflow_brief"] = f.get("workflow_brief", "")
+            card["skills_evidenced"] = sorted(set(tech) | set(card["stack"]["frameworks"]))
+        else:
+            card["skills_evidenced"] = sorted(set(card.get("skills_evidenced", [])) | set(tech))
+        card.update({
+            "name": f["name"], "featured_rank": f["rank"], "link": f.get("link"),
+            "disclosure_tier": f.get("disclosure_tier", config.DEFAULT_DISCLOSURE_TIER),
+            "ai_showcase": bool(f.get("ai_showcase")),
+        })
+        if f.get("role_override"):
+            card["role"] = f["role_override"]
+        if f.get("domain"):
+            card["domain"] = f["domain"]
+        featured.append(card)
+    return featured + others
+
+
 def refresh_meta() -> int:
     """Fast path: re-emit profile.json from existing cards + current profile.yaml
-    profile meta (cta, emerging_skills, headline, ...). No LLM calls."""
+    (profile meta and the featured list). No LLM calls."""
     profile = yaml.safe_load(config.PROFILE_YAML.read_text(encoding="utf-8"))
     if profile["profile"].get("resume_grounded"):
         return _emit_resume_bundle(profile)
     full = json.load(open(config.OUT_DIR / "projects.json", encoding="utf-8"))
-    skills = json.load(open(config.OUT_DIR / "skills.json", encoding="utf-8"))
+    full = _sync_featured(profile, full)
+    skills = _skills_index(full)
+    (config.OUT_DIR / "projects.json").write_text(
+        json.dumps(full, indent=2, ensure_ascii=False), encoding="utf-8")
+    (config.OUT_DIR / "skills.json").write_text(
+        json.dumps(skills, indent=2, ensure_ascii=False), encoding="utf-8")
     bundle = {
         "profile": {k: v for k, v in profile["profile"].items()},
         "projects": [_public_view(c) for c in full],
@@ -338,14 +396,7 @@ def main() -> int:
     all_cards = featured_cards + other_cards
 
     # ---- skills.json ----
-    skills: dict[str, list] = {}
-    for c in all_cards:
-        w = ROLE_WEIGHT.get(c["role"], 0.0)
-        for sk in c.get("skills_evidenced", []):
-            skills.setdefault(sk, []).append(
-                {"project": c.get("key", c["slug"]), "role": c["role"], "weight": round(w, 2)})
-    skills_sorted = dict(sorted(skills.items(),
-                                key=lambda kv: -sum(e["weight"] for e in kv[1])))
+    skills_sorted = _skills_index(all_cards)
 
     # ---- write outputs ----
     config.OUT_DIR.mkdir(parents=True, exist_ok=True)
