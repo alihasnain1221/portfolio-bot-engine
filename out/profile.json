@@ -16,8 +16,7 @@
       "availability": "I've got time flexibility on my end, but it'd be great to talk it through on a call."
     },
     "emerging_skills": [
-      "self-hosted / fine-tuned LLMs (PEFT on small GPU boxes)",
-      "deeper agentic systems & MCP tooling"
+      "self-hosted / fine-tuned LLMs (PEFT on small GPU boxes)"
     ],
     "voice": {
       "tone": "Casual, direct, technically confident. Says the point fast, names real systems and real numbers, and sounds like one engineer talking to another. Warm with recruiters, never corporate. Short sentences, fragments are fine.\n",
@@ -42,12 +41,12 @@
         "Alright! Sounds like a fit. Grab me on LinkedIn, email, or just give me a call and we'll set something up."
       ]
     },
-    "summary": "Senior Software & AI Engineer with 5+ years, at heart a microservices and distributed-systems engineer: I design event-driven, service-based architectures (monolith to microservices, BFF/gateway) and run them on AWS with Terraform IaC. MERN is my primary stack within that (MongoDB, Express, React, Node.js, TypeScript), plus Nest.js. Owned architecture-to-delivery across fintech, healthcare, and SaaS, leading cross-functional teams, CI/CD pipelines, and production-grade systems handling high-volume transactions. Also designed and shipped production multi-model AI pipelines (AWS Rekognition, OpenAI Moderation API, GPT-4o) with deliberate signal separation and structured LLM output.\n",
+    "summary": "Senior Software & AI Engineer with 5+ years shipping production systems across sports tech, fintech, healthcare, and SaaS. I build AI agents that do real engineering work: a Claude Agent SDK agent that writes regression tests from Jira tickets and merged code under per-run cost and time limits, plus multi-model AI pipelines and MCP servers. I own quality and platform work end to end, including a ~950-case regression suite gating a backend rewrite, short-lived per-branch test environments on AWS, and Terraform-managed infrastructure. At heart a microservices and distributed-systems engineer (monolith to microservices, event-driven design), working across TypeScript, Python, and C#/.NET with Vue, React, Node.js, FastAPI, and PostgreSQL.\n",
     "tech_lead_areas": [
       "Architecture ownership: monolith -> microservices, BFF/gateway, event-driven design",
       "Infrastructure as Code (Terraform/HashiCorp), multi-region disaster recovery, zero-downtime deploys",
-      "CI/CD pipeline design with automated unit + E2E testing",
-      "Multi-model AI pipeline design, agentic AI, structured LLM output",
+      "Quality ownership: Playwright API regression suites, per-branch test environments, CI/CD",
+      "AI agents (Claude Agent SDK), MCP servers, multi-model AI pipelines, structured LLM output",
       "Team leadership & mentoring (led a team of 6), rigorous code reviews, engineering best practices",
       "Observability & monitoring (Grafana, OpenTelemetry)",
       "Database architecture & migrations (MySQL/PostgreSQL/MongoDB) for high-volume transactions",
@@ -56,7 +55,7 @@
     "experience": [
       {
         "company": "Nextek Solutions",
-        "title": "Technical Lead / Senior Software Engineer",
+        "title": "Technical Lead / Senior Software & AI Engineer (contracted to SPiN since Apr 2024)",
         "period": "Sep 2022 - Present"
       },
       {
@@ -70,74 +69,96 @@
       "BSCS, PAK AIMS - Institute of Management Sciences (2019-2023)"
     ],
     "cv_skills": {
-      "AI & Automation": [
-        "Agentic AI",
-        "LLMs",
-        "GPT-4o",
-        "OpenAI Moderation API",
+      "AI & Agents": [
+        "Claude Agent SDK",
+        "Anthropic SDK",
+        "MCP (FastMCP authoring and consuming)",
+        "OpenAI (GPT -4o, Moderation API)",
+        "xAI Grok",
+        "Gemini",
         "Multi-model Pipelines",
         "Structured LLM Output",
-        "Claude",
-        "MCPs",
-        "n8n",
-        "Make.io",
-        "AWS Transcribe",
-        "Replit",
-        "Design Patterns"
+        "Multi-provider Fallback",
+        "Claude Code",
+        "n8n"
       ],
-      "Core": [
-        "React",
+      "Languages": [
         "TypeScript",
-        "JavaScript (ES6+)",
+        "JavaScript",
+        "Python",
+        "C# (.NET 10)",
+        "Go",
+        "SQL"
+      ],
+      "Frontend & Mobile": [
+        "React",
+        "Vue 3 (Pinia, PrimeVue)",
+        "Capacitor (iOS/Android)",
+        "React Native",
+        "Redux/Redux Saga",
+        "Replicache",
+        "Vite",
+        "Tailwind"
+      ],
+      "Backend & Data": [
         "Node.js",
         "Express.js",
         "Nest.js",
-        "Go",
-        "Python"
-      ],
-      "Backend & Database": [
-        "MySQL",
+        "FastAPI",
+        "ASP.NET Core",
         "PostgreSQL",
         "MongoDB",
-        "RESTful APIs",
+        "MySQL",
+        "Redis",
+        "DynamoDB Streams",
         "gRPC",
-        "Asynchronous Processing",
         "Event-Driven Architecture",
-        "Redux/Redux Saga"
+        "Twilio",
+        "Firebase (Auth, FCM)"
       ],
       "Cloud & Infrastructure": [
-        "AWS (Lambda, API Gateway, RDS, CDN, CodePipeline, CodeBuild)",
-        "Terraform",
-        "HashiCorp",
+        "AWS (ECS Fargate, Lambda, SQS/DLQ, SNS, EventBridge, S3, CloudFront, ALB, WAF v2, RDS/Aurora, Rekognition, Transcribe)",
+        "Terraform/Terraform Cloud",
+        "GitHub Actions",
+        "Docker",
         "GCP",
         "CI/CD",
-        "IaC",
-        "Zero Downtime Deployments",
-        "MLOps"
+        "Autoscaling",
+        "Load Testing"
       ],
-      "Observability & Monitoring": [
-        "Grafana",
-        "OpenTelemetry (OTel)"
+      "Testing & Observability": [
+        "Playwright",
+        "xUnit + Testcontainers",
+        "Jest",
+        "Vitest",
+        "Firebase Emulators",
+        "OpenTelemetry",
+        "Sentry",
+        "Datadog RUM",
+        "Grafana"
       ],
       "Methodologies": [
         "Agile",
-        "Code Reviews",
-        "Observability",
         "Technical Leadership",
+        "Code Reviews",
         "DevOps"
       ]
     },
     "cv_experience": [
       {
         "company": "NEXTEK SOLUTIONS",
-        "title": "Technical Lead / Senior Software Engineer",
+        "title": "Technical Lead / Senior Software & AI Engineer",
         "period": "September 2022 – Present",
         "highlights": [
-          "Architected and deployed resilient MERN backend systems supporting high-volume financial infrastructure, maintaining 99.9% uptime across transaction-heavy platforms.",
-          "Designed and implemented CI/CD pipelines with automated testing, reducing deployment latency by 40% while enforcing WCAG accessibility standards.",
-          "Scaled RESTful APIs and database schemas across MySQL and PostgreSQL to handle massive seasonal traffic spikes and reliable money movement for nonprofit fundraising.",
-          "Mentored junior developers and conducted rigorous code reviews to uphold engineering best practices and maintain high code quality standards.",
-          "Collaborated with cross-functional teams to integrate analytics and observability tooling, identify and resolve endpoint weak spots, and ensure smooth end-to-end delivery."
+          "Built the spec-writing role of an in-house multi-role AI agent platform (Claude Agent SDK on AWS ECS Fargate). It reads Jira acceptance criteria and merged backend diffs, writes Playwright regression tests and opens PRs, driven from Jira and Slack with per-run caps on time, turns and cost.",
+          "Designed and am main author of a ~950-case Playwright API regression suite that gates a Node.js to .NET 10/PostgreSQL backend rewrite, covering 58% of client-called endpoints, with daily Slack reports ranking failures by impact.",
+          "Top contributor to an internal platform that spins up short-lived full-stack test environments per branch (Terraform, ECS Fargate, GitHub Actions): service onboarding, per-environment Lambdas, test and route-coverage reporting. Authored a Python MCP server (FastMCP) that simulates users to seed these environments.",
+          "Built a 3-layer AI content moderation pipeline (AWS Rekognition, OpenAI Moderation, GPT -4o with structured output) that separates visual and language signals to avoid false positives on sports content, shipped as 5 Terraform-managed Lambdas.",
+          "Hardened the edge with AWS WAF v2 and ALB access logging, set up ECS autoscaling and wrote the load tests that verified it. Moved a crawler from ECS to Lambda + SQS + EventBridge with dead -letter queues and capped concurrency.",
+          "Shipped product features across Vue 3 + Capacitor and a .NET 10/PostgreSQL API: org settings with inheritance, Twilio Verify SMS opt-in, FCM push notifications, iOS/Android deep links. Built Replicache real-time multi-user sync for the evaluations app as its largest contributor.",
+          "Use Claude Code daily as an agentic development tool, with custom skills for headed Playwright UI walkthroughs, Jira/Confluence authoring and infrastructure access.",
+          "Took client products from monolithic MVPs to microservices with Terraform IaC on AWS, including a live region migration during an AWS outage.",
+          "Mentored developers and ran code reviews across client teams to keep delivery quality consistent."
         ]
       },
       {
@@ -147,57 +168,11 @@
         "highlights": [
           "Led a team of 6 developers to build high-performance platforms using React, TypeScript, and MERN stack, increasing user engagement by 30% in the first quarter.",
           "Implemented Turborepo for monorepo management, consolidating fragmented data tools into a unified CRM and management platform.",
-          "Actively participated in agile rituals including sprint planning, daily stand-ups, and retrospectives, driving consistent on-time delivery under stringent timelines.",
-          "Migrated legacy database systems to MySQL/PostgreSQL architectures, ensuring data integrity for billions of dollars in donor transactions.",
-          "Advocated for adoption of emerging technologies and frameworks, keeping the team at the forefront of the evolving tech landscape."
+          "Migrated legacy database systems to MySQL/PostgreSQL architectures, ensuring data integrity for billions of dollars in donor transactions."
         ]
       }
     ],
     "cv_projects": [
-      {
-        "name": "SPiN - Sports Network Mobile App",
-        "summary": "Built and shipped a production 3-layer AI content moderation pipeline: AWS Rekognition hard gate → OpenAI Moderation API (language-only) → GPT-4o contextual judgment with a sports-domain system prompt and structured JSON output. Deliberately separated visual signals (pixel-level Rekognition labels) from language signals (AWS Transcribe + detected text) to eliminate false positives on sports content. Pipeline runs fully async for video via SNS/DynamoDB Streams and sync for images, feeding results via webhook to MongoDB. Re-architected the platform from monolithic MVP to microservices with full IaC on AWS.",
-        "tech": [
-          "MERN",
-          "Go",
-          "Python",
-          "Terraform",
-          "AWS Rekognition",
-          "AWS Transcribe",
-          "AWS Comprehend",
-          "AWS Personalize",
-          "OpenAI Moderation API",
-          "GPT-4o",
-          "DynamoDB Streams",
-          "SNS"
-        ],
-        "link": "https://spinsports.ai"
-      },
-      {
-        "name": "MojoTip",
-        "summary": "Originally launched as InstaTip, rebranded to MojoTip following copyright resolution. Built from scratch as a monolithic MVP and scaled horizontally to handle growing load. Fintech cashless tipping platform with robust backend infrastructure and automated CI/CD pipelines.",
-        "tech": [
-          "MongoDB",
-          "Express.js",
-          "Node.js",
-          "TypeScript"
-        ],
-        "link": "https://mojotip.com"
-      },
-      {
-        "name": "Success.ai",
-        "summary": "Built a multi-channel cold outreach automation platform. An Apify-powered scraper extracts LinkedIn leads based on user-defined criteria and stages them for outreach. Users compose campaigns via a template builder with variable substitution and AI-assisted copy generation (OpenAI GPT with explicit positive/negative prompt framing for tone control). EmailEngine drives automated follow-up sequences based on response status. The core engineering challenge was a unified multi-account inbox that aggregates all client email accounts into a single interface, supporting both manual compose/send from any account and automated EmailEngine sequences. Bulk sending routes leads in chunks across multiple sender addresses to avoid spam filters and rate limits.",
-        "tech": [
-          "MERN",
-          "Terraform",
-          "HashiCorp",
-          "OpenAI GPT",
-          "EmailEngine",
-          "Apify",
-          "Node.js"
-        ],
-        "link": "https://success.ai"
-      },
       {
         "name": "UmeedVentures",
         "summary": "Redesigned a coupled three-module monolith into 12 independent microservices, enabling parallel team deployments with zero cross-team blocking. Built full IaC via Terraform (ECS, CDN, RDS, API Gateway), making infrastructure reproducible and region-portable. Led disaster recovery during a Bahrain AWS region outage, migrating production to a new region in hours using existing Terraform config. Maintained infrastructure cost parity while doubling system reliability across 3 independent teams.",
@@ -208,19 +183,7 @@
           "Terraform",
           "AWS (ECS, CDN, RDS, API Gateway)"
         ],
-        "link": "https://umeedcs.com/"
-      },
-      {
-        "name": "Lantern Finance",
-        "summary": "Built a fractional ETH staking platform solving the 32 ETH minimum barrier by pooling user investments percentage-based until the threshold is reached, staking via BitGo, and distributing rewards proportional to each user's pool contribution. Integrated MetaMask as the client-side wallet connector for transaction signing with no server-side key management. The core challenge was ledger consistency: keeping in-app transaction records in sync with on-chain state across both MetaMask and BitGo, handled via webhooks from both to track refund progress, reflect live wallet balances, and maintain a full audit trail. Built an internal reconciliation system to catch and surface any discrepancies between on-chain events and internal records.",
-        "tech": [
-          "MERN",
-          "TypeScript",
-          "MetaMask",
-          "BitGo",
-          "ethers.js"
-        ],
-        "link": "https://lantern.finance/"
+        "link": "umeedcs.com"
       },
       {
         "name": "North Metro100 BNM100",
@@ -234,102 +197,81 @@
           "Terraform",
           "HashiCorp"
         ],
-        "link": "https://northmetro100.org/"
+        "link": "northmetro100.org"
       },
       {
-        "name": "The Simple Vue",
-        "summary": "Started on Replit with Supabase and Firebase Cloud Functions, migrated to Heroku, then to AWS via CodeBuild and CodePipeline, showcasing full infrastructure evolution from prototype to cloud-native deployment.",
-        "tech": [
-          "Replit",
-          "Supabase",
-          "Firebase Cloud Functions",
-          "Heroku",
-          "AWS CDN",
-          "CodeBuild",
-          "CodePipeline"
-        ],
-        "link": "https://www.thesimplevue.com/"
-      },
-      {
-        "name": "SafeCamp - MedFlow",
-        "summary": "Healthcare platform tailored for laboratory partners. Reduced overhead costs and errors through end-to-end efficiency software, leveraging serverless architecture and a generic componential approach.",
-        "tech": [
-          "Serverless AWS Lambda",
-          "Node.js",
-          "React.js",
-          "Redux Saga",
-          "Redux Toolkit"
-        ],
-        "link": "https://www.gomedflow.com/"
-      },
-      {
-        "name": "Bond Studio AI",
-        "summary": "Interior design and procurement platform. Started as B2E and evolved into a large-scale B2C platform built with a cross-functional team.",
-        "tech": [
-          "Nest.js",
-          "Terraform",
-          "Unity",
-          "React Native",
-          "Regressions"
-        ],
-        "link": null
-      },
-      {
-        "name": "BuzzMi",
-        "summary": "Gamification-based secure messaging and social app with cashback rewards, end-to-end encryption, private messaging, and community mentorship features.",
-        "tech": [
-          "Nest.js",
-          "Node.js",
-          "Terraform",
-          "React Native",
-          "E2E Regressions"
-        ],
-        "link": null
-      },
-      {
-        "name": "Trove",
-        "summary": "eGift card distribution platform for employee gifting. Centralizes gifting across borders for the Asia-Pacific region, tracking spending and redemptions via a dashboard.",
-        "tech": [
-          "AWS EC2",
-          "MERN",
-          "GCP Cloud Functions"
-        ],
-        "link": "https://trove.com/"
-      },
-      {
-        "name": "CastingPAX",
-        "summary": "B2B2C casting platform simplifying the casting process through automation, reducing wasted time and empowering casting directors.",
+        "name": "Success.ai",
+        "summary": "Built a multi-channel cold outreach automation platform. An Apify-powered scraper extracts LinkedIn leads based on user-defined criteria and stages them for outreach. Users compose campaigns via a template builder with variable substitution and AI-assisted copy generation (OpenAI GPT with explicit positive/negative prompt framing for tone control). EmailEngine drives automated follow-up sequences based on response status. The core engineering challenge was a unified multi-account inbox that aggregates all client email accounts into a single interface, supporting both manual compose/send from any account and automated EmailEngine sequences. Bulk sending routes leads in chunks across multiple sender addresses to avoid spam filters and rate limits.",
         "tech": [
           "MERN",
-          "Micro-frontends",
-          "AWS RDS",
-          "Unit Tests",
-          "Test Stories"
+          "Terraform",
+          "HashiCorp",
+          "OpenAI GPT",
+          "EmailEngine",
+          "Apify",
+          "Node.js"
         ],
-        "link": "https://www.castingpax.com/"
+        "link": "success.ai"
+      },
+      {
+        "name": "Portfolio AI Assistant",
+        "summary": "Multi-provider LLM chatbot that answers questions about my work, grounded in git history and CV data. Guardrails stop it from overclaiming or disclosing internal details. Runs a Gemini -first fallback chain across providers with a circuit breaker; three live bots deployed with Docker on a VPS.",
+        "tech": [
+          "Gemini",
+          "Multi-provider LLM Routing",
+          "Circuit Breaker",
+          "Docker",
+          "VPS"
+        ],
+        "link": "ali.nexteksol.com"
       },
       {
         "name": "SafeScan",
-        "summary": "B2B SaaS compliance and job site safety platform. Combines real-time check-ins, digital inspections, and accountability tracking to streamline communication and reduce reporting delays.",
+        "summary": "B2B SaaS compliance and job-site safety platform with real-time check-ins, digital inspections and accountability tracking. Integrated xAI Grok (via the OpenAI SDK) for a streaming in-app AI assistant and AI-generated monthly compliance report PDFs.",
         "tech": [
           "MERN",
           "gRPC",
+          "xAI Grok",
           "AWS Lambda",
           "AWS API Gateway",
           "AWS CodeBuild",
           "AWS CodePipeline"
         ],
-        "link": "https://www.safesiteusa.com/"
+        "link": "www.safesiteusa.com"
+      },
+      {
+        "name": "Lantern Finance",
+        "summary": "Built a fractional ETH staking platform solving the 32 ETH minimum barrier by pooling user investments percentage-based until the threshold is reached, staking via BitGo, and distributing rewards proportional to each user's pool contribution. Integrated MetaMask as the client-side wallet connector for transaction signing with no server-side key management. The core challenge was ledger consistency: keeping in-app transaction records in sync with on-chain state across both MetaMask and BitGo, handled via webhooks from both to track refund progress, reflect live wallet balances, and maintain a full audit trail. Built an internal reconciliation system to catch and surface any discrepancies between on-chain events and internal records.",
+        "tech": [
+          "MERN",
+          "TypeScript",
+          "MetaMask",
+          "BitGo",
+          "ethers.js"
+        ],
+        "link": "lantern.finance"
+      },
+      {
+        "name": "MojoTip",
+        "summary": "Originally launched as InstaTip, rebranded to MojoTip following copyright resolution. Built from scratch as a monolithic MVP and scaled horizontally to handle growing load. Fintech cashless tipping platform with robust backend infrastructure and automated CI/CD pipelines.",
+        "tech": [
+          "MongoDB",
+          "Express.js",
+          "Node.js",
+          "TypeScript"
+        ],
+        "link": "mojotip.com"
       }
     ],
     "cv_education": [
-      "FAST - NATIONAL UNIVERSITY OF COMPUTER AND EMERGING SCIENCES Lahore MSCS in Computer Science, Graduated With High Honors January 2023 – January 2025",
-      "PAK AIMS - THE INSTITUTE OF MANAGEMENT SCIENCES Lahore BSCS in Computer Science January 2019 – January 2023"
+      "MSCS in Computer Science, Graduated With High Honors, FAST - NATIONAL UNIVERSITY OF COMPUTER AND EMERGING SCIENCES, Lahore (January 2023 – January 2025)",
+      "BSCS in Computer Science, PAK AIMS - THE INSTITUTE OF MANAGEMENT SCIENCES, Lahore (January 2019 – January 2023)"
     ],
     "cv_languages": [
       "English",
       "Urdu"
-    ]
+    ],
+    "cv_summary": "Senior Software & AI Engineer with 5+ years shipping production systems across sports tech, fintech, healthcare, and SaaS. Builds AI agents that do real engineering work: a Claude Agent SDK agent that writes regression tests from Jira tickets and merged co de under per -run cost and time limits, plus multi -model AI pipelines and MCP servers. Owns quality and platform work end to end, including a ~950 -case regression suite gating a backend rewrite, short-lived per-branch test environments on AWS, and Terraform -managed infrastructure. Works across TypeScript, Python, and C#/.NET with Vue, React, Node.js, FastAPI, and PostgreSQL."
   },
   "projects": [
     {
@@ -386,21 +328,28 @@
           "GitHub Actions",
           "IaC",
           "Unit Testing",
-          "MERN",
-          "Go",
+          "Claude Agent SDK",
+          "MCP",
+          "Playwright",
+          "TypeScript",
           "Python",
+          "C# / .NET 10",
+          "PostgreSQL",
+          "Vue 3",
+          "Capacitor",
+          "Node.js",
           "Terraform",
+          "AWS ECS Fargate",
+          "AWS Lambda",
+          "SQS",
+          "EventBridge",
+          "AWS WAF",
           "AWS Rekognition",
           "AWS Transcribe",
-          "AWS Comprehend",
-          "AWS Personalize",
           "OpenAI Moderation API",
           "GPT-4o",
-          "DynamoDB Streams",
-          "SNS",
-          "AWS Lambda",
-          "MCP",
-          "MCP Tools"
+          "Twilio",
+          "Replicache"
         ]
       },
       "signals": {
@@ -417,42 +366,46 @@
       "link": "https://spinsports.ai",
       "ai_showcase": true,
       "source": "resume",
-      "summary_public": "Built and shipped a production 3-layer AI content moderation pipeline: AWS Rekognition hard gate -> OpenAI Moderation API (language-only) -> GPT-4o contextual judgment with a sports-domain system prompt and structured JSON output. Deliberately separated visual signals (pixel-level Rekognition labels) from language signals (AWS Transcribe + detected text) to eliminate false positives on sports content. Pipeline runs fully async for video via SNS/DynamoDB Streams and sync for images, feeding results via webhook to MongoDB. Re-architected the platform from monolithic MVP to microservices with full IaC on AWS. Also built MCP (Model Context Protocol) tools for the platform and implemented the AWS Lambda functions provisioned as code via Terraform.",
-      "workflow_brief": "The AI content moderation pipeline operates in three layers: AWS Rekognition for visual analysis, OpenAI Moderation API for language filtering, and GPT-4o for contextual judgment. It processes video asynchronously using SNS/DynamoDB Streams and images synchronously, with results sent to MongoDB via webhook.",
+      "summary_public": "SPiN (spinsports.ai) is a sports network for teams, leagues and families. I've been contracted there through Nextek since April 2024. I built the spec-writing role of an in-house multi-role AI agent platform (Claude Agent SDK on AWS ECS Fargate): it reads Jira acceptance criteria and merged backend diffs, writes Playwright regression tests and opens PRs, driven from Jira and Slack with per-run caps on time, turns and cost. I designed and am the main author of a ~950-case Playwright API regression suite that gates a Node.js to .NET 10 / PostgreSQL backend rewrite, covering 58% of client-called endpoints, with daily Slack reports ranking failures by impact. I'm the top contributor to an internal platform that spins up short-lived full-stack test environments per branch (Terraform, ECS Fargate, GitHub Actions), and wrote a Python MCP server (FastMCP) that simulates users to seed them. I built a 3-layer AI content moderation pipeline (AWS Rekognition, then OpenAI Moderation, then GPT-4o with structured output) that separates visual and language signals to avoid false positives on sports content, shipped as 5 Terraform-managed Lambdas. I hardened the edge with AWS WAF v2 and ALB access logging, set up ECS autoscaling with the load tests that verified it, and moved a crawler from ECS to Lambda + SQS + EventBridge. Product work spans Vue 3 + Capacitor and a .NET 10 / PostgreSQL API: org settings with inheritance, Twilio Verify SMS opt-in, FCM push notifications, iOS and Android deep links, and Replicache real-time sync for the evaluations app. The agent platform's core and its other roles, and the test environment platform's core, were built by teammates.",
+      "workflow_brief": "",
       "domain": "sports",
       "skills_evidenced": [
-        "AI pipeline design",
         "AWS",
-        "AWS Comprehend",
+        "AWS ECS Fargate",
         "AWS Lambda",
-        "AWS Personalize",
         "AWS Rekognition",
         "AWS Transcribe",
+        "AWS WAF",
         "BullMQ",
-        "DynamoDB Streams",
+        "C# / .NET 10",
+        "Capacitor",
+        "Claude Agent SDK",
+        "EventBridge",
         "Express",
         "FastAPI",
         "Firebase",
         "GPT-4o",
-        "Go",
-        "Infrastructure as Code",
+        "GitHub Actions",
         "MCP",
-        "MCP Tools",
-        "MCP tool development",
-        "MERN",
-        "Microservices architecture",
         "MongoDB",
+        "Node.js",
         "OpenAI",
         "OpenAI Moderation API",
+        "Playwright",
+        "PostgreSQL",
         "Pydantic",
         "Python",
         "React",
         "Redis",
-        "SNS",
+        "Replicache",
+        "SQS",
         "Tailwind",
         "Terraform",
+        "Twilio",
+        "TypeScript",
         "Vite",
         "Vue",
+        "Vue 3",
         "WebSockets",
         "numpy",
         "pandas"
@@ -1195,7 +1148,7 @@
       "key": "safescan",
       "slug": "Safe-Scan/safescan_admin",
       "name": "SafeScan",
-      "role": "contributor",
+      "role": "lead",
       "self_reported": false,
       "authorship": {
         "your_commits": 1883,
@@ -1234,6 +1187,7 @@
           "Unit Testing",
           "MERN",
           "gRPC",
+          "xAI Grok",
           "AWS Lambda",
           "AWS API Gateway",
           "AWS CodeBuild",
@@ -1252,10 +1206,10 @@
       "featured_rank": 12,
       "disclosure_tier": "summary",
       "link": "https://www.safesiteusa.com/",
-      "ai_showcase": false,
+      "ai_showcase": true,
       "source": "resume",
-      "summary_public": "B2B SaaS compliance and job site safety platform. Combines real-time check-ins, digital inspections, and accountability tracking to streamline communication and reduce reporting delays.",
-      "workflow_brief": "The platform operates by enabling real-time check-ins and digital inspections, which are tracked and reported to streamline communication and accountability on job sites.",
+      "summary_public": "B2B SaaS compliance and job-site safety platform with real-time check-ins, digital inspections and accountability tracking. I led the admin backend and integrated xAI Grok (via the OpenAI SDK) for a streaming in-app AI assistant and AI-generated monthly compliance report PDFs.",
+      "workflow_brief": "",
       "domain": "compliance",
       "skills_evidenced": [
         "AWS",
@@ -1264,10 +1218,7 @@
         "AWS CodePipeline",
         "AWS Lambda",
         "BullMQ",
-        "CI/CD",
-        "E2E Testing",
         "Express",
-        "JavaScript",
         "MERN",
         "MongoDB",
         "OpenAI",
@@ -1275,78 +1226,58 @@
         "Redis",
         "Redux",
         "Redux Toolkit",
-        "Serverless AWS",
-        "TypeScript",
-        "Unit Testing",
         "Vite",
-        "gRPC"
+        "gRPC",
+        "xAI Grok"
       ]
     },
     {
-      "key": "pobot",
-      "slug": "Test-apps/PoBot_Expansion–AI_Assistant_for_Migrant_Support",
-      "name": "PoBot - AI Assistant for Migrant Support",
+      "key": "portfolio_ai",
+      "slug": "portfolio_ai",
       "role": "solo",
-      "self_reported": false,
-      "authorship": {
-        "your_commits": 7,
-        "total": 7,
-        "share": 1.0,
-        "first": "2026-07-09",
-        "last": "2026-07-10",
-        "loc_you": 1271576
-      },
+      "self_reported": true,
+      "authorship": null,
       "stack": {
-        "languages": [
-          "Python"
-        ],
-        "frameworks": [
-          "FAISS",
-          "OpenAI",
-          "PyTorch",
-          "Sentence-Transformers",
-          "Transformers",
-          "numpy"
-        ],
+        "languages": [],
+        "frameworks": [],
         "testing": [],
         "iac": [],
         "tags": [
-          "Unit Testing"
+          "Python",
+          "FastAPI",
+          "Gemini",
+          "Claude",
+          "OpenAI",
+          "Multi-provider LLM routing",
+          "Circuit breaker",
+          "Docker"
         ]
       },
-      "signals": {
-        "unit_tests": true,
-        "e2e_tests": false,
-        "iac": false,
-        "ci": false,
-        "readme": true,
-        "docker": false,
-        "serverless": false
-      },
-      "featured_rank": 13,
-      "disclosure_tier": "open",
-      "link": null,
-      "ai_showcase": true,
-      "source": "repo",
-      "summary_public": "A retrieval-augmented (RAG) AI assistant that answers migrant-support questions grounded in a curated knowledge base rather than free-form LLM output. Demonstrates retrieval pipeline design, prompt engineering, and end-to-end LLM application architecture.",
-      "workflow_brief": "PoBot uses a retrieval-augmented generation approach where user queries are matched against a curated knowledge base using FAISS and Sentence-Transformers. Relevant information is retrieved and used to generate accurate responses through an LLM, ensuring answers are grounded in reliable data.",
-      "domain": "AI / social support",
+      "signals": {},
+      "source": "resume",
+      "summary_public": "The chatbot you're talking to. A multi-provider LLM chatbot that answers questions about my work, grounded in git history and CV data. Guardrails stop it from overclaiming or disclosing internal details. It runs a Gemini-first fallback chain across providers with a circuit breaker, and one engine serves three live bots deployed with Docker on a VPS. Built solo.",
+      "workflow_brief": "",
+      "domain": "AI / LLM applications",
       "skills_evidenced": [
-        "FAISS",
-        "LLM application architecture",
+        "Circuit breaker",
+        "Claude",
+        "Docker",
+        "FastAPI",
+        "Gemini",
+        "Multi-provider LLM routing",
         "OpenAI",
-        "PyTorch",
-        "Python",
-        "RAG design",
-        "Sentence-Transformers",
-        "Transformers",
-        "numpy"
-      ]
+        "Python"
+      ],
+      "name": "Portfolio AI Assistant",
+      "featured_rank": 13,
+      "link": "https://ali.nexteksol.com",
+      "disclosure_tier": "open",
+      "ai_showcase": true
     },
     {
       "key": "leadforge",
       "slug": "Personal/leadforge-system",
-      "name": "LeadForge - AI Lead-Generation System",
+      "name": "LeadForge - Lead-Scraping Pipeline",
       "role": "solo",
       "self_reported": false,
       "authorship": {
@@ -1378,16 +1309,12 @@
       "featured_rank": 14,
       "disclosure_tier": "open",
       "link": null,
-      "ai_showcase": true,
+      "ai_showcase": false,
       "source": "repo",
-      "summary_public": "A solo-built, closed-loop lead-generation system for pitching web-design services to local businesses: scrape leads (SerpAPI) -> score -> generate personalized AI pitch emails -> send automatically -> track opens/replies -> analyze conversions to improve over time. Built on n8n with Claude via MCP. Strong evidence of agentic-AI and automation capability owned end to end.",
-      "workflow_brief": "The system scrapes leads, scores them, generates personalized AI pitch emails, sends them automatically, and tracks engagement to analyze and improve conversion rates.",
+      "summary_public": "A personal project: an n8n + SerpAPI pipeline that scrapes local-business leads into Google Sheets, built with Claude Code and n8n-mcp. It is a scraping pipeline only, not in production, and has no AI email or analysis steps yet.",
+      "workflow_brief": "",
       "domain": "marketing automation",
-      "skills_evidenced": [
-        "Agentic AI automation",
-        "End-to-end system ownership",
-        "JavaScript"
-      ]
+      "skills_evidenced": []
     },
     {
       "key": "llm_extractor",
@@ -3431,16 +3358,6 @@
         "weight": 0.85
       },
       {
-        "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
-      },
-      {
-        "project": "leadforge",
-        "role": "solo",
-        "weight": 1.0
-      },
-      {
         "project": "llm_extractor",
         "role": "snapshot",
         "weight": 0.1
@@ -3588,6 +3505,11 @@
     ],
     "TypeScript": [
       {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
         "project": "mojotip",
         "role": "contributor",
         "weight": 0.55
@@ -3616,11 +3538,6 @@
         "project": "castingpax",
         "role": "lead",
         "weight": 0.85
-      },
-      {
-        "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
       },
       {
         "project": "llm_extractor",
@@ -3735,6 +3652,11 @@
     ],
     "GitHub Actions": [
       {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
         "project": "lantern",
         "role": "minor",
         "weight": 0.25
@@ -3840,6 +3762,103 @@
         "weight": 0.55
       }
     ],
+    "React": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "mojotip",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "EarlyBirdsProperties/EarlyBirds-Properties-FE",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/meadowlands-service",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Boiler-plates/Frontend-Monorepo",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "E-commerce-FYP-test",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "other-mind-cloud-functions/delete-user/delete_user_om",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "DSA/spn-league-portal",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/evaluation-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "Test-apps/apollo-brokers-limit-challenge",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/registration-app",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "DSA/stat-link-FE-v2",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/adomate-public-FE",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
     "Unit Testing": [
       {
         "project": "lantern",
@@ -3858,11 +3877,6 @@
       },
       {
         "project": "buzzmi",
-        "role": "contributor",
-        "weight": 0.55
-      },
-      {
-        "project": "safescan",
         "role": "contributor",
         "weight": 0.55
       },
@@ -3948,103 +3962,6 @@
       },
       {
         "project": "Test-apps/spn-base-todo-list-backend",
-        "role": "contributor",
-        "weight": 0.55
-      }
-    ],
-    "React": [
-      {
-        "project": "spin",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "mojotip",
-        "role": "contributor",
-        "weight": 0.55
-      },
-      {
-        "project": "umeedventures",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "lantern",
-        "role": "minor",
-        "weight": 0.25
-      },
-      {
-        "project": "northmetro100",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "simplevue",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "castingpax",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
-      },
-      {
-        "project": "EarlyBirdsProperties/EarlyBirds-Properties-FE",
-        "role": "solo",
-        "weight": 1.0
-      },
-      {
-        "project": "SPN/meadowlands-service",
-        "role": "solo",
-        "weight": 1.0
-      },
-      {
-        "project": "Boiler-plates/Frontend-Monorepo",
-        "role": "solo",
-        "weight": 1.0
-      },
-      {
-        "project": "E-commerce-FYP-test",
-        "role": "solo",
-        "weight": 1.0
-      },
-      {
-        "project": "other-mind-cloud-functions/delete-user/delete_user_om",
-        "role": "solo",
-        "weight": 1.0
-      },
-      {
-        "project": "DSA/spn-league-portal",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "SPN/evaluation-app",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "Test-apps/apollo-brokers-limit-challenge",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "SPN/registration-app",
-        "role": "contributor",
-        "weight": 0.55
-      },
-      {
-        "project": "DSA/stat-link-FE-v2",
-        "role": "contributor",
-        "weight": 0.55
-      },
-      {
-        "project": "Test-apps/adomate-public-FE",
         "role": "contributor",
         "weight": 0.55
       }
@@ -4218,6 +4135,83 @@
         "weight": 0.55
       }
     ],
+    "Express": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "mojotip",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "northmetro100",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "trove",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "castingpax",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "llm_extractor",
+        "role": "snapshot",
+        "weight": 0.1
+      },
+      {
+        "project": "Boiler-plates/Backend-MVC",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "Test-apps/Basic-Auth/BE",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "EarlyBirdsProperties/EarlyBirds-Properties-BE",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "PTI-Central-Punjab/PTI-Central-Punjab-BE",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "Test-apps/spn-base-todo-list-backend",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
     "Tailwind": [
       {
         "project": "spin",
@@ -4290,83 +4284,6 @@
         "weight": 0.55
       }
     ],
-    "Express": [
-      {
-        "project": "spin",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "mojotip",
-        "role": "contributor",
-        "weight": 0.55
-      },
-      {
-        "project": "umeedventures",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "lantern",
-        "role": "minor",
-        "weight": 0.25
-      },
-      {
-        "project": "northmetro100",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "simplevue",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "trove",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "castingpax",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
-      },
-      {
-        "project": "llm_extractor",
-        "role": "snapshot",
-        "weight": 0.1
-      },
-      {
-        "project": "Boiler-plates/Backend-MVC",
-        "role": "solo",
-        "weight": 1.0
-      },
-      {
-        "project": "Test-apps/Basic-Auth/BE",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "EarlyBirdsProperties/EarlyBirds-Properties-BE",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "PTI-Central-Punjab/PTI-Central-Punjab-BE",
-        "role": "contributor",
-        "weight": 0.55
-      },
-      {
-        "project": "Test-apps/spn-base-todo-list-backend",
-        "role": "contributor",
-        "weight": 0.55
-      }
-    ],
     "MongoDB": [
       {
         "project": "spin",
@@ -4395,8 +4312,8 @@
       },
       {
         "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
+        "role": "lead",
+        "weight": 0.85
       },
       {
         "project": "Boiler-plates/Backend-MVC",
@@ -4446,11 +4363,6 @@
         "weight": 0.85
       },
       {
-        "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
-      },
-      {
         "project": "SPN/infrastructure-bootstrap",
         "role": "solo",
         "weight": 1.0
@@ -4488,7 +4400,7 @@
         "weight": 0.85
       },
       {
-        "project": "pobot",
+        "project": "portfolio_ai",
         "role": "solo",
         "weight": 1.0
       },
@@ -4541,8 +4453,8 @@
       },
       {
         "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
+        "role": "lead",
+        "weight": 0.85
       },
       {
         "project": "SPN/meadowlands-service",
@@ -4570,48 +4482,6 @@
         "weight": 0.55
       }
     ],
-    "Infrastructure as Code": [
-      {
-        "project": "spin",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "success_ai",
-        "role": "self-reported",
-        "weight": 0.0
-      },
-      {
-        "project": "umeedventures",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "SPN/meadowlands-service",
-        "role": "solo",
-        "weight": 1.0
-      },
-      {
-        "project": "SPN/infrastructure-bootstrap",
-        "role": "solo",
-        "weight": 1.0
-      },
-      {
-        "project": "SPN/infrastructure-core",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "SPN/garden-service",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "SPN/public-website",
-        "role": "contributor",
-        "weight": 0.55
-      }
-    ],
     "Docker": [
       {
         "project": "lantern",
@@ -4622,6 +4492,11 @@
         "project": "buzzmi",
         "role": "contributor",
         "weight": 0.55
+      },
+      {
+        "project": "portfolio_ai",
+        "role": "solo",
+        "weight": 1.0
       },
       {
         "project": "llm_extractor",
@@ -4682,8 +4557,8 @@
       },
       {
         "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
+        "role": "lead",
+        "weight": 0.85
       },
       {
         "project": "SPN/meadowlands-service",
@@ -4702,6 +4577,75 @@
       },
       {
         "project": "SPN/registration-app",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "FastAPI": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "portfolio_ai",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/meadowlands-service",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/garden-service",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/dev-tools",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/jumbotron-svc",
+        "role": "contributor",
+        "weight": 0.55
+      }
+    ],
+    "Infrastructure as Code": [
+      {
+        "project": "success_ai",
+        "role": "self-reported",
+        "weight": 0.0
+      },
+      {
+        "project": "umeedventures",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/meadowlands-service",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/infrastructure-bootstrap",
+        "role": "solo",
+        "weight": 1.0
+      },
+      {
+        "project": "SPN/infrastructure-core",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/garden-service",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/public-website",
         "role": "contributor",
         "weight": 0.55
       }
@@ -4751,8 +4695,8 @@
       },
       {
         "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
+        "role": "lead",
+        "weight": 0.85
       },
       {
         "project": "SPN/infrastructure-bootstrap",
@@ -4793,8 +4737,8 @@
       },
       {
         "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
+        "role": "lead",
+        "weight": 0.85
       },
       {
         "project": "E-commerce-FYP-test",
@@ -4839,29 +4783,29 @@
         "weight": 0.55
       }
     ],
-    "FastAPI": [
+    "PostgreSQL": [
       {
         "project": "spin",
         "role": "lead",
         "weight": 0.85
       },
       {
-        "project": "SPN/meadowlands-service",
-        "role": "solo",
-        "weight": 1.0
-      },
-      {
-        "project": "SPN/garden-service",
+        "project": "umeedventures",
         "role": "lead",
         "weight": 0.85
       },
       {
-        "project": "SPN/dev-tools",
+        "project": "northmetro100",
         "role": "lead",
         "weight": 0.85
       },
       {
-        "project": "SPN/jumbotron-svc",
+        "project": "simplevue",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "buzzmi",
         "role": "contributor",
         "weight": 0.55
       }
@@ -4893,34 +4837,29 @@
         "weight": 1.0
       }
     ],
-    "numpy": [
+    "OpenAI": [
       {
         "project": "spin",
         "role": "lead",
         "weight": 0.85
       },
       {
-        "project": "pobot",
+        "project": "safescan",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "portfolio_ai",
         "role": "solo",
         "weight": 1.0
       },
       {
-        "project": "SPN/meadowlands-service",
-        "role": "solo",
-        "weight": 1.0
-      },
-      {
-        "project": "SPN/jumbotron-svc",
-        "role": "contributor",
-        "weight": 0.55
+        "project": "llm_extractor",
+        "role": "snapshot",
+        "weight": 0.1
       }
     ],
     "MERN": [
-      {
-        "project": "spin",
-        "role": "lead",
-        "weight": 0.85
-      },
       {
         "project": "success_ai",
         "role": "self-reported",
@@ -4943,23 +4882,28 @@
       },
       {
         "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
-      }
-    ],
-    "PostgreSQL": [
-      {
-        "project": "umeedventures",
         "role": "lead",
         "weight": 0.85
+      }
+    ],
+    "Node.js": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "mojotip",
+        "role": "contributor",
+        "weight": 0.55
+      },
+      {
+        "project": "success_ai",
+        "role": "self-reported",
+        "weight": 0.0
       },
       {
         "project": "northmetro100",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "simplevue",
         "role": "lead",
         "weight": 0.85
       },
@@ -5035,26 +4979,21 @@
         "weight": 0.55
       }
     ],
-    "OpenAI": [
+    "numpy": [
       {
         "project": "spin",
         "role": "lead",
         "weight": 0.85
       },
       {
-        "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
-      },
-      {
-        "project": "pobot",
+        "project": "SPN/meadowlands-service",
         "role": "solo",
         "weight": 1.0
       },
       {
-        "project": "llm_extractor",
-        "role": "snapshot",
-        "weight": 0.1
+        "project": "SPN/jumbotron-svc",
+        "role": "contributor",
+        "weight": 0.55
       }
     ],
     "pandas": [
@@ -5074,45 +5013,6 @@
         "weight": 0.55
       }
     ],
-    "IaC": [
-      {
-        "project": "SPN/dev-tools",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "SPN/evaluation-app",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "SPN/jumbotron-svc",
-        "role": "contributor",
-        "weight": 0.55
-      }
-    ],
-    "E2E Testing": [
-      {
-        "project": "lantern",
-        "role": "minor",
-        "weight": 0.25
-      },
-      {
-        "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
-      },
-      {
-        "project": "SPN/spn-vue-app",
-        "role": "lead",
-        "weight": 0.85
-      },
-      {
-        "project": "SPN/spn-integration-tests",
-        "role": "contributor",
-        "weight": 0.55
-      }
-    ],
     "Redis": [
       {
         "project": "spin",
@@ -5126,28 +5026,23 @@
       },
       {
         "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
+        "role": "lead",
+        "weight": 0.85
       }
     ],
-    "Node.js": [
+    "IaC": [
       {
-        "project": "mojotip",
-        "role": "contributor",
-        "weight": 0.55
-      },
-      {
-        "project": "success_ai",
-        "role": "self-reported",
-        "weight": 0.0
-      },
-      {
-        "project": "northmetro100",
+        "project": "SPN/dev-tools",
         "role": "lead",
         "weight": 0.85
       },
       {
-        "project": "buzzmi",
+        "project": "SPN/evaluation-app",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "SPN/jumbotron-svc",
         "role": "contributor",
         "weight": 0.55
       }
@@ -5186,14 +5081,26 @@
         "weight": 0.85
       }
     ],
-    "Go": [
+    "AWS Lambda": [
       {
         "project": "spin",
         "role": "lead",
         "weight": 0.85
       },
       {
-        "project": "SPN/shareable-service",
+        "project": "safescan",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "BullMQ": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      },
+      {
+        "project": "safescan",
         "role": "lead",
         "weight": 0.85
       }
@@ -5246,26 +5153,31 @@
         "weight": 0.85
       }
     ],
-    "AWS Lambda": [
+    "E2E Testing": [
       {
-        "project": "spin",
+        "project": "lantern",
+        "role": "minor",
+        "weight": 0.25
+      },
+      {
+        "project": "SPN/spn-vue-app",
         "role": "lead",
         "weight": 0.85
       },
       {
-        "project": "safescan",
+        "project": "SPN/spn-integration-tests",
         "role": "contributor",
         "weight": 0.55
       }
     ],
-    "BullMQ": [
+    "Playwright": [
       {
         "project": "spin",
         "role": "lead",
         "weight": 0.85
       },
       {
-        "project": "safescan",
+        "project": "SPN/spn-integration-tests",
         "role": "contributor",
         "weight": 0.55
       }
@@ -5342,58 +5254,30 @@
         "weight": 0.85
       }
     ],
-    "FAISS": [
+    "Circuit breaker": [
       {
-        "project": "pobot",
+        "project": "portfolio_ai",
         "role": "solo",
         "weight": 1.0
       }
     ],
-    "LLM application architecture": [
+    "Claude": [
       {
-        "project": "pobot",
+        "project": "portfolio_ai",
         "role": "solo",
         "weight": 1.0
       }
     ],
-    "PyTorch": [
+    "Gemini": [
       {
-        "project": "pobot",
+        "project": "portfolio_ai",
         "role": "solo",
         "weight": 1.0
       }
     ],
-    "RAG design": [
+    "Multi-provider LLM routing": [
       {
-        "project": "pobot",
-        "role": "solo",
-        "weight": 1.0
-      }
-    ],
-    "Sentence-Transformers": [
-      {
-        "project": "pobot",
-        "role": "solo",
-        "weight": 1.0
-      }
-    ],
-    "Transformers": [
-      {
-        "project": "pobot",
-        "role": "solo",
-        "weight": 1.0
-      }
-    ],
-    "Agentic AI automation": [
-      {
-        "project": "leadforge",
-        "role": "solo",
-        "weight": 1.0
-      }
-    ],
-    "End-to-end system ownership": [
-      {
-        "project": "leadforge",
+        "project": "portfolio_ai",
         "role": "solo",
         "weight": 1.0
       }
@@ -5445,21 +5329,7 @@
         "weight": 0.85
       }
     ],
-    "AI pipeline design": [
-      {
-        "project": "spin",
-        "role": "lead",
-        "weight": 0.85
-      }
-    ],
-    "AWS Comprehend": [
-      {
-        "project": "spin",
-        "role": "lead",
-        "weight": 0.85
-      }
-    ],
-    "AWS Personalize": [
+    "AWS ECS Fargate": [
       {
         "project": "spin",
         "role": "lead",
@@ -5480,7 +5350,35 @@
         "weight": 0.85
       }
     ],
-    "DynamoDB Streams": [
+    "AWS WAF": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "C# / .NET 10": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Capacitor": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Claude Agent SDK": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "EventBridge": [
       {
         "project": "spin",
         "role": "lead",
@@ -5501,27 +5399,6 @@
         "weight": 0.85
       }
     ],
-    "MCP Tools": [
-      {
-        "project": "spin",
-        "role": "lead",
-        "weight": 0.85
-      }
-    ],
-    "MCP tool development": [
-      {
-        "project": "spin",
-        "role": "lead",
-        "weight": 0.85
-      }
-    ],
-    "Microservices architecture": [
-      {
-        "project": "spin",
-        "role": "lead",
-        "weight": 0.85
-      }
-    ],
     "OpenAI Moderation API": [
       {
         "project": "spin",
@@ -5529,7 +5406,28 @@
         "weight": 0.85
       }
     ],
-    "SNS": [
+    "Replicache": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "SQS": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Twilio": [
+      {
+        "project": "spin",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Vue 3": [
       {
         "project": "spin",
         "role": "lead",
@@ -5742,6 +5640,41 @@
         "weight": 0.85
       }
     ],
+    "AWS API Gateway": [
+      {
+        "project": "safescan",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "AWS CodeBuild": [
+      {
+        "project": "safescan",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "AWS CodePipeline": [
+      {
+        "project": "safescan",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "gRPC": [
+      {
+        "project": "safescan",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "xAI Grok": [
+      {
+        "project": "safescan",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
     "AWS ECS": [
       {
         "project": "SPN/infrastructure-core",
@@ -5759,6 +5692,13 @@
     "VPC": [
       {
         "project": "SPN/infrastructure-core",
+        "role": "lead",
+        "weight": 0.85
+      }
+    ],
+    "Go": [
+      {
+        "project": "SPN/shareable-service",
         "role": "lead",
         "weight": 0.85
       }
@@ -5894,41 +5834,6 @@
         "weight": 0.55
       }
     ],
-    "AWS API Gateway": [
-      {
-        "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
-      }
-    ],
-    "AWS CodeBuild": [
-      {
-        "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
-      }
-    ],
-    "AWS CodePipeline": [
-      {
-        "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
-      }
-    ],
-    "Serverless AWS": [
-      {
-        "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
-      }
-    ],
-    "gRPC": [
-      {
-        "project": "safescan",
-        "role": "contributor",
-        "weight": 0.55
-      }
-    ],
     "Prisma": [
       {
         "project": "PTI-Central-Punjab/PTI-Central-Punjab-BE",
@@ -5939,13 +5844,6 @@
     "pytest": [
       {
         "project": "SPN/jumbotron-svc",
-        "role": "contributor",
-        "weight": 0.55
-      }
-    ],
-    "Playwright": [
-      {
-        "project": "SPN/spn-integration-tests",
         "role": "contributor",
         "weight": 0.55
       }

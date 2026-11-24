@@ -41,7 +41,6 @@ profile:
   # rather than over-claiming shipped experience. EDIT freely.
   emerging_skills:
     - "self-hosted / fine-tuned LLMs (PEFT on small GPU boxes)"
-    - "deeper agentic systems & MCP tooling"
 
   # VOICE -- how the bot should SOUND (this is Ali's own tone). The examples do
   # most of the work (few-shot style transfer). EDIT the examples to your real
@@ -71,24 +70,25 @@ profile:
       - "Alright! Sounds like a fit. Grab me on LinkedIn, email, or just give me a call and we'll set something up."
 
   summary: >
-    Senior Software & AI Engineer with 5+ years, at heart a microservices and
-    distributed-systems engineer: I design event-driven, service-based
-    architectures (monolith to microservices, BFF/gateway) and run them on AWS
-    with Terraform IaC. MERN is my primary stack within that (MongoDB, Express,
-    React, Node.js, TypeScript), plus Nest.js. Owned architecture-to-delivery
-    across fintech, healthcare, and SaaS, leading cross-functional teams, CI/CD
-    pipelines, and production-grade systems handling high-volume transactions.
-    Also designed and shipped production multi-model AI pipelines (AWS
-    Rekognition, OpenAI Moderation API, GPT-4o) with deliberate signal
-    separation and structured LLM output.
+    Senior Software & AI Engineer with 5+ years shipping production systems
+    across sports tech, fintech, healthcare, and SaaS. I build AI agents that
+    do real engineering work: a Claude Agent SDK agent that writes regression
+    tests from Jira tickets and merged code under per-run cost and time
+    limits, plus multi-model AI pipelines and MCP servers. I own quality and
+    platform work end to end, including a ~950-case regression suite gating a
+    backend rewrite, short-lived per-branch test environments on AWS, and
+    Terraform-managed infrastructure. At heart a microservices and
+    distributed-systems engineer (monolith to microservices, event-driven
+    design), working across TypeScript, Python, and C#/.NET with Vue, React,
+    Node.js, FastAPI, and PostgreSQL.
 
   # Tech-lead / ownership competencies (from CV work-experience + skills).
   # The bot should weave the relevant ones into almost every project answer.
   tech_lead_areas:
     - "Architecture ownership: monolith -> microservices, BFF/gateway, event-driven design"
     - "Infrastructure as Code (Terraform/HashiCorp), multi-region disaster recovery, zero-downtime deploys"
-    - "CI/CD pipeline design with automated unit + E2E testing"
-    - "Multi-model AI pipeline design, agentic AI, structured LLM output"
+    - "Quality ownership: Playwright API regression suites, per-branch test environments, CI/CD"
+    - "AI agents (Claude Agent SDK), MCP servers, multi-model AI pipelines, structured LLM output"
     - "Team leadership & mentoring (led a team of 6), rigorous code reviews, engineering best practices"
     - "Observability & monitoring (Grafana, OpenTelemetry)"
     - "Database architecture & migrations (MySQL/PostgreSQL/MongoDB) for high-volume transactions"
@@ -96,7 +96,7 @@ profile:
 
   experience:
     - company: Nextek Solutions
-      title: Technical Lead / Senior Software Engineer
+      title: Technical Lead / Senior Software & AI Engineer (contracted to SPiN since Apr 2024)
       period: "Sep 2022 - Present"
     - company: Rapidzz Solutions
       title: Senior Web Developer (led a team of 6)
@@ -108,111 +108,95 @@ profile:
   # AUTO-GENERATED below (cv_skills / cv_experience / cv_projects) from the CV by
   # `python -m ingest.scrape_cv`. Do not hand-edit; re-run the script to refresh.
   cv_skills:
-    AI & Automation:
-      - Agentic AI
-      - LLMs
-      - GPT-4o
-      - OpenAI Moderation API
+    AI & Agents:
+      - Claude Agent SDK
+      - Anthropic SDK
+      - MCP (FastMCP authoring and consuming)
+      - OpenAI (GPT -4o, Moderation API)
+      - xAI Grok
+      - Gemini
       - Multi-model Pipelines
       - Structured LLM Output
-      - Claude
-      - MCPs
+      - Multi-provider Fallback
+      - Claude Code
       - n8n
-      - Make.io
-      - AWS Transcribe
-      - Replit
-      - Design Patterns
-    Core:
-      - React
+    Languages:
       - TypeScript
-      - JavaScript (ES6+)
+      - JavaScript
+      - Python
+      - C# (.NET 10)
+      - Go
+      - SQL
+    Frontend & Mobile:
+      - React
+      - Vue 3 (Pinia, PrimeVue)
+      - Capacitor (iOS/Android)
+      - React Native
+      - Redux/Redux Saga
+      - Replicache
+      - Vite
+      - Tailwind
+    Backend & Data:
       - Node.js
       - Express.js
       - Nest.js
-      - Go
-      - Python
-    Backend & Database:
-      - MySQL
+      - FastAPI
+      - ASP.NET Core
       - PostgreSQL
       - MongoDB
-      - RESTful APIs
+      - MySQL
+      - Redis
+      - DynamoDB Streams
       - gRPC
-      - Asynchronous Processing
       - Event-Driven Architecture
-      - Redux/Redux Saga
+      - Twilio
+      - Firebase (Auth, FCM)
     Cloud & Infrastructure:
-      - AWS (Lambda, API Gateway, RDS, CDN, CodePipeline, CodeBuild)
-      - Terraform
-      - HashiCorp
+      - AWS (ECS Fargate, Lambda, SQS/DLQ, SNS, EventBridge, S3, CloudFront, ALB, WAF v2, RDS/Aurora, Rekognition, Transcribe)
+      - Terraform/Terraform Cloud
+      - GitHub Actions
+      - Docker
       - GCP
       - CI/CD
-      - IaC
-      - Zero Downtime Deployments
-      - MLOps
-    Observability & Monitoring:
+      - Autoscaling
+      - Load Testing
+    Testing & Observability:
+      - Playwright
+      - xUnit + Testcontainers
+      - Jest
+      - Vitest
+      - Firebase Emulators
+      - OpenTelemetry
+      - Sentry
+      - Datadog RUM
       - Grafana
-      - OpenTelemetry (OTel)
     Methodologies:
       - Agile
-      - Code Reviews
-      - Observability
       - Technical Leadership
+      - Code Reviews
       - DevOps
   cv_experience:
     - company: NEXTEK SOLUTIONS
-      title: Technical Lead / Senior Software Engineer
+      title: Technical Lead / Senior Software & AI Engineer
       period: September 2022 – Present
       highlights:
-        - Architected and deployed resilient MERN backend systems supporting high-volume financial infrastructure, maintaining 99.9% uptime across transaction-heavy platforms.
-        - Designed and implemented CI/CD pipelines with automated testing, reducing deployment latency by 40% while enforcing WCAG accessibility standards.
-        - Scaled RESTful APIs and database schemas across MySQL and PostgreSQL to handle massive seasonal traffic spikes and reliable money movement for nonprofit fundraising.
-        - Mentored junior developers and conducted rigorous code reviews to uphold engineering best practices and maintain high code quality standards.
-        - Collaborated with cross-functional teams to integrate analytics and observability tooling, identify and resolve endpoint weak spots, and ensure smooth end-to-end delivery.
+        - Built the spec-writing role of an in-house multi-role AI agent platform (Claude Agent SDK on AWS ECS Fargate). It reads Jira acceptance criteria and merged backend diffs, writes Playwright regression tests and opens PRs, driven from Jira and Slack with per-run caps on time, turns and cost.
+        - Designed and am main author of a ~950-case Playwright API regression suite that gates a Node.js to .NET 10/PostgreSQL backend rewrite, covering 58% of client-called endpoints, with daily Slack reports ranking failures by impact.
+        - 'Top contributor to an internal platform that spins up short-lived full-stack test environments per branch (Terraform, ECS Fargate, GitHub Actions): service onboarding, per-environment Lambdas, test and route-coverage reporting. Authored a Python MCP server (FastMCP) that simulates users to seed these environments.'
+        - Built a 3-layer AI content moderation pipeline (AWS Rekognition, OpenAI Moderation, GPT -4o with structured output) that separates visual and language signals to avoid false positives on sports content, shipped as 5 Terraform-managed Lambdas.
+        - Hardened the edge with AWS WAF v2 and ALB access logging, set up ECS autoscaling and wrote the load tests that verified it. Moved a crawler from ECS to Lambda + SQS + EventBridge with dead -letter queues and capped concurrency.
+        - 'Shipped product features across Vue 3 + Capacitor and a .NET 10/PostgreSQL API: org settings with inheritance, Twilio Verify SMS opt-in, FCM push notifications, iOS/Android deep links. Built Replicache real-time multi-user sync for the evaluations app as its largest contributor.'
+        - Use Claude Code daily as an agentic development tool, with custom skills for headed Playwright UI walkthroughs, Jira/Confluence authoring and infrastructure access.
+        - Took client products from monolithic MVPs to microservices with Terraform IaC on AWS, including a live region migration during an AWS outage.
+        - Mentored developers and ran code reviews across client teams to keep delivery quality consistent.
     - company: RAPIDZZ SOLUTIONS
       title: Senior Web Developer
       period: September 2021 – September 2022
       highlights:
         - Led a team of 6 developers to build high-performance platforms using React, TypeScript, and MERN stack, increasing user engagement by 30% in the first quarter.
         - Implemented Turborepo for monorepo management, consolidating fragmented data tools into a unified CRM and management platform.
-        - Actively participated in agile rituals including sprint planning, daily stand-ups, and retrospectives, driving consistent on-time delivery under stringent timelines.
         - Migrated legacy database systems to MySQL/PostgreSQL architectures, ensuring data integrity for billions of dollars in donor transactions.
-        - Advocated for adoption of emerging technologies and frameworks, keeping the team at the forefront of the evolving tech landscape.
   cv_projects:
-    - name: SPiN - Sports Network Mobile App
-      summary: 'Built and shipped a production 3-layer AI content moderation pipeline: AWS Rekognition hard gate → OpenAI Moderation API (language-only) → GPT-4o contextual judgment with a sports-domain system prompt and structured JSON output. Deliberately separated visual signals (pixel-level Rekognition labels) from language signals (AWS Transcribe + detected text) to eliminate false positives on sports content. Pipeline runs fully async for video via SNS/DynamoDB Streams and sync for images, feeding results via webhook to MongoDB. Re-architected the platform from monolithic MVP to microservices with full IaC on AWS.'
-      tech:
-        - MERN
-        - Go
-        - Python
-        - Terraform
-        - AWS Rekognition
-        - AWS Transcribe
-        - AWS Comprehend
-        - AWS Personalize
-        - OpenAI Moderation API
-        - GPT-4o
-        - DynamoDB Streams
-        - SNS
-      link: https://spinsports.ai
-    - name: MojoTip
-      summary: Originally launched as InstaTip, rebranded to MojoTip following copyright resolution. Built from scratch as a monolithic MVP and scaled horizontally to handle growing load. Fintech cashless tipping platform with robust backend infrastructure and automated CI/CD pipelines.
-      tech:
-        - MongoDB
-        - Express.js
-        - Node.js
-        - TypeScript
-      link: https://mojotip.com
-    - name: Success.ai
-      summary: Built a multi-channel cold outreach automation platform. An Apify-powered scraper extracts LinkedIn leads based on user-defined criteria and stages them for outreach. Users compose campaigns via a template builder with variable substitution and AI-assisted copy generation (OpenAI GPT with explicit positive/negative prompt framing for tone control). EmailEngine drives automated follow-up sequences based on response status. The core engineering challenge was a unified multi-account inbox that aggregates all client email accounts into a single interface, supporting both manual compose/send from any account and automated EmailEngine sequences. Bulk sending routes leads in chunks across multiple sender addresses to avoid spam filters and rate limits.
-      tech:
-        - MERN
-        - Terraform
-        - HashiCorp
-        - OpenAI GPT
-        - EmailEngine
-        - Apify
-        - Node.js
-      link: https://success.ai
     - name: UmeedVentures
       summary: Redesigned a coupled three-module monolith into 12 independent microservices, enabling parallel team deployments with zero cross-team blocking. Built full IaC via Terraform (ECS, CDN, RDS, API Gateway), making infrastructure reproducible and region-portable. Led disaster recovery during a Bahrain AWS region outage, migrating production to a new region in hours using existing Terraform config. Maintained infrastructure cost parity while doubling system reliability across 3 independent teams.
       tech:
@@ -221,16 +205,7 @@ profile:
         - React/Vite
         - Terraform
         - AWS (ECS, CDN, RDS, API Gateway)
-      link: https://umeedcs.com/
-    - name: Lantern Finance
-      summary: "Built a fractional ETH staking platform solving the 32 ETH minimum barrier by pooling user investments percentage-based until the threshold is reached, staking via BitGo, and distributing rewards proportional to each user's pool contribution. Integrated MetaMask as the client-side wallet connector for transaction signing with no server-side key management. The core challenge was ledger consistency: keeping in-app transaction records in sync with on-chain state across both MetaMask and BitGo, handled via webhooks from both to track refund progress, reflect live wallet balances, and maintain a full audit trail. Built an internal reconciliation system to catch and surface any discrepancies between on-chain events and internal records."
-      tech:
-        - MERN
-        - TypeScript
-        - MetaMask
-        - BitGo
-        - ethers.js
-      link: https://lantern.finance/
+      link: umeedcs.com
     - name: North Metro100 BNM100
       summary: Built a fully automated job pipeline system using n8n and Claude (via MCP). A scheduled workflow scrapes job listings from target sites, creates structured Jira tickets with key-value job metadata, and triggers a dynamic re-prioritization agent on every new item. Client manages pipeline progression via a drag-and-drop Jira board. On job entry into the processing column, an agentic workflow triggers, queries member preference profiles from the NorthMetro portal, uses Claude via MCP to match and rank the most relevant members, emails assignments with follow-up reminders, and automatically schedules calendar tasks on acknowledgment.
       tech:
@@ -241,77 +216,62 @@ profile:
         - Replit
         - Terraform
         - HashiCorp
-      link: https://northmetro100.org/
-    - name: The Simple Vue
-      summary: Started on Replit with Supabase and Firebase Cloud Functions, migrated to Heroku, then to AWS via CodeBuild and CodePipeline, showcasing full infrastructure evolution from prototype to cloud-native deployment.
-      tech:
-        - Replit
-        - Supabase
-        - Firebase Cloud Functions
-        - Heroku
-        - AWS CDN
-        - CodeBuild
-        - CodePipeline
-      link: https://www.thesimplevue.com/
-    - name: SafeCamp - MedFlow
-      summary: Healthcare platform tailored for laboratory partners. Reduced overhead costs and errors through end-to-end efficiency software, leveraging serverless architecture and a generic componential approach.
-      tech:
-        - Serverless AWS Lambda
-        - Node.js
-        - React.js
-        - Redux Saga
-        - Redux Toolkit
-      link: https://www.gomedflow.com/
-    - name: Bond Studio AI
-      summary: Interior design and procurement platform. Started as B2E and evolved into a large-scale B2C platform built with a cross-functional team.
-      tech:
-        - Nest.js
-        - Terraform
-        - Unity
-        - React Native
-        - Regressions
-      link:
-    - name: BuzzMi
-      summary: Gamification-based secure messaging and social app with cashback rewards, end-to-end encryption, private messaging, and community mentorship features.
-      tech:
-        - Nest.js
-        - Node.js
-        - Terraform
-        - React Native
-        - E2E Regressions
-      link:
-    - name: Trove
-      summary: eGift card distribution platform for employee gifting. Centralizes gifting across borders for the Asia-Pacific region, tracking spending and redemptions via a dashboard.
-      tech:
-        - AWS EC2
-        - MERN
-        - GCP Cloud Functions
-      link: https://trove.com/
-    - name: CastingPAX
-      summary: B2B2C casting platform simplifying the casting process through automation, reducing wasted time and empowering casting directors.
+      link: northmetro100.org
+    - name: Success.ai
+      summary: Built a multi-channel cold outreach automation platform. An Apify-powered scraper extracts LinkedIn leads based on user-defined criteria and stages them for outreach. Users compose campaigns via a template builder with variable substitution and AI-assisted copy generation (OpenAI GPT with explicit positive/negative prompt framing for tone control). EmailEngine drives automated follow-up sequences based on response status. The core engineering challenge was a unified multi-account inbox that aggregates all client email accounts into a single interface, supporting both manual compose/send from any account and automated EmailEngine sequences. Bulk sending routes leads in chunks across multiple sender addresses to avoid spam filters and rate limits.
       tech:
         - MERN
-        - Micro-frontends
-        - AWS RDS
-        - Unit Tests
-        - Test Stories
-      link: https://www.castingpax.com/
+        - Terraform
+        - HashiCorp
+        - OpenAI GPT
+        - EmailEngine
+        - Apify
+        - Node.js
+      link: success.ai
+    - name: Portfolio AI Assistant
+      summary: Multi-provider LLM chatbot that answers questions about my work, grounded in git history and CV data. Guardrails stop it from overclaiming or disclosing internal details. Runs a Gemini -first fallback chain across providers with a circuit breaker; three live bots deployed with Docker on a VPS.
+      tech:
+        - Gemini
+        - Multi-provider LLM Routing
+        - Circuit Breaker
+        - Docker
+        - VPS
+      link: ali.nexteksol.com
     - name: SafeScan
-      summary: B2B SaaS compliance and job site safety platform. Combines real-time check-ins, digital inspections, and accountability tracking to streamline communication and reduce reporting delays.
+      summary: B2B SaaS compliance and job-site safety platform with real-time check-ins, digital inspections and accountability tracking. Integrated xAI Grok (via the OpenAI SDK) for a streaming in-app AI assistant and AI-generated monthly compliance report PDFs.
       tech:
         - MERN
         - gRPC
+        - xAI Grok
         - AWS Lambda
         - AWS API Gateway
         - AWS CodeBuild
         - AWS CodePipeline
-      link: https://www.safesiteusa.com/
+      link: www.safesiteusa.com
+    - name: Lantern Finance
+      summary: "Built a fractional ETH staking platform solving the 32 ETH minimum barrier by pooling user investments percentage-based until the threshold is reached, staking via BitGo, and distributing rewards proportional to each user's pool contribution. Integrated MetaMask as the client-side wallet connector for transaction signing with no server-side key management. The core challenge was ledger consistency: keeping in-app transaction records in sync with on-chain state across both MetaMask and BitGo, handled via webhooks from both to track refund progress, reflect live wallet balances, and maintain a full audit trail. Built an internal reconciliation system to catch and surface any discrepancies between on-chain events and internal records."
+      tech:
+        - MERN
+        - TypeScript
+        - MetaMask
+        - BitGo
+        - ethers.js
+      link: lantern.finance
+    - name: MojoTip
+      summary: Originally launched as InstaTip, rebranded to MojoTip following copyright resolution. Built from scratch as a monolithic MVP and scaled horizontally to handle growing load. Fintech cashless tipping platform with robust backend infrastructure and automated CI/CD pipelines.
+      tech:
+        - MongoDB
+        - Express.js
+        - Node.js
+        - TypeScript
+      link: mojotip.com
   cv_education:
-    - FAST - NATIONAL UNIVERSITY OF COMPUTER AND EMERGING SCIENCES Lahore MSCS in Computer Science, Graduated With High Honors January 2023 – January 2025
-    - PAK AIMS - THE INSTITUTE OF MANAGEMENT SCIENCES Lahore BSCS in Computer Science January 2019 – January 2023
+    - MSCS in Computer Science, Graduated With High Honors, FAST - NATIONAL UNIVERSITY OF COMPUTER AND EMERGING SCIENCES, Lahore (January 2023 – January 2025)
+    - BSCS in Computer Science, PAK AIMS - THE INSTITUTE OF MANAGEMENT SCIENCES, Lahore (January 2019 – January 2023)
   cv_languages:
     - English
     - Urdu
+  cv_summary: 'Senior Software & AI Engineer with 5+ years shipping production systems across sports tech, fintech, healthcare, and SaaS. Builds AI agents that do real engineering work: a Claude Agent SDK agent that writes regression tests from Jira tickets and merged co de under per -run cost and time limits, plus multi -model AI pipelines and MCP servers. Owns quality and platform work end to end, including a ~950 -case regression suite gating a backend rewrite, short-lived per-branch test environments on AWS, and Terraform -managed infrastructure. Works across TypeScript, Python, and C#/.NET with Vue, React, Node.js, FastAPI, and PostgreSQL.'
 featured:
   - rank: 1
     key: spin
@@ -321,24 +281,39 @@ featured:
     repos: [SPN/New_SPN_Backend, SPN/spn-web-app, SPN/spn-slate, SPN/feed-service, SPN/integrations-service, SPN/crawler-service]
     disclosure_tier: summary
     link: https://spinsports.ai
-    tech: [MERN, Go, Python, Terraform, AWS Rekognition, AWS Transcribe, AWS Comprehend, AWS Personalize, OpenAI Moderation API, GPT-4o, DynamoDB Streams, SNS, "AWS Lambda", "MCP", "MCP Tools"]
+    tech: [Claude Agent SDK, MCP, Playwright, TypeScript, Python, "C# / .NET 10", PostgreSQL, Vue 3, Capacitor, Node.js, MongoDB, Terraform, "AWS ECS Fargate", "AWS Lambda", SQS, EventBridge, "AWS WAF", AWS Rekognition, AWS Transcribe, OpenAI Moderation API, GPT-4o, GitHub Actions, Twilio, Replicache]
     lead_focus:
+      - "AI agents doing engineering work (Claude Agent SDK), with cost and time limits"
+      - "Quality ownership: regression suite design, test environments, reporting"
       - "Multi-model AI pipeline design, structured LLM output"
-      - "MCP (Model Context Protocol) tool development"
-      - "AWS Lambda implementations provisioned via Terraform (IaC)"
-      - "Architecture ownership: monolith -> microservices, event-driven design"
+      - "AWS infrastructure as code (Terraform): Lambda, ECS Fargate, WAF, autoscaling"
+    # Wording follows the Nov 2026 CV. Comprehend and Personalize were removed in
+    # Apr 2026, so they are not listed as current tech.
     narrative: >
-      Built and shipped a production 3-layer AI content moderation pipeline:
-      AWS Rekognition hard gate -> OpenAI Moderation API (language-only) ->
-      GPT-4o contextual judgment with a sports-domain system prompt and
-      structured JSON output. Deliberately separated visual signals
-      (pixel-level Rekognition labels) from language signals (AWS Transcribe +
-      detected text) to eliminate false positives on sports content. Pipeline
-      runs fully async for video via SNS/DynamoDB Streams and sync for images,
-      feeding results via webhook to MongoDB. Re-architected the platform from
-      monolithic MVP to microservices with full IaC on AWS. Also built MCP
-      (Model Context Protocol) tools for the platform and implemented the AWS
-      Lambda functions provisioned as code via Terraform.
+      SPiN (spinsports.ai) is a sports network for teams, leagues and families.
+      I've been contracted there through Nextek since April 2024. I built the
+      spec-writing role of an in-house multi-role AI agent platform (Claude
+      Agent SDK on AWS ECS Fargate): it reads Jira acceptance criteria and
+      merged backend diffs, writes Playwright regression tests and opens PRs,
+      driven from Jira and Slack with per-run caps on time, turns and cost. I
+      designed and am the main author of a ~950-case Playwright API regression
+      suite that gates a Node.js to .NET 10 / PostgreSQL backend rewrite,
+      covering 58% of client-called endpoints, with daily Slack reports ranking
+      failures by impact. I'm the top contributor to an internal platform that
+      spins up short-lived full-stack test environments per branch (Terraform,
+      ECS Fargate, GitHub Actions), and wrote a Python MCP server (FastMCP)
+      that simulates users to seed them. I built a 3-layer AI content
+      moderation pipeline (AWS Rekognition, then OpenAI Moderation, then GPT-4o
+      with structured output) that separates visual and language signals to
+      avoid false positives on sports content, shipped as 5 Terraform-managed
+      Lambdas. I hardened the edge with AWS WAF v2 and ALB access logging, set
+      up ECS autoscaling with the load tests that verified it, and moved a
+      crawler from ECS to Lambda + SQS + EventBridge. Product work spans Vue 3
+      + Capacitor and a .NET 10 / PostgreSQL API: org settings with
+      inheritance, Twilio Verify SMS opt-in, FCM push notifications, iOS and
+      Android deep links, and Replicache real-time sync for the evaluations
+      app. The agent platform's core and its other roles, and the test
+      environment platform's core, were built by teammates.
 
   - rank: 2
     key: mojotip
@@ -545,52 +520,61 @@ featured:
     repos: [Safe-Scan/safescan_admin, Safe-Scan/safescan_panel, Safe-Scan/safescan_orientation, Safe-Scan/safescan_sanico_form]
     disclosure_tier: summary
     link: https://www.safesiteusa.com/
-    tech: [MERN, gRPC, "AWS Lambda", "AWS API Gateway", "AWS CodeBuild", "AWS CodePipeline"]
+    tech: [MERN, gRPC, xAI Grok, "AWS Lambda", "AWS API Gateway", "AWS CodeBuild", "AWS CodePipeline"]
+    role_override: lead            # ~50% of the admin backend's commits; the Grok work is all Ali's
+    ai_showcase: true
     lead_focus:
+      - "LLM integration (xAI Grok): streaming assistant, AI-written reports"
       - "gRPC / service architecture"
       - "Serverless AWS (Lambda, API Gateway)"
-      - "CI/CD pipeline design (CodeBuild/CodePipeline)"
     narrative: >
-      B2B SaaS compliance and job site safety platform. Combines real-time
-      check-ins, digital inspections, and accountability tracking to streamline
-      communication and reduce reporting delays.
+      B2B SaaS compliance and job-site safety platform with real-time
+      check-ins, digital inspections and accountability tracking. I led the
+      admin backend and integrated xAI Grok (via the OpenAI SDK) for a
+      streaming in-app AI assistant and AI-generated monthly compliance report
+      PDFs.
 
-  # --- AI-forward projects (full projects, not "assessments") ---------
+  # --- AI-forward projects ---------------------------------------------
+  # PoBot was removed (2026-11): its commits are Uzair's and it's off the CV.
   - rank: 13
-    key: pobot
-    name: "PoBot - AI Assistant for Migrant Support"
-    source: repo
+    key: portfolio_ai
+    name: "Portfolio AI Assistant"
+    source: resume
     ai_showcase: true
-    repos: ["Test-apps/PoBot_Expansion–AI_Assistant_for_Migrant_Support"]
+    repos: []                      # this engine; not part of the git scan
+    resume_only: true
+    role_override: solo
+    domain: "AI / LLM applications"
     disclosure_tier: open
+    link: https://ali.nexteksol.com
+    tech: [Python, FastAPI, Gemini, Claude, OpenAI, "Multi-provider LLM routing", "Circuit breaker", Docker]
     lead_focus:
-      - "Retrieval-Augmented Generation (RAG) design"
-      - "LLM application architecture"
+      - "LLM application architecture with grounding and guardrails"
+      - "End-to-end system ownership (solo)"
     narrative: >
-      A retrieval-augmented (RAG) AI assistant that answers migrant-support
-      questions grounded in a curated knowledge base rather than free-form LLM
-      output. Demonstrates retrieval pipeline design, prompt engineering, and
-      end-to-end LLM application architecture.
-    narrative_provisional: true    # ingest LLM step will ground this from the repo
+      The chatbot you're talking to. A multi-provider LLM chatbot that answers
+      questions about my work, grounded in git history and CV data. Guardrails
+      stop it from overclaiming or disclosing internal details. It runs a
+      Gemini-first fallback chain across providers with a circuit breaker, and
+      one engine serves three live bots deployed with Docker on a VPS. Built
+      solo.
 
   - rank: 14
     key: leadforge
-    name: "LeadForge - AI Lead-Generation System"
+    name: "LeadForge - Lead-Scraping Pipeline"
     source: repo
-    ai_showcase: true
     repos: [Personal/leadforge-system]
     disclosure_tier: open
     sanitize: true                 # repo docs contain a live Google Sheet ID etc.
     lead_focus:
-      - "Agentic AI automation (n8n + Claude via MCP)"
-      - "End-to-end system ownership (solo)"
+      - "Workflow automation (n8n)"
+      - "End-to-end ownership (solo, personal project)"
+    # Only the scraping pipeline exists. The AI pitch and analyzer steps are unbuilt.
     narrative: >
-      A solo-built, closed-loop lead-generation system for pitching web-design
-      services to local businesses: scrape leads (SerpAPI) -> score -> generate
-      personalized AI pitch emails -> send automatically -> track opens/replies
-      -> analyze conversions to improve over time. Built on n8n with Claude via
-      MCP. Strong evidence of agentic-AI and automation capability owned end to
-      end.
+      A personal project: an n8n + SerpAPI pipeline that scrapes local-business
+      leads into Google Sheets, built with Claude Code and n8n-mcp. It is a
+      scraping pipeline only, not in production, and has no AI email or
+      analysis steps yet.
 
   - rank: 15
     key: llm_extractor
