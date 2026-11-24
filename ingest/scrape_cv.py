@@ -52,6 +52,7 @@ Rules:
 - skill_groups: mirror the CV's own skill categories and their items verbatim.
 - experience.highlights: one entry per bullet, trimmed but faithful (keep metrics).
 - projects.summary: the project's description as written; tech = its listed technologies.
+- projects: include EVERY project the CV names, also the brief one-line entries under headings like "Other work" or "Additional projects". For those, summary is the one line as written and tech is whatever it lists (often in parentheses).
 - Use null for a missing link. Do not add commentary.
 CV TEXT:
 """
